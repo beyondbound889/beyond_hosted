@@ -1,5 +1,5 @@
 
-import '../css/meetglyco.css'
+import '../css/MeetGlyco.css'
 import bottleImg from '../assets/bottle.png'
 
 const ingredients = [
