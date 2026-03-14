@@ -33,10 +33,6 @@ function Navbar() {
 		setActiveMenu((prev) => (prev === menuName ? null : menuName))
 	}
 
-	const toggleMobileSub = (name) => {
-		setMobileSubMenu((prev) => (prev === name ? null : name))
-	}
-
 	return (
 		<>
 		<header className="navbar-wrapper" onMouseLeave={() => setActiveMenu(null)}>
