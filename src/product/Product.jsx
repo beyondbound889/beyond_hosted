@@ -5,6 +5,8 @@ import LandingDetails from "./LandingDetails";
 import ProductPage from "./ProductPage";
 import SoundFamiliar from "./SoundFamiliar";
 import IngredientsSection from "./IngredientsSection";
+import beforeImg from "./assets/before.jpg";
+import afterImg from "./assets/after.jpg";
 
 function App() {
   return (
@@ -38,8 +40,8 @@ function App() {
           </div>
         </div>
         <BeforeAfterSlider
-          beforeImg={"src/assets/after.jpg"}
-          afterImg={"src/assets/before.jpg"}
+          beforeImg={beforeImg}
+          afterImg={afterImg}
         />
         <GlycomicsCard />
         <LandingDetails />
