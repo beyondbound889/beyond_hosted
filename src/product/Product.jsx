@@ -40,8 +40,8 @@ function App() {
           </div>
         </div>
         <BeforeAfterSlider
-          beforeImg={beforeImg}
-          afterImg={afterImg}
+          beforeImg={afterImgImg}
+          afterImg={beforeImg}
         />
         <GlycomicsCard />
         <LandingDetails />
