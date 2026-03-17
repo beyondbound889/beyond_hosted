@@ -1,0 +1,127 @@
+
+
+:root {
+  --teal-dark: #0D7377;
+  --text-main: #333;
+  --text-light: #777;
+  --bg-white: #ffffff;
+}
+
+.body-sf {
+  margin: 0;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+  background-color: #fdfdfd;
+  display: flex;
+  justify-content: center;
+}
+
+.container-sf {
+  max-width: 1000px; /* Increased for better spacing on PC */
+  width: 100%;
+  text-align: center;
+}
+
+/* Header */
+.title-sf {
+  font-family: 'Bree Serif'; /* Keeps that elegant look */
+  font-size: 3.5rem;
+  margin: 0 0 10px 0;
+  color: #111;
+  font-weight: 400;
+}
+
+.subtitle-sf {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 60px;
+}
+
+/* The Grid - This is the fix for the stacking */
+.grid-sf {
+  display: grid;
+  /* Forces 3 columns on PC, drops to 1 on mobile */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px 30px; /* More vertical space for the offset shadow */
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+/* Card Styling */
+.card-wrapper-sf {
+  position: relative;
+  display: flex;
+}
+
+/* The Teal Background Shape */
+.card-bg-sf {
+  position: absolute;
+  z-index: 1;
+  /* Adjust these to control the "thickness" of the teal edge */
+  top: -6px; 
+  left: 6px;
+  right: -6px;
+  bottom: 6px;
+  background-color: var(--teal-dark);
+  border-radius: 20px;
+}
+
+/* The White Card */
+.card-content-sf {
+  position: relative;
+  z-index: 2; /* Sits on top of the teal bg */
+  flex: 1;
+  background: white;
+  border: 1.5px solid #eaeaea;
+  border-radius: 20px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.icon-circle-sf {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.card-text-sf {
+  font-size: 1.05rem;
+  color: #444;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Footer text */
+.footer-sf {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+.footer strong {
+  color: #111;
+}
+
+/* Responsive Fix: Switch to 1 column on mobile */
+@media (max-width: 768px) {
+  .grid-sf {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto 50px auto;
+  }
+  .title-sf {
+    font-size: 2.5rem;
+  }
+}
