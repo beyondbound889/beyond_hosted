@@ -69,3 +69,4 @@ function IngredientsSection() {
 }
 
 export default IngredientsSection;
+

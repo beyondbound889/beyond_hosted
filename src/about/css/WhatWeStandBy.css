@@ -1,0 +1,177 @@
+/* WhatWeStandBy.css */
+
+.what-we-stand-by {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+}
+
+.what-we-stand-by h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-family: 'Inter', sans-serif;
+}
+
+.stand-by-subtitle {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #14706A;
+  margin-bottom: 50px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-family: 'Inter', sans-serif;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 80px;
+  background: transparent;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.value-card {
+  text-align: center;
+  padding: 25px 20px;
+  background: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 8px 24px rgba(42, 124, 124, 0.15);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  box-shadow: 0 15px 36px rgba(23, 23, 23, 0.25);
+  transform: translateY(-4px);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  height: 80px;
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a96a6;
+}
+
+.value-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.value-card h3 {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+.leadership-section {
+  text-align: center;
+  padding: 50px 30px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.leadership-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.leadership-bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-weight: 800;
+  color: rgba(200, 200, 200, 0.25);
+  letter-spacing: 5px;
+  font-family: 'Inter', sans-serif;
+  z-index: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.leadership-section h2 {
+  font-size: 3rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.leadership-section p {
+  font-size: 1.05rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .what-we-stand-by h2 {
+    font-size: 2rem;
+  }
+
+  .stand-by-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
+
+  .leadership-section {
+    padding: 30px 20px;
+  }
+
+  .bg-text-top,
+  .bg-text-bottom {
+    font-size: 2.5rem;
+  }
+
+  .leadership-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .leadership-section p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bg-text-top,
+  .bg-text-bottom {
+    font-size: 1.8rem;
+  }
+}
+
+
+

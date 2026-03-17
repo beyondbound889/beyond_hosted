@@ -27,6 +27,7 @@ const accountMenuItems = [
 function Navbar() {
   const activeMenu = useMenuStore((state) => state.activeMenu);
   const setActiveMenu = useMenuStore((state) => state.setActiveMenu);
+  const setActivePage = useMenuStore((state) => state.setActivePage);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileSubMenu, setMobileSubMenu] = useState(null);
   const [signedInUser, setSignedInUser] = useState(null);
@@ -39,7 +40,12 @@ function Navbar() {
     <>
       <header
         className="navbar-wrapper"
-        onMouseLeave={() => setActiveMenu(null)}
+        onMouseLeave={() => {
+          // Close any open dropdown menus when the cursor leaves the navbar.
+          if (["science", "about", "login"].includes(activeMenu)) {
+            setActiveMenu(null);
+          }
+        }}
       >
         <nav className="navbar">
           <div className="navbar-brand">
@@ -49,13 +55,21 @@ function Navbar() {
 
           <ul className="navbar-links">
             <li className="menu-item">
-              <button type="button" className="menu-trigger">
+              <button
+                type="button"
+                className="menu-trigger"
+                onClick={() => setActivePage("home")}
+              >
                 Home
               </button>
             </li>
 
             <li className="menu-item">
-              <button type="button" className="menu-trigger">
+              <button
+                type="button"
+                className="menu-trigger"
+                onClick={() => setActivePage("products")}
+              >
                 Products
               </button>
             </li>
@@ -105,7 +119,7 @@ function Navbar() {
               <button
                 type="button"
                 className="menu-trigger"
-                onClick={() => toggleMenu("about")}
+                onClick={() => setActivePage("about")}
                 aria-expanded={activeMenu === "about"}
               >
                 About
@@ -191,10 +205,26 @@ function Navbar() {
 
         {mobileOpen && (
           <div className="mobile-menu">
-            <button type="button" className="mobile-link">
+            <button
+              type="button"
+              className="mobile-link"
+              onClick={() => {
+                setActivePage("home");
+                setMobileOpen(false);
+                setMobileSubMenu(null);
+              }}
+            >
               Home
             </button>
-            <button type="button" className="mobile-link">
+            <button
+              type="button"
+              className="mobile-link"
+              onClick={() => {
+                setActivePage("products");
+                setMobileOpen(false);
+                setMobileSubMenu(null);
+              }}
+            >
               Products
             </button>
 
@@ -231,9 +261,11 @@ function Navbar() {
             <button
               type="button"
               className="mobile-link mobile-link--has-sub"
-              onClick={() =>
-                setMobileSubMenu((p) => (p === "about" ? null : "about"))
-              }
+              onClick={() => {
+                setActivePage("about");
+                setMobileOpen(false);
+                setMobileSubMenu((p) => (p === "about" ? null : "about"));
+              }}
               aria-expanded={mobileSubMenu === "about"}
             >
               About
@@ -277,3 +309,4 @@ function Navbar() {
 }
 
 export default Navbar;
+

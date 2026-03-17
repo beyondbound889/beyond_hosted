@@ -1,4 +1,22 @@
 html,body {
   padding: 0;
-  margin: 0
+  margin: 0;
+  font-family: 'Inter'
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.scaled-wrapper {
+  transform: scale(0.9);
+  transform-origin: top center;
+  /* width: 111.11%; */ /* 100 / 0.9 to compensate shrink */
+}
+
+.scaled-wrapper2 {
+  transform: scale(0.9);
+  transform-origin: top center;
+  /* width: 111.11%; */ /* 100 / 0.9 to compensate shrink */
 }

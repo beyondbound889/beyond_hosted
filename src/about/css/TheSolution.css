@@ -1,0 +1,259 @@
+/* TheSolution.css */
+
+.the-solution {
+  padding: 20px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+
+}
+
+.the-solution h3 {
+  font-size: 2.5rem;
+  color: #4d4c4c;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.the-solution h3 .section-number {
+  color: #2a7c7c;
+}
+
+.solution-description {
+  font-size: 1.1rem;
+  color: #666;
+  font-size: 10;
+  margin-bottom: 40px;
+  max-width: 600px;
+  font-family: 'Inter', sans-serif;
+}
+
+.solution-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.solution-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.solution-item-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.solution-item {
+  background: white;
+  border: 2px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.solution-item-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.solution-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2a7c7c;
+  line-height: 1;
+  min-width: 40px;
+}
+
+.solution-item-left span:last-child {
+  color: #333;
+  font-weight: 600;
+}
+
+.dropdown-icon {
+  background: none !important;
+  width: auto !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  color: #4a96a6;
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.solution-item.expanded .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.solution-item:hover {
+  border-color: #4a96a6;
+  background: #f0f7f9;
+}
+
+.solution-item.expanded {
+  background: #4a96a6;
+  color: white;
+  border-color: #4a96a6;
+}
+
+.solution-item.expanded .solution-number {
+  color: white;
+}
+
+.solution-item.expanded .solution-item-left span:last-child {
+  color: white;
+}
+
+.solution-item.expanded .dropdown-icon {
+  color: white;
+}
+
+.solution-content-dropdown {
+  background: #f0f7f9;
+  padding: 15px 20px;
+  border-radius: 0 0 8px 8px;
+  border: 2px solid #4a96a6;
+  border-top: none;
+  margin-bottom: 15px;
+}
+
+.solution-content-dropdown p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.solution-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-bottle {
+  width: 250px;
+  height: 300px;
+  /* background: linear-gradient(135deg, #f0f7f9 0%, #e0e8eb 100%); */
+  /* border-radius: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-bottle img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.certifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px 0;
+}
+
+.cert {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.cert h4 {
+  font-size: 2rem;
+  color: #2a7c7c;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.cert p {
+  font-size: 0.95rem;
+  color: #999999;
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .solution-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .certifications {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .product-bottle {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .the-solution {
+    padding: 40px 15px;
+  }
+
+  .the-solution h3 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+
+  .solution-description {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  .solution-content {
+    gap: 30px;
+  }
+
+  .solution-items {
+    gap: 12px;
+  }
+
+  .solution-item {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .solution-number {
+    font-size: 1.5rem;
+  }
+
+  .product-bottle {
+    width: 150px;
+    height: 200px;
+  }
+
+  .certifications {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .cert h4 {
+    font-size: 1.5rem;
+  }
+
+  .cert p {
+    font-size: 0.85rem;
+  }
+}
+
+
+

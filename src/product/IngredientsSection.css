@@ -23,7 +23,7 @@
 
 /* Header */
 .title-is {
-  font-family: 'Bree Serif'; /* The original uses serif for the main title */
+  font-family: 'Inter', sans-serif; /* The original uses serif for the main title */
   font-size: 3.8rem;
   font-weight: 400;
   margin: 0;
@@ -122,7 +122,7 @@
 }
 /* Text Content */
 .ingredient-name-is {
-  font-family: 'Bree Serif';
+  font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   margin: 0 0 5px 0;
@@ -158,3 +158,6 @@
     font-size: 2.5rem;
   }
 }
+
+
+

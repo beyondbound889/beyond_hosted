@@ -1,21 +1,31 @@
-import { useState } from 'react'
 import Product from './product/Product.jsx'
+import AboutUs from './about/components/AboutUs.jsx'
+import Home from './home/App.jsx'
 import './App.css'
 import Navbar from './navbar.jsx'
 import Footer from './footer.jsx'
 import useMenuStore from './useMenuStore';
 
 function App() {
-  const activeMenu = useMenuStore((state) => state.activeMenu);
-  const [count, setCount] = useState(0)
+  const activePage = useMenuStore((state) => state.activePage);
 
   return (
     <>
-    <Navbar/>
-    {activeMenu==='products' && <Product/>}
-    <Footer />
+      <Navbar />
+      <div /* className='scaled-wrapper' */>
+   
+        <div /* className='scaled-wrapper' */>
+
+        {activePage === 'products' && <Product />}
+        </div>
+
+        {activePage === 'about' && <AboutUs />}
+        {activePage === 'home' && <Home />}
+      </div>
+      <Footer />
     </>
   )
 }
 
 export default App
+

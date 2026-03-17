@@ -1,0 +1,672 @@
+/* OurTeam.css */
+
+.our-team {
+  padding: 20px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #ffffff;
+  position: relative;
+}
+
+.team-header-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.team-bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-weight: 800;
+  color: rgba(42, 124, 124, 0.1);
+  letter-spacing: 5px;
+  font-family: 'Inter', sans-serif;
+  z-index: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.our-team h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.core-team {
+  margin-bottom: 100px;
+}
+
+.mentor-title {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  z-index: 1;
+  margin: 80px 0 50px;
+  letter-spacing: -1px;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .our-team {
+    padding: 60px 20px;
+  }
+
+  .team-header-container {
+    margin-bottom: 60px;
+  }
+
+  .our-team h2 {
+    font-size: 3rem;
+  }
+
+  .team-bg-text {
+    font-size: 4rem;
+  }
+
+  .team-container {
+    gap: 50px;
+  }
+
+  .team-image-wrapper {
+    width: 160px;
+    height: 160px;
+  }
+
+  .team-image {
+    width: 160px;
+    height: 160px;
+  }
+
+  .team-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.team-card {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  text-align: center;
+  box-shadow: none;
+  transition: none;
+}
+
+.team-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.team-image-wrapper {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0f7f9 0%, #e8eff3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-half-circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #2a7c7c;
+  border-radius: 50% 0 50% 50%;
+  transform: rotate(-45deg);
+  border: 3px solid white;
+}
+
+.badge-image {
+  position: relative;
+  z-index: 2;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.badge-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.team-card h3 {
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+
+.team-card .title {
+  font-size: 1rem;
+  color: #2a7c7c;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.team-card .qualification {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 6px;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4;
+}
+
+.team-card .location {
+  font-size: 0.9rem;
+  color: #999;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4;
+}
+
+/* Mentors Section */
+.mentors-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto 100px;
+}
+
+.mentor-card {
+  text-align: center;
+}
+
+.mentor-image-wrapper {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mentor-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0f7f9 0%, #e8eff3 100%);
+  border: 4px solid #2a7c7c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mentor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mentor-badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.mentor-badge-image {
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  background: #c94a4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mentor-badge-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mentor-card h4 {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.mentor-card p {
+  font-size: 0.9rem;
+  color: #666;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+/* Partner Section */
+.partner-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.partner-box {
+  background: #f9f9f9;
+  padding: 50px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.partner-box img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 25px;
+  object-fit: contain;
+}
+
+.partner-box p {
+  font-size: 1.1rem;
+  color: #666;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .our-team {
+    padding: 50px 20px;
+  }
+
+  .team-header-container {
+    margin-bottom: 50px;
+  }
+
+  .team-bg-text {
+    font-size: 3.5rem;
+  }
+
+  .our-team h2 {
+    font-size: 2.5rem;
+  }
+
+  .core-team {
+    margin-bottom: 70px;
+  }
+
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .team-image-wrapper {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 20px;
+  }
+
+  .team-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .team-badge {
+    width: 50px;
+    height: 50px;
+  }
+
+  .badge-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .team-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .team-card .title {
+    font-size: 0.95rem;
+  }
+
+  .team-card .qualification {
+    font-size: 0.85rem;
+  }
+
+  .mentors-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .mentor-image-wrapper {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 15px;
+  }
+
+  .mentor-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .mentor-badge {
+    width: 45px;
+    height: 45px;
+  }
+
+  .mentor-badge-image {
+    width: 42px;
+    height: 42px;
+  }
+
+  .mentor-card h4 {
+    font-size: 1rem;
+  }
+
+  .mentor-card p {
+    font-size: 0.85rem;
+  }
+
+  .partner-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .partner-box {
+    padding: 35px;
+  }
+
+  .partner-box img {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .partner-box p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .our-team {
+    padding: 35px 15px;
+  }
+
+  .team-header-container {
+    margin-bottom: 45px;
+  }
+
+  .team-bg-text {
+    font-size: 3.5rem;
+  }
+
+  .our-team h2 {
+    font-size: 2.2rem;
+  }
+
+  .core-team {
+    margin-bottom: 50px;
+  }
+
+  .team-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .team-image-wrapper {
+    width: 130px;
+    height: 130px;
+  }
+
+  .team-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .team-badge {
+    width: 45px;
+    height: 45px;
+  }
+
+  .badge-image {
+    width: 35px;
+    height: 35px;
+  }
+
+  .team-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+
+  .team-card .title {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+
+  .team-card .qualification,
+  .team-card .location {
+    font-size: 0.8rem;
+  }
+
+  .mentors-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .mentor-image-wrapper {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 15px;
+  }
+
+  .mentor-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .mentor-badge {
+    width: 45px;
+    height: 45px;
+  }
+
+  .mentor-badge-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mentor-card h4 {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+  }
+
+  .mentor-card p {
+    font-size: 0.8rem;
+  }
+
+  .partner-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
+  .partner-box {
+    padding: 25px 20px;
+  }
+
+  .partner-box img {
+    max-width: 120px;
+    margin-bottom: 15px;
+  }
+
+  .partner-box p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .our-team {
+    padding: 30px 12px;
+  }
+
+  .team-header-container {
+    margin-bottom: 35px;
+  }
+
+  .team-bg-text {
+    font-size: 2.5rem;
+  }
+
+  .our-team h2 {
+    font-size: 1.8rem;
+  }
+
+  .core-team {
+    margin-bottom: 40px;
+  }
+
+  .team-container {
+    gap: 35px;
+  }
+
+  .team-image-wrapper {
+    width: 110px;
+    height: 110px;
+  }
+
+  .team-image {
+    width: 110px;
+    height: 110px;
+  }
+
+  .team-badge {
+    width: 38px;
+    height: 38px;
+  }
+
+  .badge-image {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+  }
+
+  .team-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .team-card .title {
+    font-size: 0.85rem;
+  }
+
+  .team-card .qualification,
+  .team-card .location {
+    font-size: 0.75rem;
+  }
+
+  .mentors-container {
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .mentor-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .mentor-card h4 {
+    font-size: 0.85rem;
+  }
+
+  .mentor-card p {
+    font-size: 0.7rem;
+  }
+
+  .partner-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .partner-box {
+    padding: 20px 15px;
+  }
+
+  .partner-box img {
+    max-width: 100px;
+    margin-bottom: 12px;
+  }
+
+  .partner-box p {
+    font-size: 0.8rem;
+  }
+}
+
+
+

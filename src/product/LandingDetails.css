@@ -1,13 +1,13 @@
-.landing-container {
+.landing-container-ld {
   max-width: 1000px;
   margin: 0 auto;
   padding: 60px 20px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   color: #1a1a1a;
 }
 
 /* Testimonial Styles */
-.main-quote {
+.main-quote-ld {
   text-align: center;
   font-size: 28px;
   line-height: 1.3;
@@ -16,52 +16,53 @@
   margin: 0 auto 20px;
 }
 
-.quote-author {
+.quote-author-ld {
   text-align: center;
   color: #666;
   margin-bottom: 40px;
 }
 
-.testimonial-grid {
+.testimonial-grid-ld {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
-.test-card {
+.test-card-ld {
   background: #fff;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.stars { color: #d4a017; margin-bottom: 10px; }
+.stars-ld { color: #d4a017; margin-bottom: 10px; }
 
-.test-text {
+.test-text-ld {
   font-size: 14px;
   line-height: 1.5;
   color: #444;
   margin-bottom: 20px;
 }
 
-.user-info { display: flex; align-items: center; gap: 12px; }
-.avatar { width: 45px; height: 45px; border-radius: 50%; }
-.user-name { font-weight: 700; font-size: 14px; }
-.verified { font-size: 12px; color: #888; }
+.user-info-ld { display: flex; align-items: center; gap: 12px; }
+.avatar-ld { width: 45px; height: 45px; border-radius: 50%; }
+.user-name-ld { font-weight: 700; font-size: 14px; }
+.verified-ld { font-size: 12px; color: #888; }
 
 /* Badge Section */
-.trust-section {
+.trust-section-ld {
   text-align: center;
   margin: 80px 0;
+  font-size: 24px;
 }
 
-.trust-text {
+.trust-text-ld {
   color: #555;
   font-weight: 600;
   margin-bottom: 40px;
 }
 
-.badge-row {
+.badge-row-ld {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -70,42 +71,42 @@
 }
 
 /* FAQ Styles */
-.faq-section {
+.faq-section-ld {
   display: flex;
   gap: 60px;
   border-top: 1px solid #eee;
   padding-top: 60px;
 }
 
-.faq-left { flex: 1; }
-.faq-right { flex: 1.5; }
+.faq-left-ld { flex: 1; }
+.faq-right-ld { flex: 1.5; font-size: 24px; }
 
-.faq-title {
+.faq-title-ld {
   font-size: 42px;
   line-height: 1.1;
   margin-bottom: 30px;
 }
 
-.faq-item {
+.faq-item-ld {
   border-bottom: 1px solid #ddd;
   padding: 20px 0;
   cursor: pointer;
 }
 
-.faq-question {
+.faq-question-ld {
   display: flex;
   justify-content: space-between;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 24px;
 }
 
-.faq-answer {
+.faq-answer-ld {
   padding-top: 15px;
   color: #666;
   line-height: 1.6;
 }
 
-.cart-btn {
+.cart-btn-ld {
   background: #137474;
   color: white;
   border: none;
@@ -116,6 +117,9 @@
 }
 
 @media (max-width: 768px) {
-  .faq-section { flex-direction: column; }
-  .main-quote { font-size: 22px; }
+  .faq-section-ld { flex-direction: column; }
+  .main-quote-ld { font-size: 22px; }
 }
+
+
+

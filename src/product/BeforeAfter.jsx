@@ -49,3 +49,4 @@ const ImageSlider = ({ beforeImg, afterImg }) => {
 };
 
 export default ImageSlider;
+

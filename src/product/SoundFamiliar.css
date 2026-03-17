@@ -24,7 +24,7 @@
 
 /* Header */
 .title-sf {
-  font-family: 'Bree Serif'; /* Keeps that elegant look */
+  font-family: 'Inter', sans-serif; /* Keeps that elegant look */
   font-size: 3.5rem;
   margin: 0 0 10px 0;
   color: #111;
@@ -125,3 +125,6 @@
     font-size: 2.5rem;
   }
 }
+
+
+

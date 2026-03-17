@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import "./Product.css";
 import BeforeAfterSlider from "./BeforeAfter";
 import GlycomicsCard from "./GlycomicsCard";
@@ -9,18 +7,17 @@ import SoundFamiliar from "./SoundFamiliar";
 import IngredientsSection from "./IngredientsSection";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div style={{display:'flex', flexDirection: 'column', alignItems: 'center'}}>
+      <div style={{display:'flex', flexDirection: 'column', alignItems: 'center', padding: '80px',
+      }}>
         <ProductPage />
         <SoundFamiliar />
         <IngredientsSection />
         <div style={{display:'flex', flexDirection: 'column', alignItems: 'center'}}>
           <div
             style={{
-              fontFamily: "Bree Serif",
+              fontFamily: "Inter",
               fontWeight: 200,
               fontSize: "64px",
               lineHeight: "82px",
@@ -52,3 +49,4 @@ function App() {
 }
 
 export default App;
+

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './LandingDetails.css';
+import TrustStandards from './trust';
 
 const LandingDetails = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -19,24 +20,24 @@ const LandingDetails = () => {
   ];
 
   return (
-    <div className="landing-container">
+    <div className="landing-container-ld">
       {/* Testimonial Header */}
-      <section className="testimonial-section">
-        <h2 className="main-quote">
+      <section className="testimonial-section-ld">
+        <h2 className="main-quote-ld">
           “My blood sugar used to spike after every meal and I'd feel exhausted. After 3 weeks on Glycomics, that afternoon crash is completely gone. My doctor noticed the difference too”
         </h2>
-        <p className="quote-author">★★★★★ ~ Naina Sharma</p>
+        <p className="quote-author-ld">★★★★★ ~ Naina Sharma</p>
 
-        <div className="testimonial-grid">
+        <div className="testimonial-grid-ld ">
           {testimonials.map((t, i) => (
-            <div key={i} className="test-card">
-              <div className="stars">★★★★★</div>
-              <p className="test-text">"{t.text}"</p>
-              <div className="user-info">
-                <img src={t.img} alt={t.name} className="avatar" />
+            <div key={i} className="test-card-ld">
+              <div className="stars-ld">★★★★★</div>
+              <p className="test-text-ld">"{t.text}"</p>
+              <div className="user-info-ld">
+                <img src={t.img} alt={t.name} className="avatar-ld" />
                 <div>
-                  <div className="user-name">{t.name}</div>
-                  <div className="verified">Verified Customer</div>
+                  <div className="user-name-ld">{t.name}</div>
+                  <div className="verified-ld">Verified Customer</div>
                 </div>
               </div>
             </div>
@@ -45,32 +46,26 @@ const LandingDetails = () => {
       </section>
 
       {/* Trust Badges */}
-      <section className="trust-section">
-        <p className="trust-text">Backed by 200+ peer-reviewed studies on berberine · Clinical trial in progress at Somaiya Hospital · AYUSH certified</p>
-        <div className="badge-row">
-          {/* Replace src with your actual badge images */}
-          <img src="https://via.placeholder.com/80x80?text=WHO" alt="WHO" />
-          <img src="https://via.placeholder.com/80x80?text=ISO" alt="ISO" />
-          <img src="https://via.placeholder.com/80x80?text=AYUSH" alt="AYUSH" />
-          <img src="https://via.placeholder.com/80x80?text=HACCP" alt="HACCP" />
-          <img src="https://via.placeholder.com/80x80?text=NON+GMO" alt="NON GMO" />
-        </div>
+      <section className="trust-section-ld">
+        <p className="trust-text-ld">Backed by 200+ peer-reviewed studies on berberine · Clinical trial in progress at Somaiya Hospital · AYUSH certified</p>
+        <TrustStandards/>
       </section>
+      
 
       {/* FAQ Section */}
-      <section className="faq-section">
-        <div className="faq-left">
-          <h2 className="faq-title">What You Should Know About Glycomics</h2>
-          <button className="cart-btn">🛒 ADD TO CART</button>
+      <section className="faq-section-ld">
+        <div className="faq-left-ld">
+          <h2 className="faq-title-ld">What You Should Know About Glycomics</h2>
+          <button className="cart-btn-ld">🛒 ADD TO CART</button>
         </div>
-        <div className="faq-right">
+        <div className="faq-right-ld">
           {faqs.map((faq, i) => (
-            <div key={i} className="faq-item" onClick={() => setOpenIndex(openIndex === i ? null : i)}>
-              <div className="faq-question">
+            <div key={i} className="faq-item-ld" onClick={() => setOpenIndex(openIndex === i ? null : i)}>
+              <div className="faq-question-ld">
                 {faq.q}
                 <span>{openIndex === i ? '−' : '⌵'}</span>
               </div>
-              {openIndex === i && <div className="faq-answer">{faq.a}</div>}
+              {openIndex === i && <div className="faq-answer-ld">{faq.a}</div>}
             </div>
           ))}
         </div>
