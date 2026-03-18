@@ -85,12 +85,15 @@ function Navbar() {
 
             <li
               className="menu-item"
-              onMouseEnter={() => setActiveMenu("science")}
+              /* onMouseEnter={() => setActiveMenu("science")} */
             >
               <button
                 type="button"
                 className="menu-trigger"
-                onClick={() => toggleMenu("science")}
+                onClick={() => {
+                  toggleMenu("science");
+                  setActivePage("science");
+                }}
                 aria-expanded={activeMenu === "science"}
               >
                 Science
@@ -231,9 +234,11 @@ function Navbar() {
             <button
               type="button"
               className="mobile-link mobile-link--has-sub"
-              onClick={() =>
-                setMobileSubMenu((p) => (p === "science" ? null : "science"))
-              }
+              onClick={() => {
+                setActivePage("science");
+                setMobileOpen(false);
+                setMobileSubMenu((p) => (p === "science" ? null : "science"));
+              }}
               aria-expanded={mobileSubMenu === "science"}
             >
               Science

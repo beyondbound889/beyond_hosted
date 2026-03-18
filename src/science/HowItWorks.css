@@ -1,0 +1,119 @@
+.science-how-it-works {
+  padding: 4rem 2rem 6rem;
+  background-color: #ffffff;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Bree Serif', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: #000;
+}
+
+.how-it-works-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Background shadow effect as in design */
+.how-it-works-container::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: -15px;
+  bottom: -15px;
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.how-it-works-box {
+  background-color: #0D7377;
+  /* dark teal */
+  border-radius: 20px;
+  padding: 3rem;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.how-it-works-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
+.how-it-works-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.flow-step {
+  flex: 1;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  /* Slight transparency */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100px;
+}
+
+.flow-label {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.flow-title {
+  font-family: 'Bree Serif', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.flow-arrow {
+  color: rgba(255, 255, 255, 0.7);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .how-it-works-flow {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .flow-step {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .flow-arrow {
+    transform: rotate(90deg);
+  }
+
+  .how-it-works-box {
+    padding: 2rem;
+  }
+}

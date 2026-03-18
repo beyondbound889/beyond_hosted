@@ -1,6 +1,7 @@
 import Product from './product/Product.jsx'
 import AboutUs from './about/components/AboutUs.jsx'
 import Home from './home/App.jsx'
+import Science from './science/Science.jsx'
 import './App.css'
 import Navbar from './navbar.jsx'
 import Footer from './footer.jsx'
@@ -21,6 +22,7 @@ function App() {
 
         {activePage === 'about' && <AboutUs />}
         {activePage === 'home' && <Home />}
+        {activePage === 'science' && <Science />}
       </div>
       <Footer />
     </>

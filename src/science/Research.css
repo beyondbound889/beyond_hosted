@@ -1,0 +1,142 @@
+.science-research {
+  padding: 6rem 2rem;
+  background-color: #ffffff;
+  font-family: 'Inter', -apple-system, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Bree Serif', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+  color: #000;
+}
+
+.research-container {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.research-left {
+  flex: 1;
+}
+
+.research-number {
+  font-size: 10rem;
+  font-weight: 800;
+  color: #d1e8e2; /* Light teal */
+  margin: 0;
+  line-height: 0.8;
+  letter-spacing: -0.05em;
+}
+
+.research-subtitle {
+  font-family: 'Bree Serif', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #000;
+  margin: 1.5rem 0;
+  line-height: 1.2;
+}
+
+.research-desc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2.5rem;
+  max-width: 90%;
+}
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.research-tag {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fff;
+}
+
+.checkmark {
+  color: #0D7377; /* Green checkmark */
+  font-weight: bold;
+}
+
+.research-right {
+  flex: 1;
+  display: flex;
+}
+
+.research-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.research-card {
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.research-card-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #0D7377; /* Green tag text */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.research-card-title {
+  font-family: 'Bree Serif', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0 0.8rem 0;
+}
+
+.research-card-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #666;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .research-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .research-number {
+    font-size: 6rem;
+  }
+  
+  .research-subtitle {
+    font-size: 1.8rem;
+  }
+  
+  .research-card {
+    padding: 1.5rem;
+  }
+}
