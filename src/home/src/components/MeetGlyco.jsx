@@ -1,6 +1,6 @@
 
 import '../css/MeetGlyco.css'
-import bottleImg from '../../Gemini_Generated_Image_iwrg9hiwrg9hiwrg (1) (5) 2-1.png'
+import bottleImg from '../../Gemini_Generated_Image_5ccfpd5ccfpd5ccf 2.png'
 import blurImg from '../../Blur.png'
 import reviewImageOne from '../../image 32.png'
 import reviewImageTwo from '../../image 33.png'

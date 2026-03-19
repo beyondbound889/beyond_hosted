@@ -52,12 +52,14 @@
 	min-height: 712px;
 	display: grid;
 	grid-template-columns: minmax(0, 604.8px) minmax(0, 823.2px);
+	align-items: stretch;
 	gap: 12px;
 }
 
 .howit-step-stack {
 	display: flex;
 	flex-direction: column;
+	height: 100%;
 	gap: 12px;
 }
 
@@ -79,7 +81,7 @@
 }
 
 .howit-card--step {
-	height: auto;
+	flex: 1;
 	min-height: 0;
 	padding: 48px;
 	display: flex;
