@@ -1,3 +1,4 @@
+
 import './footer.css'
 
 const quickLinks = ['About Us', 'Products', 'Science', 'FAQ']

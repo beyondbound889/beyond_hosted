@@ -7,7 +7,7 @@
 }
 
 .howit-inner {
-	max-width: 1531px;
+	max-width: 1200px;
 	margin: 0 auto;
 	width: 100%;
 	box-sizing: border-box;
@@ -45,7 +45,7 @@
 	grid-template-columns: minmax(0, 652px) minmax(0, 867px);
 	gap: 12px;
 	width: 100%;
-	max-width: 1531px;
+	max-width: 1200px;
 	min-height: 712px;
 }
 
@@ -54,7 +54,7 @@
 	grid-template-columns: minmax(0, 823px) minmax(0, 696px);
 	gap: 12px;
 	width: 100%;
-	max-width: 1531px;
+	max-width: 1200px;
 }
 
 .howit-step-stack {

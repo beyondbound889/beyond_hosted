@@ -43,7 +43,7 @@ function Navbar() {
         <nav className="navbar">
           <div className="navbar-brand">
             <img src={beyondLogo} alt="Beyond Bound" className="navbar-logo" />
-            BEYOND BOUND<sup>®</sup>
+            BEYOND BOUND<span>®</span>
           </div>
 
           <ul className="navbar-links">
