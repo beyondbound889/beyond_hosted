@@ -66,6 +66,7 @@ const OurTeam = () => {
         {coreTeam.map((member) => (
           <div key={member.id} className="team-card">
             <div className="team-image-wrapper">
+               <div className="mentor-bg"></div> {/* Teal Shadow Element */}
               <div className="team-image">
                 <img src={member.image} alt={member.name} />
               </div>
@@ -93,6 +94,7 @@ const OurTeam = () => {
         {mentors.map((mentor) => (
           <div key={mentor.id} className="mentor-card">
             <div className="mentor-image-wrapper">
+             <div className="mentor-bg"></div> {/* Teal Shadow Element */}
               <div className="mentor-image">
                 <img src={mentor.image} alt={mentor.name} />
               </div>

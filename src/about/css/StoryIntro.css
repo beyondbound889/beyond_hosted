@@ -1,13 +1,21 @@
 /* StoryIntro.css */
 
 .story-intro {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 40px;
-  align-items: flex-start;
-  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  gap:100px;
+  align-items: center;
+  padding: 40px 40px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.intro-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  width: 100%;
+  align-items: flex-start;
 }
 
 .intro-left {
@@ -22,11 +30,32 @@
   gap: 20px;
 }
 
+.intro-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 300px;
+  left: 450px;
+  z-index: 20;
+}
+
+.logo-image {
+  width: 160px;
+  height: 160px;
+  border: 3px solid #2a7c7c;
+  border-radius: 50%;
+  object-fit: contain;
+  padding: 8px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(42, 124, 124, 0.2);
+}
+
 .intro-title {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
   color: #2a7c7c;
-  font-family: 'Inter', sans-serif;
+  font-family: 'bree Serif', sans-serif;
   line-height: 1.1;
   margin: 0;
 }
@@ -43,14 +72,16 @@
   display: grid;
   grid-template-columns: 0.3fr 0.7fr;
   gap: 30px;
-  grid-column: 1 / -1;
+  width: 100%;
   max-width: 100%;
+  position: relative;
+  margin-top: 0;
 }
 
 .intro-image, .intro-image-right {
   width: 100%;
   max-width: 100%;
-  height: 350px;
+  height: 370px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -78,7 +109,7 @@
   background: white;
   border: 2px solid #2a7c7c;
   border-radius: 12px;
-  padding: 14px 16px;
+  padding: 12px 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -86,6 +117,7 @@
   font-family: 'Inter', sans-serif;
   transition: all 0.3s ease;
   font-size: 0.9rem;
+
 }
 
 .intro-nav-button:hover {

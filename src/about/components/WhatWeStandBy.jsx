@@ -47,7 +47,7 @@ const WhatWeStandBy = () => {
 
       <div className="leadership-section">
         <div className="leadership-container">
-          <div className="leadership-bg-text">STANDARD & LEADERSHIP</div>
+          <div className="leadership-bg-text">STANDARD{"\n"}&{"\n"}LEADERSHIP</div>
           <h2 className="leadership-title">Standard & Leadership</h2>
         </div>
         <p>
