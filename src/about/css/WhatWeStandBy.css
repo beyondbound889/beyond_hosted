@@ -1,7 +1,7 @@
 /* WhatWeStandBy.css */
 
 .what-we-stand-by {
-  padding: 60px 20px;
+  padding: 30px 20px;
   max-width: 1200px;
   margin: 0 auto;
   background: white;
@@ -14,7 +14,7 @@
   margin-bottom: 10px;
   font-weight: 700;
   letter-spacing: 4px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'bree serif', sans-serif;
 }
 
 .stand-by-subtitle {
@@ -30,7 +30,7 @@
 .values-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 80px;
   background: transparent;
   max-width: 900px;
@@ -40,7 +40,7 @@
 
 .value-card {
   text-align: center;
-  padding: 25px 20px;
+  padding: 27px 25px;
   background: white;
   border: none;
   border-radius: 30px;
@@ -78,7 +78,7 @@
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 400;
-  font-family: 'Inter', sans-serif;
+  font-family: 'bree serif', sans-serif;
 }
 
 .leadership-section {
@@ -99,14 +99,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 800;
-  color: rgba(200, 200, 200, 0.25);
+  color: rgba(3, 3, 3, 0.25);
+  opacity: 20%;
   letter-spacing: 5px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'bree serif', sans-serif;
   z-index: 0;
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: pre-line;
+  width: auto;
   pointer-events: none;
 }
 
@@ -150,10 +152,11 @@
 
   .leadership-bg-text {
     font-size: 2.5rem;
-    max-width: 90%;
+    max-width: 100px;
     white-space: normal;
     word-break: break-word;
     overflow: hidden;
+    line-height: 1.2;
   }
 
   .bg-text-top,
@@ -177,9 +180,10 @@
 
   .leadership-bg-text {
     font-size: 1.8rem;
-    max-width: 85%;
+    max-width: 80px;
     white-space: normal;
     word-break: break-word;
+    line-height: 1.2;
   }
 
   .bg-text-top,

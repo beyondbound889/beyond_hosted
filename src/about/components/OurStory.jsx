@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
 import '../css/OurStory.css';
 import bottleAbout from '../assets/bottleabout.png';
+import { ChevronDown } from 'lucide-react';
 
 const OurStory = () => {
   const [expandedItem, setExpandedItem] = useState(null);
+
+  const handleShopNow = () => {
+    window.location.href = '/product';
+  };
 
   return (
     <section className="our-story">
@@ -53,7 +58,7 @@ const OurStory = () => {
                   <span className="solution-number">01</span>
                   <span>Standardized Extracts</span>
                 </div>
-                <span className="dropdown-icon">▼</span>
+                <ChevronDown className="dropdown-icon" size={20} />
               </button>
               {expandedItem === 1 && (
                 <div className="solution-content-dropdown">
@@ -70,7 +75,7 @@ const OurStory = () => {
                   <span className="solution-number">02</span>
                   <span>Modern Lab Validation</span>
                 </div>
-                <span className="dropdown-icon">▼</span>
+                <ChevronDown className="dropdown-icon" size={20} />
               </button>
               {expandedItem === 2 && (
                 <div className="solution-content-dropdown">
@@ -87,7 +92,7 @@ const OurStory = () => {
                   <span className="solution-number">03</span>
                   <span>Responsible Formulation</span>
                 </div>
-                <span className="dropdown-icon">▼</span>
+                <ChevronDown className="dropdown-icon" size={20} />
               </button>
               {expandedItem === 3 && (
                 <div className="solution-content-dropdown">
@@ -95,6 +100,7 @@ const OurStory = () => {
                 </div>
               )}
             </div>
+            <button onClick={handleShopNow} className="shop-now-btn">Shop now →</button>
           </div>
 
           <div className="solution-image">

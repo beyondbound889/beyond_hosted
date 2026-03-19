@@ -127,6 +127,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+   
+
 }
 
 .team-image {
@@ -134,10 +136,10 @@
   height: 180px;
   border-radius: 50%;
   overflow: hidden;
-  background: linear-gradient(135deg, #f0f7f9 0%, #e8eff3 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 
 .team-image img {
@@ -208,7 +210,7 @@
 .team-card .qualification {
   font-size: 0.9rem;
   color: #666;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
   font-family: 'Inter', sans-serif;
   line-height: 1.4;
 }
@@ -224,9 +226,10 @@
 .mentors-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 20px;
   max-width: 1200px;
-  margin: 0 auto 100px;
+  padding: 20PX;
+  margin: 0 auto 5px;
 }
 
 .mentor-card {
@@ -237,10 +240,21 @@
   position: relative;
   width: 160px;
   height: 160px;
-  margin: 0 auto 20px;
+  margin: 0 auto 35px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.mentor-bg {
+  position: absolute;
+  z-index: 1;
+  top: -8px;
+  left: 10px;
+  right: -10px;
+  bottom: 5px;
+  background-color: #2a7c7c;
+  border-radius: 50%;
 }
 
 .mentor-image {
@@ -249,10 +263,11 @@
   border-radius: 50%;
   overflow: hidden;
   background: linear-gradient(135deg, #f0f7f9 0%, #e8eff3 100%);
-  border: 4px solid #2a7c7c;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 
 .mentor-image img {
@@ -310,41 +325,6 @@
   line-height: 1.5;
 }
 
-/* Partner Section */
-.partner-title {
-  font-size: 2.5rem;
-  text-align: center;
-  color: #1a1a1a;
-  margin-bottom: 40px;
-  font-weight: 600;
-  font-family: 'Inter', sans-serif;
-}
-
-.partner-box {
-  background: #f9f9f9;
-  padding: 50px;
-  border-radius: 12px;
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-}
-
-.partner-box img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  margin-bottom: 25px;
-  object-fit: contain;
-}
-
-.partner-box p {
-  font-size: 1.1rem;
-  color: #666;
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  font-weight: 500;
-}
 
 @media (max-width: 768px) {
   .our-team {
@@ -414,30 +394,7 @@
   .mentor-image-wrapper {
     width: 130px;
     height: 130px;
-    margin: 0 auto 15px;
-  }
-
-  .mentor-image {
-    width: 130px;
-    height: 130px;
-  }
-
-  .mentor-badge {
-    width: 45px;
-    height: 45px;
-  }
-
-  .mentor-badge-image {
-    width: 42px;
-    height: 42px;
-  }
-
-  .mentor-card h4 {
-    font-size: 1rem;
-  }
-
-  .mentor-card p {
-    font-size: 0.85rem;
+    margin: 0 auto 25px;
   }
 
   .partner-title {
@@ -529,31 +486,7 @@
   .mentor-image-wrapper {
     width: 130px;
     height: 130px;
-    margin: 0 auto 15px;
-  }
-
-  .mentor-image {
-    width: 130px;
-    height: 130px;
-  }
-
-  .mentor-badge {
-    width: 45px;
-    height: 45px;
-  }
-
-  .mentor-badge-image {
-    width: 40px;
-    height: 40px;
-  }
-
-  .mentor-card h4 {
-    font-size: 0.95rem;
-    margin-bottom: 5px;
-  }
-
-  .mentor-card p {
-    font-size: 0.8rem;
+    margin: 0 auto 25px;
   }
 
   .partner-title {
@@ -642,6 +575,8 @@
   .mentor-image {
     width: 80px;
     height: 80px;
+    position: relative;
+    z-index: 2;
   }
 
   .mentor-card h4 {

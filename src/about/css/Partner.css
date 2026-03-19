@@ -1,7 +1,7 @@
 /* Partner.css */
 
 .partner {
-  padding: 20px 20px;
+  padding: 10px 10px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -10,14 +10,14 @@
   font-size: 2.5rem;
   text-align: center;
   color: #19191a;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-weight: 600;
 }
 
 .partner-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  gap: 20px;
   justify-items: center;
 }
 
