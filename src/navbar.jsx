@@ -237,11 +237,6 @@ function Navbar() {
               aria-expanded={mobileSubMenu === "about"}
             >
               About
-              <span
-                className={`mobile-caret${mobileSubMenu === "about" ? " mobile-caret--open" : ""}`}
-              >
-                ⌄
-              </span>
             </button>
             {mobileSubMenu === "about" && (
               <div className="mobile-submenu">
