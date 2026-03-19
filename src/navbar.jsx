@@ -122,7 +122,6 @@ function Navbar() {
                 aria-expanded={activeMenu === "about"}
               >
                 About
-                <span className="menu-caret">⌄</span>
               </button>
             </li>
 
