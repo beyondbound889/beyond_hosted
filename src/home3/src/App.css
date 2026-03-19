@@ -1,0 +1,72 @@
+.page-container {
+	width: 100%;
+	max-width: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.page-container > * {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.page-container section,
+.page-container .w-full {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.page-container :is(.navbar, .glyco-inner, .trust-inner, .about-solution, .mgs-frame, .who-inner, .pds-container, .pas-container, .wds-shell, .faq-inner, .howit-inner, .loved-container, .transform-shell, .site-footer__inner) {
+	max-width: 1800px !important;
+	width: 100% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	padding-left: 32px !important;
+	padding-right: 32px !important;
+	box-sizing: border-box;
+	background: transparent !important;
+}
+
+.page-container :is(.navbar-wrapper, .glyco-section, .trust-section, .about-section, .mgs-section, .who-section, .pds-section, .pas-section, .wds-section, .faq-section, .howit-section, .loved-section, .transform-section, .site-footer) {
+	width: 100%;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	box-sizing: border-box;
+}
+
+.page-container :is(h1, h2, h3, h4, h5, h6, p) {
+	max-width: none !important;
+	width: auto !important;
+}
+
+.page-container :is(.who-title-wrap, .who-cards-container, .who-disclaimer, .site-footer__grid, .site-footer__bottom, .loved-frame, .mgs-copy, .mgs-paragraph-group, .mgs-paragraph--primary, .mgs-paragraph--secondary, .about-right-frame, .about-copy-stack, .about-text-block, .faq-list) {
+	max-width: none !important;
+	width: 100% !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	box-sizing: border-box;
+}
+
+@media (min-width: 901px) {
+	.page-container .glyco-content {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		align-items: center;
+		gap: 24px !important;
+	}
+
+	.page-container .glyco-left,
+	.page-container .glyco-right {
+		width: auto !important;
+		max-width: none !important;
+		min-width: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.page-container :is(.navbar, .glyco-inner, .trust-inner, .about-solution, .mgs-frame, .who-inner, .pds-container, .pas-container, .wds-shell, .faq-inner, .howit-inner, .loved-container, .transform-shell, .site-footer__inner) {
+		padding-left: 24px !important;
+		padding-right: 24px !important;
+	}
+}

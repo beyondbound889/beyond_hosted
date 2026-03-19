@@ -24,7 +24,7 @@ const Mechanism = () => {
   return (
     <section className="science-mechanism">
       <h2 className="section-title text-center">
-        Mechanism of<br /><i>Action</i>
+        Mechanism of<br />Action
       </h2>
       
       <div className="mechanism-container">

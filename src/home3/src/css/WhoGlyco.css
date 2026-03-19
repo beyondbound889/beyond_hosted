@@ -1,0 +1,358 @@
+/* ── Who Glycomics Section ── */
+.who-section {
+	width: 100%;
+	background: rgba(250, 250, 250, 0.3);
+	padding: 87px 100px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+.who-inner {
+	max-width: 1728px;
+	margin: 0 auto;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 100px;
+	padding: 0;
+}
+
+.who-title-wrap {
+	width: 1527.11px;
+	min-height: 110.49px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.who-title {
+	width: 623px;
+	font-size: 64px;
+	font-weight: 400;
+	line-height: 48.3px;
+	color: #171717;
+	letter-spacing: 0;
+	margin: 0;
+	text-align: center;
+	font-synthesis: none;
+}
+
+.who-cards-container {
+	width: 1527.11px;
+	min-height: 457.21px;
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	gap: 37.65px;
+}
+
+/* ── Card Styles ── */
+.who-card {
+	width: 483.93px;
+	height: 457.21px;
+	background: #ffffff;
+	border: 1px solid #E5E7EB;
+	border-radius: 6px;
+	padding: 24px;
+	box-sizing: border-box;
+	text-align: center;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1 1 0;
+}
+
+.who-card:hover {
+	box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+	transform: translateY(-4px);
+}
+
+.who-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 88px;
+	height: 88px;
+	margin: 0 auto 62px;
+	background: #E8F2EE;
+	color: #0D7377;
+	border: none;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+	flex-shrink: 0;
+}
+
+.who-card:hover .who-icon {
+	background: #fbfbfb;
+}
+
+.who-icon svg {
+	width: 24px;
+	height: 24px;
+}
+
+.who-card-title {
+	width: 355.23px;
+	min-height: 34.68px;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 32.2px;
+	color: #06131f;
+	letter-spacing: 0;
+	margin: 0 0 18.83px;
+	font-synthesis: none;
+	text-align: center;
+}
+
+.who-card-description {
+	width: 355.23px;
+	min-height: 114.77px;
+	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-size: 24px;
+	line-height: 38.26px;
+	color: #636366;
+	letter-spacing: 0;
+	margin: 0;
+	text-align: center;
+}
+
+/* ── Disclaimer Styles ── */
+.who-disclaimer {
+	width: 1242px;
+	min-height: 73px;
+	background: #ffffff;
+	border: 1px solid #c7c7cc;
+	border-radius: 12px;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+}
+
+.who-disclaimer-icon {
+	width: 19px;
+	height: 31px;
+	padding-top: 2px;
+	margin-top: 21px;
+	margin-left: 25px;
+	flex: 0 0 auto;
+}
+
+.who-disclaimer-icon-svg {
+	width: 19px;
+	height: 29px;
+	display: block;
+	color: #9ba3a7;
+}
+
+.who-disclaimer-text {
+	width: 1124px;
+	min-height: 44px;
+	margin: 15.3px 0 13.7px 14px;
+	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20.4px;
+	letter-spacing: 0;
+	color: #6b7280;
+}
+
+/* ── Tablet (1024px) ── */
+@media (max-width: 1024px) {
+	.who-inner {
+		gap: 64px;
+	}
+
+	.who-section {
+		padding: 72px 28px;
+	}
+
+	.who-title-wrap,
+	.who-cards-container,
+	.who-disclaimer {
+		width: 100%;
+	}
+
+	.who-title {
+		width: auto;
+		font-size: 48px;
+	}
+
+	.who-cards-container {
+		gap: 18px;
+	}
+
+	.who-card {
+		width: calc((100% - 36px) / 3);
+		padding: 38px 20px 28px;
+		min-height: 410px;
+	}
+
+	.who-card-title,
+	.who-card-description {
+		width: 100%;
+	}
+
+	.who-disclaimer-text {
+		width: auto;
+		margin-right: 18px;
+	}
+}
+
+/* ── Mobile (768px) ── */
+@media (max-width: 768px) {
+	.who-inner {
+		gap: 36px;
+	}
+
+	.who-title {
+		font-size: 32px;
+		line-height: 1.2;
+	}
+
+	.who-cards-container {
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.who-card {
+		width: 100%;
+		min-height: auto;
+		height: auto;
+		padding: 28px 20px 24px;
+		border-radius: 18px;
+	}
+
+	.who-icon {
+		width: 72px;
+		height: 72px;
+		margin-bottom: 32px;
+	}
+
+	.who-card-title {
+		font-size: 24px;
+		line-height: 1.2;
+		margin-bottom: 16px;
+		min-height: auto;
+	}
+
+	.who-card-description {
+		font-size: 18px;
+		line-height: 1.55;
+		min-height: auto;
+	}
+
+	.who-disclaimer {
+		width: 100%;
+		min-height: auto;
+		padding: 0 0 12px;
+		border-radius: 12px;
+		align-items: flex-start;
+	}
+
+	.who-disclaimer-icon {
+		margin-top: 16px;
+		margin-left: 16px;
+	}
+
+	.who-disclaimer-text {
+		font-size: 11px;
+		line-height: 1.6;
+		margin: 14px 14px 0 12px;
+	}
+}
+
+/* ── Small Mobile (480px) ── */
+@media (max-width: 480px) {
+	.who-section {
+		padding: 48px 12px;
+	}
+
+	.who-title {
+		font-size: 26px;
+		line-height: 1.2;
+	}
+
+	.who-inner {
+		gap: 28px;
+	}
+
+	.who-card {
+		padding: 24px 16px;
+	}
+
+	.who-icon {
+		width: 64px;
+		height: 64px;
+		margin-bottom: 16px;
+	}
+
+	.who-card-title {
+		font-size: 21px;
+		margin-bottom: 10px;
+	}
+
+	.who-card-description {
+		font-size: 16px;
+	}
+
+	.who-disclaimer {
+		border-radius: 10px;
+	}
+
+	.who-disclaimer-icon {
+		margin-top: 14px;
+		margin-left: 14px;
+	}
+
+	.who-disclaimer-text {
+		font-size: 10px;
+		line-height: 1.5;
+		margin-right: 12px;
+	}
+}
+
+/* ── Extra Small (375px) ── */
+@media (max-width: 375px) {
+	.who-title {
+		font-size: 22px;
+		line-height: 1.2;
+	}
+
+	.who-card {
+		padding: 20px 12px;
+		border-radius: 8px;
+	}
+
+	.who-icon {
+		width: 48px;
+		height: 48px;
+		margin-bottom: 14px;
+		border-radius: 10px;
+	}
+
+	.who-card-title {
+		font-size: 19px;
+		margin-bottom: 8px;
+	}
+
+	.who-card-description {
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	.who-disclaimer {
+		border-radius: 8px;
+		border-width: 1px;
+	}
+
+	.who-disclaimer-text {
+		font-size: 9px;
+		line-height: 1.5;
+		margin-left: 10px;
+	}
+}

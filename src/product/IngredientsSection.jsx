@@ -2,6 +2,12 @@ import "./IngredientsSection.css"; // Importing the corresponding CSS file
 import berberineImg from "./assets/berberine.png";
 import gurmarImg from "./assets/gurmar.png";
 import vijaysarImg from "./assets/vijaysar.png";
+import React, {useRef, useEffect} from "react";
+import amlaImg from "./assets/amla.png";
+import haldiImg from "./assets/haldi.png";
+import jambuImg from "./assets/jambuseeds.png";
+import karelaImg from "./assets/karela.png";
+
 
 const ingredients = [
   {
@@ -24,10 +30,58 @@ const ingredients = [
     name: "Vijaysar",
     dosage: "60 mg",
     description: "Keeps your insulin-making cells healthy",
+  }
+  ,
+  {
+    image: jambuImg,
+    isHero: false,
+    name: "Jambu Seeds",
+    dosage: "40 mg",
+    description: "Slows down how fast carbs digest",
   },
+  {
+    image: karelaImg,
+    isHero: false,
+    name: "Karela",
+    dosage: "30 mg",
+    description: "Moves sugar into cells without insulin",
+  },{
+    image: haldiImg,
+    isHero: false,
+    name: "Haldi",
+    dosage: "20 mg",
+    description: "Cools the inflammation blocking your metabolism",
+  },{
+    image: amlaImg,
+    isHero: false,
+    name: "Amla",
+    dosage: "20 mg",
+    description: "Protects cells that process your energy",
+  },
+
 ];
 
 function IngredientsSection() {
+  const containerRef = React.useRef(null);
+
+    useEffect(() => {
+    const container = containerRef.current;
+
+    const handleWheel = (e) => {
+      if (e.deltaY !== 0) {
+        e.preventDefault();
+        container.scrollLeft += e.deltaY;
+      }
+    };
+
+    container.addEventListener("wheel", handleWheel, { passive: false });
+
+    return () => {
+      container.removeEventListener("wheel", handleWheel);
+    };
+  }, []);
+
+
   return (
     <div className="body-is">
       <section className="ingredients-container-is">
@@ -35,6 +89,8 @@ function IngredientsSection() {
           <h2 className="title-is">Curated with Care.</h2>
           <h2 className="title-alt-is">Backed by Nature.</h2>
         </header>
+
+        <div className="scroll-wrap" ref={containerRef}>
 
         <div className="grid-is">
           {ingredients.map((ingredient, index) => (
@@ -62,6 +118,8 @@ function IngredientsSection() {
               </div>
             </div>
           ))}
+        </div>
+
         </div>
       </section>
     </div>

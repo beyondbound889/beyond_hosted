@@ -66,8 +66,7 @@ const WhoIsItFor = () => {
           </svg>
         </div>
         <div className="disclaimer-text">
-          <p>Glycomics is not intended to replace prescribed medication including Metformin or other glucose-lowering drugs. If you have diagnosed diabetes or are on medication, consult your physician before use.</p>
-          <p>Not intended to diagnose, treat, cure, or prevent any disease.</p>
+          <p>Glycomics is not intended to replace prescribed medication including Metformin or other glucose-lowering drugs. If you have diagnosed diabetes or are on medication, consult your physician before use. Not intended to diagnose, treat, cure, or prevent any disease.</p>
         </div>
       </div>
     </section>

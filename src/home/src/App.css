@@ -1,0 +1,160 @@
+.page-container {
+	--content-max: 1728px;
+	--content-gutter: 24px;
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: clip;
+}
+
+.page-container,
+.page-container * {
+	box-sizing: border-box;
+	min-width: 0;
+}
+
+.page-container > * {
+	width: 100%;
+	max-width: 100%;
+}
+
+.page-container img,
+.page-container svg,
+.page-container video,
+.page-container canvas {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Keep navbar logo exactly as designed (avoid global image rule regressions). */
+.page-container .navbar-logo {
+	height: 60px;
+	width: auto;
+	max-width: none;
+	flex-shrink: 0;
+}
+
+/* Keep all main wrappers fluid while preserving each section's own styling. */
+.page-container :is(
+	.navbar,
+	.glyco-inner,
+	.trust-inner,
+	.about-solution,
+	.mgs-frame,
+	.who-inner,
+	.pds-container,
+	.pas-container,
+	.wds-shell,
+	.faq-inner,
+	.howit-inner,
+	.loved-container,
+	.transform-shell,
+	.site-footer__inner
+) {
+	width: min(var(--content-max), 100%);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Hardening against common overflow from fixed Figma widths. */
+.page-container :is(
+	.who-title-wrap,
+	.who-cards-container,
+	.who-card-title,
+	.who-card-description,
+	.mgs-title-wrap,
+	.glyco-title,
+	.glyco-note,
+	.about-title,
+	.about-description,
+	.transform-title,
+	.transform-copy,
+	.pds-line-wrap,
+	.pds-line,
+	.pds-shop-btn
+) {
+	max-width: 100%;
+}
+
+.page-container :is(
+	.pas-title,
+	.pas-subtitle,
+	.glyco-note-text,
+	.mgs-ingredient,
+	.howit-btn,
+	.pds-badge
+) {
+	overflow-wrap: anywhere;
+	word-break: break-word;
+	text-wrap: pretty;
+}
+
+/* Keep hero social-proof copy exactly as original visual. */
+.page-container .glyco-customers {
+	white-space: nowrap;
+	overflow-wrap: normal;
+	word-break: normal;
+	text-wrap: nowrap;
+}
+
+.page-container .navbar-brand {
+	white-space: nowrap;
+	overflow-wrap: normal;
+	word-break: normal;
+	text-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+	.page-container .navbar-logo {
+		height: 46px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.page-container {
+		--content-gutter: 20px;
+	}
+}
+
+@media (max-width: 980px) {
+	.page-container .pds-action-row {
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+	.page-container .pds-shop-btn {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.page-container {
+		--content-gutter: 16px;
+	}
+
+	.page-container :is(
+		.glyco-note,
+		.glyco-note-text,
+		.pas-title,
+		.pas-subtitle,
+		.mgs-ingredient
+	) {
+		white-space: normal !important;
+		width: auto;
+		height: auto;
+		line-height: 1.4;
+	}
+
+	.page-container :is(.site-footer__bottom, .site-footer__socials, .faq-question, .transform-actions) {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 480px) {
+	.page-container {
+		--content-gutter: 12px;
+	}
+}

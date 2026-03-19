@@ -183,3 +183,173 @@
     bottom: -10px;
   }
 }
+
+.body-is {
+  margin: 0;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+
+  display: flex;
+  justify-content: center;
+}
+
+.ingredients-container-is {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Header */
+.title-is {
+  font-family: 'Bree Serif','Inter', sans-serif; /* The original uses serif for the main title */
+  font-size: 3.8rem;
+  font-weight: 400;
+  margin: 0;
+  color: var(--text-main);
+}
+
+.title-alt-is{
+  font-family: 'Bree Serif','Inter', sans-serif;
+  font-size: 3.8rem;
+  font-weight: 500;
+  margin: 0 0 70px 0;
+  color: var(--text-main);
+  line-height: 1;
+
+}
+
+.scroll-wrap {
+  overflow-x: auto;
+  padding-bottom: 20px; /* Space for scrollbar */
+  margin: 0 -20px; /* Negate horizontal padding */
+  max-width: 100%;
+  
+   /* Hide scrollbar (Firefox) */
+  scrollbar-width: none;
+
+  /* Hide scrollbar (IE/Edge legacy) */
+  -ms-overflow-style: none;
+}
+
+
+.scroll-wrap::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* The Grid - Keeps 3 columns on PC */
+.grid-is {
+  display: grid;
+  grid-template-columns: repeat(7, 400px);
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* Card Styling: This handles the teal shadow offset */
+.card-outer-wrapper-is {
+  position: relative;
+  display: flex;
+}
+
+.card-bg-is {
+  position: absolute;
+  z-index: 1;
+  /* Adjust these to make the teal edge thicker or thinner */
+  top: 10px;
+  left: 10px;
+  right: -10px;
+  bottom: -10px;
+  background-color: var(--teal-dark);
+  border-radius: 20px;
+}
+
+.card-content-is {
+  position: relative;
+  z-index: 2; /* Main card sits on top of the bg */
+  flex: 1;
+  background: white;
+  border: 1.5px solid #eaeaea;
+  border-radius: 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100px; /* Ensures all cards stay the same height */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero Badge */
+.hero-badge-is {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: var(--teal-dark);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Image Container */
+.img-container-is {
+  margin-top: 10px; /* Spacing for the hero badge */
+  margin-bottom: 25px;
+  position: relative; /* Ensures the stacking context for child elements */
+}
+
+.ingredient-img-is {
+  max-height: 200px; /* Constraints the image size */
+  width: auto;
+  position: relative; /* Adds stacking context to the image */
+  z-index: 10; /* Ensure this is above the circle */
+}
+
+.img-circle-is {
+  position: absolute; /* Keeps it positioned relative to .img-container-is */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: #ECECEC;
+  z-index: 10; /* Set to a negative value so it stays behind the image */
+}
+/* Text Content */
+.ingredient-name-is {
+  font-family: 'Bree Serif','Inter', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0 0 5px 0;
+  color: var(--text-main);
+}
+
+.ingredient-dosage-is {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-light);
+  margin: 0 0 20px 0;
+}
+
+.ingredient-description-is {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.content-is {
+    text-align: left;
+}
+
+/* Responsive Fix: Switch to 1 column on mobile */
+@media (max-width: 800px) {
+  .grid-is {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .title-is, .title-alt-is {
+    font-size: 2.5rem;
+  }
+}

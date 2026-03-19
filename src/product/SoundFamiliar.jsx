@@ -22,6 +22,7 @@ function SoundFamiliar() {
         <p className="subtitle-sf">Your Blood Sugar Is, Trying To Tell You Something.</p>
       </header>
 
+      <div className='grid-wrap'>
       <div className="grid-sf">
         {data.map((item, index) => {
           // 1. Assign the icon to a Capitalized variable
@@ -44,6 +45,7 @@ function SoundFamiliar() {
             </div>
           );
         })}
+      </div>
       </div>
 
       <footer className="footer-sf">

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './LandingDetails.css';
 import TrustStandards from './trust';
+import { ArrowRight, Star } from 'lucide-react';
 
 const LandingDetails = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -26,12 +27,12 @@ const LandingDetails = () => {
         <h2 className="main-quote-ld">
           “My blood sugar used to spike after every meal and I'd feel exhausted. After 3 weeks on Glycomics, that afternoon crash is completely gone. My doctor noticed the difference too”
         </h2>
-        <p className="quote-author-ld">★★★★★ ~ Naina Sharma</p>
+        <p className="quote-author-ld"><Star size={'20px'} fill='#0d7377' color='#0d7377'/><Star size={'20px'} fill='#0d7377' color='#0d7377'/><Star size={'20px'} fill='#0d7377' color='#0d7377'/><Star size={'20px'} fill='#0d7377' color='#0d7377'/><Star size={'20px'} fill='#0d7377' color='#0d7377'/>&nbsp;&nbsp;~Naina Sharma</p>
 
         <div className="testimonial-grid-ld ">
           {testimonials.map((t, i) => (
             <div key={i} className="test-card-ld">
-              <div className="stars-ld">★★★★★</div>
+              <div className="stars-ld"><Star size={'16px'} fill='#c9a87c' color='#c9a87c'/><Star size={'16px'} fill='#c9a87c' color='#c9a87c'/><Star size={'16px'} fill='#c9a87c' color='#c9a87c'/><Star size={'16px'} fill='#c9a87c' color='#c9a87c'/><Star size={'16px'} fill='#c9a87c' color='#c9a87c'/></div>
               <p className="test-text-ld">"{t.text}"</p>
               <div className="user-info-ld">
                 <img src={t.img} alt={t.name} className="avatar-ld" />
@@ -55,8 +56,8 @@ const LandingDetails = () => {
       {/* FAQ Section */}
       <section className="faq-section-ld">
         <div className="faq-left-ld">
-          <h2 className="faq-title-ld">What You Should Know About Glycomics</h2>
-          <button className="cart-btn-ld">🛒 ADD TO CART</button>
+          <h2 className="faq-title-ld">What You<br/> Should Know About Glycomics</h2>
+          <button className="cart-btn-ld">Shop Now <ArrowRight/></button>
         </div>
         <div className="faq-right-ld">
           {faqs.map((faq, i) => (

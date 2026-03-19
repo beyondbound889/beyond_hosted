@@ -1,0 +1,673 @@
+.glyco-section {
+width: 100%;
+background: #ffffff;
+padding: 20px 0 96px;
+box-sizing: border-box;
+overflow-x: hidden;
+}
+
+.glyco-inner {
+max-width: 1280px;
+margin: 0 auto;
+width: 100%;
+box-sizing: border-box;
+padding: 0 16px;
+overflow: hidden;
+}
+
+.glyco-content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 62px;
+min-height: 812px;
+width: 100%;
+border: none;
+}
+
+.glyco-left {
+width: min(825px, 100%);
+padding: 0;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+text-align: left;
+gap: 18px;
+}
+
+.glyco-proof {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 14.06px;
+width: 332.21px;
+height: 55.03px;
+}
+
+.glyco-avatars {
+display: flex;
+align-items: center;
+width: 105.4px;
+height: 42.16px;
+}
+
+.glyco-avatar-shell {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+padding: 0;
+box-sizing: border-box;
+background: transparent;
+border: 2px solid #ffffff;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: -10px;
+overflow: hidden;
+}
+
+.glyco-avatar-shell:first-child {
+margin-left: 0;
+}
+
+.glyco-avatar {
+width: 100%;
+height: 100%;
+border-radius: 50%;
+object-fit: cover;
+display: block;
+}
+
+.glyco-proof-copy {
+display: flex;
+flex-direction: column;
+width: 211px;
+height: 55.03px;
+gap: 6px;
+justify-content: flex-start;
+}
+
+.glyco-stars {
+margin: 0;
+display: flex;
+align-items: center;
+gap: 2.64px;
+width: 102.77px;
+height: 18.45px;
+padding: 0;
+line-height: 0;
+}
+
+.glyco-star-shell {
+width: 18.45px;
+height: 18.45px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+box-sizing: border-box;
+}
+
+.glyco-star-icon {
+width: 16.13px;
+height: 15.56px;
+display: block;
+fill: #0D7377;
+}
+
+.glyco-customers {
+margin: 0;
+width: 211px;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+font-size: 21.08px;
+line-height: 29.51px;
+font-weight: 400;
+letter-spacing: 0;
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+color: #636366;
+gap: 5px;
+white-space: nowrap;
+}
+
+.glyco-customers-count {
+	font-weight: 500;
+	color: #171717;
+}
+
+.glyco-customers-text {
+	font-weight: 400;
+	color: #636366;
+}
+
+.glyco-title {
+width: min(825px, 100%);
+height: 160px;
+font-family: 'Bree Serif', Georgia, serif;
+font-size: 80px;
+font-weight: 400;
+line-height: 70px !important;
+color: #0A1D33;
+letter-spacing: 1px;
+margin: 0;
+font-synthesis: none;
+display: block;
+}
+
+.glyco-title span {
+	display: block;
+}
+
+.glyco-price-row {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+width: 303px;
+height: 35px;
+gap: 0;
+}
+
+.glyco-price-pair {
+display: flex;
+align-items: center;
+width: 213.19px;
+height: 35px;
+gap: 10.54px;
+}
+
+.glyco-price-old {
+width: 89px;
+height: 23px;
+display: inline-flex;
+align-items: center;
+justify-content: flex-start;
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+font-size: 24px;
+line-height: 22.4px;
+font-weight: 400;
+letter-spacing: 0;
+color: #a1a1a1;
+text-decoration: line-through;
+}
+
+.glyco-price-new {
+width: 88px;
+height: 36px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+font-size: 30.22px;
+line-height: 35.14px;
+font-weight: 500;
+letter-spacing: 0;
+color: #171717;
+}
+
+.glyco-discount {
+width: 89.61px;
+height: 28.99px;
+padding: 3.51px 14.06px;
+border-radius: 8.79px;
+box-sizing: border-box;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+background: #e8f2ee;
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+font-size: 11.42px;
+line-height: 17.13px;
+font-weight: 500;
+letter-spacing: 0;
+color: #0d7377;
+white-space: nowrap;
+}
+
+.glyco-btn {
+border: none;
+width: auto;
+height: auto;
+padding: 0;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 0;
+border-radius: 0;
+background: transparent;
+color: inherit;
+cursor: pointer;
+transition: transform 0.15s ease, box-shadow 0.2s ease;
+box-shadow: none;
+}
+
+.glyco-btn-image {
+	display: block;
+	width: 216px;
+	height: auto;
+	object-fit: contain;
+}
+
+.glyco-btn-content {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	height: 33px;
+	gap: 0;
+}
+
+.glyco-btn-label {
+	width: auto;
+	height: 33px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	font-size: 24px;
+	line-height: 32.9px;
+	font-weight: 700;
+	letter-spacing: 0;
+	color: #f4ede0;
+}
+
+.glyco-btn:hover {
+transform: none;
+box-shadow: none;
+}
+
+.glyco-note {
+width: min(474px, 100%);
+height: 39px;
+max-width: 474.31px;
+display: grid;
+place-items: start;
+text-align: left;
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+font-size: 18px;
+line-height: 33.2px;
+font-weight: 500;
+letter-spacing: 0;
+color: #575757;
+margin: 0;
+overflow: visible;
+}
+
+.glyco-note-text {
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.glyco-note-strong {
+	font-weight: 700;
+	display: inline;
+}
+
+.glyco-right {
+width: 516px;
+height: 496px;
+position: relative;
+overflow: visible;
+display: flex;
+align-items: center;
+justify-content: center;
+flex: 0 0 516px;
+}
+
+.glyco-product-wrap {
+	position: relative;
+	width: 516px;
+	height: 496px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.glyco-image {
+width: min(100%, 640px);
+height: auto;
+object-fit: contain;
+display: block;
+}
+
+.glyco-image--product {
+	position: relative;
+	width: 516px;
+	height: 496px;
+	max-width: 516px;
+	max-height: 496px;
+	object-fit: contain;
+	z-index: 10;
+}
+
+.glyco-image--blur {
+	position: absolute;
+	left: 50%;
+	top: 62%;
+	transform: translate(-50%, -50%);
+	width: min(440px, 92%);
+	height: auto;
+	object-fit: contain;
+	z-index: 1;
+	pointer-events: none;
+	opacity: 0.95;
+}
+
+@media (max-width: 1200px) {
+.glyco-inner {
+padding: 0 20px;
+}
+
+.glyco-content {
+min-height: auto;
+gap: 34px;
+}
+
+.glyco-left {
+width: 56%;
+padding: 0 28px;
+}
+
+.glyco-right {
+height: auto;
+width: 44%;
+}
+
+.glyco-product-wrap {
+	width: min(100%, 470px);
+	height: auto;
+}
+
+.glyco-price-new {
+font-size: 28px;
+}
+
+.glyco-image {
+width: 100%;
+max-width: 470px;
+}
+}
+
+@media (max-width: 900px) {
+.glyco-section {
+padding-top: 12px;
+	padding-bottom: 96px;
+}
+
+.glyco-content {
+flex-direction: column-reverse;
+align-items: stretch;
+border-left: 0;
+gap: 12px;
+padding-bottom: 12px;
+}
+
+.glyco-left,
+.glyco-right {
+width: 100%;
+padding: 0;
+}
+
+.glyco-right {
+justify-content: center;
+		height: auto;
+		min-height: 480px;
+		overflow: visible;
+}
+
+	.glyco-product-wrap {
+		width: min(100%, 420px);
+		height: auto;
+	}
+
+.glyco-image {
+max-width: 420px;
+}
+
+	.glyco-image--product {
+		position: relative;
+		height: auto;
+		width: min(100%, 420px);
+		max-width: 420px;
+	}
+
+	.glyco-image--blur {
+		width: min(360px, 88%);
+		top: 64%;
+	}
+}
+
+@media (max-width: 768px) {
+.glyco-inner {
+padding: 0 16px;
+}
+
+.glyco-left {
+gap: 16px;
+}
+
+.glyco-proof-copy {
+	width: auto;
+	height: auto;
+	gap: 4px;
+}
+
+.glyco-customers {
+	width: auto;
+	height: auto;
+	font-size: 18px;
+	line-height: 1.25;
+}
+
+.glyco-title {
+	width: 100%;
+	min-height: auto;
+	font-size: clamp(2.2rem, 8vw, 3.2rem);
+	line-height: 1.04;
+	letter-spacing: -0.02em;
+}
+
+.glyco-price-row {
+gap: 8px;
+}
+
+.glyco-price-old {
+font-size: 16px;
+}
+
+.glyco-price-new {
+font-size: 24px;
+}
+
+.glyco-btn {
+	height: auto;
+	width: auto;
+	padding: 0;
+}
+
+	.glyco-btn-image {
+		width: 186px;
+	}
+
+	.glyco-btn-content {
+		width: auto;
+		height: auto;
+		gap: 0;
+	}
+
+	.glyco-btn-label {
+		width: auto;
+		height: auto;
+		font-size: 16px;
+		line-height: 1.2;
+		letter-spacing: 0.2px;
+	}
+
+.glyco-note {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	font-size: 18px;
+	line-height: 1.45;
+	overflow: visible;
+}
+
+	.glyco-note-text {
+		white-space: normal;
+	}
+
+.glyco-image {
+max-width: 360px;
+}
+}
+
+@media (max-width: 480px) {
+.glyco-inner {
+padding: 0 12px;
+}
+
+.glyco-proof {
+gap: 6px;
+}
+
+.glyco-avatars {
+	width: 90px;
+	height: 36px;
+}
+
+.glyco-avatar-shell {
+	width: 36px;
+	height: 36px;
+	border-radius: 18px;
+	padding: 2.2px;
+	margin-left: -8px;
+}
+
+.glyco-avatar {
+	width: 31.6px;
+	height: 31.6px;
+	border-radius: 15.8px;
+}
+
+.glyco-customers {
+	font-size: 14px;
+}
+
+.glyco-title {
+font-size: 2rem;
+}
+
+.glyco-image {
+max-width: 300px;
+}
+
+.glyco-discount {
+padding: 4px 8px;
+font-size: 11px;
+}
+}
+
+@media (max-width: 375px) {
+.glyco-inner {
+padding: 0 10px;
+}
+
+.glyco-title {
+font-size: 1.8rem;
+}
+
+.glyco-image {
+max-width: 260px;
+}
+
+.glyco-btn {
+min-width: 160px;
+}
+}
+
+/* ── Responsive Typography Styles ── */
+/* Heading: text-4xl (36px) base → text-5xl (48px) sm → text-6xl (60px) md → text-7xl (72px) lg → text-8xl (96px) xl */
+h1[id="glyco-hero-title"] {
+	font-family: 'Bree Serif', Georgia, serif;
+	font-weight: 400;
+	font-size: 2.25rem; /* text-4xl: 36px */
+	line-height: 1.2; /* leading-tight */
+	letter-spacing: 0.05em;
+	color: #0A1D33;
+	margin: 0;
+	word-break: break-word;
+	white-space: normal;
+	font-synthesis: none;
+}
+
+h1[id="glyco-hero-title"] span {
+	display: block;
+}
+
+/* sm: 640px */
+@media (min-width: 640px) {
+	h1[id="glyco-hero-title"] {
+		font-size: 3rem; /* text-5xl: 48px */
+	}
+}
+
+/* md: 768px */
+@media (min-width: 768px) {
+	h1[id="glyco-hero-title"] {
+		font-size: 3.75rem; /* text-6xl: 60px */
+	}
+}
+
+/* lg: 1024px */
+@media (min-width: 1024px) {
+	h1[id="glyco-hero-title"] {
+		font-size: 4.5rem; /* text-7xl: 72px */
+	}
+}
+
+/* xl: 1280px */
+@media (min-width: 1280px) {
+	h1[id="glyco-hero-title"] {
+		font-size: 6rem; /* text-8xl: 96px */
+	}
+}
+
+/* ── Price Section: Flex with wrap ── */
+.page-container .glyco-left > div[aria-label="Pricing"] {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem; /* gap-3 */
+	flex-wrap: wrap;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.page-container .glyco-left > div[aria-label="Pricing"] span:first-child {
+	text-decoration: line-through;
+	color: #9ca3af; /* text-gray-400 */
+	font-size: 1rem;
+}
+
+.page-container .glyco-left > div[aria-label="Pricing"] span:nth-child(2) {
+	font-size: 1.125rem; /* text-lg: 18px */
+	font-weight: 600;
+	color: #171717;
+}
+
+.page-container .glyco-left > div[aria-label="Pricing"] span:last-child {
+	background-color: #dcfce7; /* bg-green-100 */
+	color: #15803d; /* text-green-700 */
+	padding: 0.25rem 0.5rem; /* px-2 py-1 */
+	border-radius: 0.25rem;
+	font-size: 0.875rem; /* text-sm */
+	white-space: nowrap;
+}
+
+/* md: 768px - Increase price font size */
+@media (min-width: 768px) {
+	.page-container .glyco-left > div[aria-label="Pricing"] span:nth-child(2) {
+		font-size: 1.25rem; /* md:text-xl: 20px */
+	}
+}

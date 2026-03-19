@@ -40,10 +40,10 @@
         </div>
 
         <div className="before-tag" style={{ opacity: sliderPos < 10 ? 0 : 1 }}>
-          before
+          Before
         </div>
         <div className="after-tag" style={{ opacity: sliderPos > 90 ? 0 : 1 }}>
-          after
+          After
         </div>
       </div>
     );

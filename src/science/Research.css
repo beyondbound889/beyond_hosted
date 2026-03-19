@@ -1,5 +1,7 @@
 .science-research {
   padding: 6rem 2rem;
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: #ffffff;
   font-family: 'Inter', -apple-system, sans-serif;
   max-width: 1200px;

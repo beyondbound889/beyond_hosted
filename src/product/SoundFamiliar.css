@@ -24,7 +24,7 @@
 
 /* Header */
 .title-sf {
-  font-family: 'Inter', sans-serif; /* Keeps that elegant look */
+  font-family:'Bree Serif', 'Inter', sans-serif; /* Keeps that elegant look */
   font-size: 3.5rem;
   margin: 0 0 10px 0;
   color: #111;
@@ -37,6 +37,11 @@
   margin-bottom: 60px;
 }
 
+.grid-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 /* The Grid - This is the fix for the stacking */
 .grid-sf {
   display: grid;
@@ -45,6 +50,9 @@
   gap: 40px 30px; /* More vertical space for the offset shadow */
   margin-bottom: 60px;
   padding: 0 20px;
+  max-width: 800px;
+  
+  
 }
 
 /* Card Styling */
@@ -103,9 +111,9 @@
 
 /* Footer text */
 .footer-sf {
-  max-width: 800px;
+  max-width: 1300px;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.6;
   color: var(--text-light);
 }

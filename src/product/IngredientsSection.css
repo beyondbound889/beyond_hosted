@@ -23,7 +23,7 @@
 
 /* Header */
 .title-is {
-  font-family: 'Inter', sans-serif; /* The original uses serif for the main title */
+  font-family: 'Bree Serif','Inter', sans-serif; /* The original uses serif for the main title */
   font-size: 3.8rem;
   font-weight: 400;
   margin: 0;
@@ -31,19 +31,37 @@
 }
 
 .title-alt-is{
-  font-family: 'Inter', sans-serif;
-  font-size: 3.5rem;
+  font-family: 'Bree Serif','Inter', sans-serif;
+  font-size: 3.8rem;
   font-weight: 500;
   margin: 0 0 70px 0;
   color: var(--text-main);
   line-height: 1;
-  font-style: italic;
+
+}
+
+.scroll-wrap {
+  overflow-x: auto;
+  padding-bottom: 20px; /* Space for scrollbar */
+  margin: 0 -20px; /* Negate horizontal padding */
+  max-width: 100%;
+  
+   /* Hide scrollbar (Firefox) */
+  scrollbar-width: none;
+
+  /* Hide scrollbar (IE/Edge legacy) */
+  -ms-overflow-style: none;
+}
+
+
+.scroll-wrap::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 /* The Grid - Keeps 3 columns on PC */
 .grid-is {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(7, 350px);
   gap: 40px;
   padding: 0 20px;
 }
@@ -60,8 +78,8 @@
   /* Adjust these to make the teal edge thicker or thinner */
   top: 10px;
   left: 10px;
-  right: -5px;
-  bottom: -5px;
+  right: -10px;
+  bottom: -10px;
   background-color: var(--teal-dark);
   border-radius: 20px;
 }
@@ -103,7 +121,7 @@
 }
 
 .ingredient-img-is {
-  max-height: 160px; /* Constraints the image size */
+  max-height: 200px; /* Constraints the image size */
   width: auto;
   position: relative; /* Adds stacking context to the image */
   z-index: 10; /* Ensure this is above the circle */
@@ -114,17 +132,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 140px;
-  height: 140px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   background-color: #ECECEC;
   z-index: 10; /* Set to a negative value so it stays behind the image */
 }
 /* Text Content */
 .ingredient-name-is {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-family: 'Bree Serif','Inter', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
   margin: 0 0 5px 0;
   color: var(--text-main);
 }
@@ -137,9 +155,8 @@
 }
 
 .ingredient-description-is {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.5;
-  color: #444;
   margin: 0;
 }
 

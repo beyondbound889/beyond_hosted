@@ -1,5 +1,7 @@
 .science-cta {
   padding: 8rem 2rem;
+  
+
   background-color: #ffffff;
   font-family: 'Inter', -apple-system, sans-serif;
   text-align: center;
@@ -16,10 +18,10 @@
 
 .cta-bg-text {
   position: absolute;
-  right: -5%;
-  bottom: -10%;
+  right: -2%;
+  bottom: -6%;
   font-family: 'Bree Serif', serif;
-  font-size: 30rem;
+  font-size: 20rem;
   font-weight: 400;
   color: #eff6f5; /* Very faint teal */
   line-height: .8;
