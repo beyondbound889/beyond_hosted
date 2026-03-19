@@ -85,7 +85,7 @@ function Navbar() {
 
             <li
               className="menu-item"
-              /* onMouseEnter={() => setActiveMenu("science")} */
+            /* onMouseEnter={() => setActiveMenu("science")} */
             >
               <button
                 type="button"
@@ -97,7 +97,7 @@ function Navbar() {
                 aria-expanded={activeMenu === "science"}
               >
                 Science
-                <span className="menu-caret">⌄</span>
+                {/* <span className="menu-caret">⌄</span> */}
               </button>
               {activeMenu === "science" ? (
                 <div className="dropdown-panel compact-panel">
@@ -126,7 +126,7 @@ function Navbar() {
                 aria-expanded={activeMenu === "about"}
               >
                 About
-                <span className="menu-caret">⌄</span>
+                {/* <span className="menu-caret">⌄</span> */}
               </button>
               {activeMenu === "about" ? (
                 <div className="dropdown-panel compact-panel">
@@ -150,6 +150,17 @@ function Navbar() {
               </button>
             </li>
           </ul>
+
+          <div className="navbar-actions">
+            <button type="button" className="nav-login-btn">
+              Login
+            </button>
+
+            <button type="button" className="nav-signup-btn">
+              Sign Up
+            </button>
+          </div>
+
 
           <div
             className={`navbar-icons${mobileOpen ? " navbar-icons--hidden" : ""}`}
@@ -208,6 +219,16 @@ function Navbar() {
 
         {mobileOpen && (
           <div className="mobile-menu">
+            <div className="navbar-actions">
+              <button type="button" className="nav-login-btn">
+                Login
+              </button>
+
+              <button type="button" className="nav-signup-btn">
+                Sign Up
+              </button>
+            </div>
+
             <button
               type="button"
               className="mobile-link"
