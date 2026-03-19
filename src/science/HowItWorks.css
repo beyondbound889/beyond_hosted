@@ -1,5 +1,7 @@
 .science-how-it-works {
   padding: 4rem 2rem 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: #ffffff;
   font-family: 'Inter', -apple-system, sans-serif;
 }
@@ -57,8 +59,16 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-}
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
 
+  /* Hide scrollbar (IE/Edge legacy) */
+  -ms-overflow-style: none;
+}
+.how-it-works-flow::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
 .flow-step {
   flex: 1;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -70,6 +80,7 @@
   flex-direction: column;
   justify-content: center;
   min-height: 100px;
+  min-width: 300px;
 }
 
 .flow-label {

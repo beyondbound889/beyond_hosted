@@ -5,17 +5,34 @@
 	border-top: 1.57px solid rgba(229, 229, 229, 0.5);
 	border-bottom: 1.57px solid rgba(229, 229, 229, 0.5);
 	background: #f3f4f6;
+	overflow-x: hidden;
 }
 
 .pas-container {
-	width: min(1527.11px, 100%);
-	min-height: 164.01px;
+	width: 100%;
+	min-height: auto;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 325.28px));
-	column-gap: 75.34px;
-	row-gap: 75.34px;
+	grid-template-columns: 1fr;
+	column-gap: auto;
+	row-gap: 2rem;
 	justify-content: center;
+}
+
+/* sm: grid-cols-2 */
+@media (min-width: 640px) {
+	.pas-container {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 2rem;
+	}
+}
+
+/* lg: grid-cols-4 */
+@media (min-width: 1024px) {
+	.pas-container {
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: 2rem;
+	}
 }
 
 .pas-item {
@@ -56,12 +73,13 @@
 .pas-title,
 .pas-subtitle {
 	margin: 0;
-	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	text-align: center;
 	letter-spacing: 0;
-	white-space: nowrap;
+	white-space: normal;
+	overflow-wrap: anywhere;
 }
 
 .pas-title {
@@ -80,12 +98,6 @@
 	.pas-section {
 		padding-left: 40px;
 		padding-right: 40px;
-	}
-
-	.pas-container {
-		grid-template-columns: repeat(2, minmax(260px, 1fr));
-		column-gap: 28px;
-		row-gap: 32px;
 	}
 
 	.pas-item {

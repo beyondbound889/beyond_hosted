@@ -131,9 +131,9 @@
 .before-tag, .after-tag {
     background: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 5px 10px;
-    border-radius: 16px;
-    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 32px;
+    font-size: 1rem
 }
 
 

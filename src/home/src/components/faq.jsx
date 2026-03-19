@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../css/faq.css'
-import faqCtaIcon from '../../Icon (6).png'
+import faqChatIcon from '../../Icon (6).png'
 
 const faqs = [
 	{
@@ -68,7 +68,13 @@ function FAQ() {
 				</div>
 
 				<div className="faq-footer">
-					<img src={faqCtaIcon} alt="Support icon" className="faq-footer-icon" loading="lazy" decoding="async" />
+					<img
+						src={faqChatIcon}
+						alt="Chat support icon"
+						className="faq-footer-icon"
+						loading="lazy"
+						decoding="async"
+					/>
 					<p className="faq-footer-text">Still have questions?</p>
 					<button type="button" className="faq-footer-btn">Contact expert <span style={{ marginLeft: '6px' }}>→</span></button>
 				</div>

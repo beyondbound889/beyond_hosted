@@ -96,7 +96,7 @@
 .howit-proof-text,
 .howit-btn,
 .howit-approval-pill {
-	font-family: Inter, 'Segoe UI', Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .howit-card-step {
@@ -136,7 +136,7 @@
 }
 
 .howit-card--feature {
-	height: 712px;
+	min-height: 712px;
 	padding: 48px 48px 0;
 	display: flex;
 	flex-direction: column;
@@ -258,7 +258,7 @@
 
 .howit-promo-title {
 	margin: 0;
-	font-family: Inter, 'Segoe UI', Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-weight: 500;
 	font-size: 48px;
 	line-height: 57.6px;

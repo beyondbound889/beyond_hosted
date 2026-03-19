@@ -3,6 +3,7 @@
 	background: #f3f4f6;
 	padding: 0 100.45px;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .transform-shell {
@@ -49,7 +50,7 @@
 .transform-copy {
 	margin: 48px 0 0;
 	width: 700.77px;
-	font-family: Inter, 'Segoe UI', Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-weight: 300;
 	font-size: 28px;
 	line-height: 42.69px;
@@ -69,7 +70,7 @@
 	height: 75px;
 	border-radius: 6.62px;
 	padding: 0 30.91px;
-	font-family: Inter, 'Segoe UI', Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 16.56px;
 	line-height: 1;
 	letter-spacing: 0.22px;
@@ -148,7 +149,7 @@
 
 .transform-label {
 	margin: 0;
-	font-family: Inter, 'Segoe UI', Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 14px;
 	line-height: 1.4;
 	font-weight: 400;

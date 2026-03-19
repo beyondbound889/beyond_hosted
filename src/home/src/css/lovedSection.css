@@ -66,7 +66,7 @@
 
 .loved-subtitle {
 	margin: 0;
-	font-family: Inter, 'Segoe UI', Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 28px;
 	font-weight: 300;
 	line-height: 44.27px;
@@ -76,11 +76,25 @@
 
 .loved-cards {
 	width: 100%;
-	max-width: 1540px;
+	max-width: 100%;
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 512.81px));
+	grid-template-columns: 1fr;
 	justify-content: center;
-	gap: 0;
+	gap: 2rem;
+}
+
+/* sm: grid-cols-2 */
+@media (min-width: 640px) {
+	.loved-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* lg: grid-cols-3 */
+@media (min-width: 1024px) {
+	.loved-cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 .loved-card {
@@ -114,7 +128,7 @@
 .loved-quote {
 	margin: 0;
 	max-width: 411.62px;
-	font-family: Inter, 'Segoe UI', Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 25.3px;
 	font-weight: 400;
 	font-style: normal;
@@ -147,7 +161,7 @@
 
 .loved-name {
 	margin: 0;
-	font-family: Inter, 'Segoe UI', Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 25.3px;
 	font-weight: 600;
 	line-height: 37.95px;
@@ -157,7 +171,7 @@
 
 .loved-role {
 	margin: 0;
-	font-family: Inter, 'Segoe UI', Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 22.14px;
 	font-weight: 400;
 	line-height: 31.62px;
@@ -168,11 +182,6 @@
 @media (max-width: 1720px) {
 	.loved-section {
 		padding: 110px 0;
-	}
-
-	.loved-cards {
-		grid-template-columns: repeat(3, minmax(0, 1fr));
-		gap: 12px;
 	}
 
 	.loved-card {
@@ -193,12 +202,6 @@
 	.loved-subtitle {
 		font-size: 22px;
 		line-height: 1.4;
-	}
-
-	.loved-cards {
-		grid-template-columns: 1fr;
-		max-width: 740px;
-		gap: 18px;
 	}
 
 	.loved-card {

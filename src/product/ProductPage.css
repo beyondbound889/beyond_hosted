@@ -9,7 +9,7 @@
   font-family: 'Inter', sans-serif;
   color: var(--text-dark);
   margin: 0;
-  padding: 40px;
+ 
 
 }
 
@@ -87,29 +87,34 @@
 }
 
 .badge {
-  font-size: 10px;
-  padding: 4px 10px;
+  font-size: 14px;
+  padding: 8px 10px;
   border-radius: 20px;
   font-weight: 600;
-  text-transform: uppercase;
+  
 }
 
 .stock-badge { background: #e0f2f1; color: #00796b; }
-.refund-badge { background: #e3f2fd; color: #1976d2; }
+.refund-badge { background: #e3f2fd; 
+display: flex;
+align-items: center;
+gap: 5px;
+ }
 
 .product-title {
-  font-size: 32px;
+  font-weight: 500;
+  font-size: 64px;
   margin: 0 0 10px 0;
 }
 
 .price {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   margin-bottom: 25px;
 }
 
 .description {
-  font-size: 12px;
+  font-size: 18px;
   line-height: 1.6;
   color: #444;
   margin-bottom: 30px;
@@ -169,7 +174,7 @@
   color: white;
   border: none;
   padding: 8px 24px;
-  border-radius: 30px;
+  border-radius: 8px;
   font-weight: 600;
   flex-grow: 1;
   cursor: pointer;

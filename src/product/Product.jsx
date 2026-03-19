@@ -7,6 +7,7 @@ import SoundFamiliar from "./SoundFamiliar";
 import IngredientsSection from "./IngredientsSection";
 import beforeImg from "./assets/before.jpg";
 import afterImg from "./assets/after.jpg";
+import GlycomicsComparison from "./GlycomicsComparison";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <div style={{display:'flex', flexDirection: 'column', alignItems: 'center'}}>
           <div
             style={{
-              fontFamily: "Inter",
+              fontFamily: "'Bree Serif', 'Inter'",
               fontWeight: 200,
               fontSize: "64px",
               lineHeight: "82px",
@@ -30,10 +31,11 @@ function App() {
           <div
             style={{
               fontFamily: "Inter",
-              fontWeight: 400,
-              fontStyle: "italic",
+              fontWeight: 500,
+            
               fontSize: "56px",
-              lineHeight: "72px",
+              lineHeight: "56px",
+              marginBottom: "32px",
             }}
           >
             Stable Today
@@ -43,7 +45,8 @@ function App() {
           beforeImg={afterImg}
           afterImg={beforeImg}
         />
-        <GlycomicsCard />
+        <GlycomicsComparison />
+      
         <LandingDetails />
       </div>
     </>

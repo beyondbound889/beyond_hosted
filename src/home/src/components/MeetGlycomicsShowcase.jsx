@@ -1,5 +1,5 @@
 import '../css/meetGlycomicsShowcase.css'
-import productShowcaseImage from '../../Gemini_Generated_Image_5ccfpd5ccfpd5ccf 2.png'
+import productShowcaseImage from '../../Gemini_Generated_Image_5wdmlg5wdmlg5wdm 2.jpg'
 
 const ingredients = [
 	'Karela',
@@ -25,8 +25,7 @@ function MeetGlycomicsShowcase() {
 					<div className="mgs-left">
 						<div className="mgs-copy">
 							<h3 className="mgs-heading">
-								Know what goes into
-								<span className="mgs-heading-accent">Glycomics</span>
+								We use all natural products
 							</h3>
 
 							<div
@@ -44,7 +43,7 @@ function MeetGlycomicsShowcase() {
 							<div className="mgs-paragraph-group">
 								<p className="mgs-paragraph mgs-paragraph--primary">
 									Glycomics is a <strong>clinically-informed Ayurvedic formulation</strong>
-									designed to support healthy glucose metabolism in adults.
+									 designed to support healthy glucose metabolism in adults.
 								</p>
 								<p className="mgs-paragraph mgs-paragraph--secondary">
 									It combines standardized botanical extracts with modern analytical

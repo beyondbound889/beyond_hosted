@@ -1,9 +1,11 @@
 
 import '../css/MeetGlyco.css'
-import bottleImg from '../../Green And Beige Elegant Product Promotion Poster (500 x 1000 px) 2.png'
+import bottleImg from '../../Gemini_Generated_Image_iwrg9hiwrg9hiwrg (1) (5) 2-1.png'
+import blurImg from '../../Blur.png'
 import reviewImageOne from '../../image 32.png'
 import reviewImageTwo from '../../image 33.png'
 import reviewImageThree from '../../image 34.png'
+import shopNowButtonImage from '../../Component 5 (1).png'
 
 function MeetGlycomics() {
 	return (
@@ -43,23 +45,27 @@ function MeetGlycomics() {
 							</div>
 						</div>
 
-						<h1 id="glyco-hero-title" className="glyco-title">
+						<h1 id="glyco-hero-title" className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight break-words font-serif font-normal tracking-wide text-blue-950">
 							Natural formation for
-							<span>you glucose</span>
+							<span className="block">you glucose</span>
 						</h1>
 
-						<div className="glyco-price-row" aria-label="Pricing">
-							<div className="glyco-price-pair">
-								<span className="glyco-price-old">₹2400</span>
-								<span className="glyco-price-new">₹1925</span>
-							</div>
-							<span className="glyco-discount">Save 29%</span>
+						<div className="flex items-center gap-3 flex-wrap" aria-label="Pricing">
+							<span className="line-through text-gray-400">₹2400</span>
+							<span className="text-lg md:text-xl font-semibold">₹1925</span>
+							<span className="bg-green-100 text-green-700 px-2 py-1 rounded text-sm">
+								Save 29%
+							</span>
 						</div>
 
 						<button type="button" className="glyco-btn">
-							<span className="glyco-btn-content">
-								<span className="glyco-btn-label">Shop Now</span>
-							</span>
+							<img
+								src={shopNowButtonImage}
+								alt="Shop now"
+								className="glyco-btn-image"
+								loading="lazy"
+								decoding="async"
+							/>
 						</button>
 
 						<p className="glyco-note">
@@ -72,8 +78,16 @@ function MeetGlycomics() {
 					<div className="glyco-right">
 						<div className="glyco-product-wrap">
 							<img
+								src={blurImg}
+								alt=""
+								className="glyco-image glyco-image--blur"
+								loading="lazy"
+								decoding="async"
+								aria-hidden="true"
+							/>
+							<img
 								src={bottleImg}
-								alt="Green and beige elegant product promotion poster"
+								alt="Glycomics product bottle"
 								className="glyco-image glyco-image--product"
 								loading="lazy"
 								decoding="async"

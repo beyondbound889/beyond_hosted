@@ -6,6 +6,7 @@
 	background: #f5f5f5;
 	display: flex;
 	justify-content: center;
+	overflow-x: hidden;
 }
 
 .pds-container {
@@ -13,7 +14,7 @@
 	max-width: 100%;
 	height: 784px;
 	display: flex;
-	gap: 52.08px;
+	gap: 0;
 }
 
 .pds-gallery {
@@ -91,7 +92,8 @@
 
 .pds-details {
 	width: 468.72px;
-	height: 765.78px;
+	height: auto;
+	min-height: 765.78px;
 	display: flex;
 	flex-direction: column;
 	gap: 39.06px;
@@ -110,7 +112,7 @@
 	align-items: center;
 	justify-content: center;
 	border-radius: 999px;
-	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 9.29px;
 	font-weight: 600;
 	line-height: 13.27px;
@@ -150,14 +152,14 @@
 }
 
 .pds-line-wrap {
-	width: 468.72px;
+	width: min(468.72px, 100%);
 	height: 2.6px;
 	display: flex;
 	align-items: center;
 }
 
 .pds-line {
-	width: 468.72px;
+	width: 100%;
 	height: 1.3px;
 	background: #c7c7cc;
 	display: block;
@@ -165,7 +167,7 @@
 
 .pds-title {
 	margin: 0;
-	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 39.06px;
 	line-height: 41.01px;
 	font-weight: 500;
@@ -175,7 +177,7 @@
 
 .pds-price {
 	margin: 0;
-	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 18.23px;
 	line-height: 18.23px;
 	font-weight: 500;
@@ -193,7 +195,7 @@
 
 .pds-description {
 	margin: 0;
-	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 18.23px;
 	line-height: 22.78px;
 	font-weight: 400;
@@ -209,7 +211,7 @@
 
 .pds-size-label {
 	margin: 0;
-	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 18.23px;
 	line-height: 18.23px;
 	font-weight: 400;
@@ -223,7 +225,7 @@
 	border: 1.3px solid #0d7377;
 	background: #e9e9e9;
 	color: #0d7377;
-	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 18.23px;
 	line-height: 100%;
 	font-weight: 400;
@@ -257,7 +259,7 @@
 	height: 52.08px;
 	border-radius: 10.42px;
 	background: #ffffff;
-	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 18.23px;
 	font-weight: 600;
 	line-height: 1;
@@ -278,7 +280,7 @@
 }
 
 .pds-qty-value {
-	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 18.23px;
 	line-height: 1;
 	font-weight: 600;
@@ -328,13 +330,13 @@
 }
 
 .pds-shop-btn {
-	width: 340px;
+	width: min(340px, 100%);
 	height: 52px;
 	border: none;
 	border-radius: 6.62px;
 	background: #0d7377;
 	color: #ffffff;
-	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 17.67px;
 	font-weight: 600;
 	line-height: 100%;
@@ -344,7 +346,7 @@
 
 .pds-policy {
 	margin: 0;
-	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 15.62px;
 	font-weight: 500;
 	line-height: 19px;
@@ -360,21 +362,22 @@
 }
 
 .pds-accordion-item {
-	height: 52px;
+	min-height: 52px;
+	height: auto;
 	border: none;
 	border-top: 1.3px solid #c7c7cc;
 	background: transparent;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 15.62px;
 	font-weight: 500;
 	line-height: 18.75px;
 	letter-spacing: -0.52px;
 	color: #1a1f24;
 	cursor: pointer;
-	padding: 0;
+	padding: 12px 0;
 }
 
 .pds-accordion-item:first-child {
@@ -389,7 +392,7 @@
 
 	.pds-container {
 		width: 100%;
-		gap: 28px;
+		gap: 0;
 		height: auto;
 	}
 
@@ -412,12 +415,18 @@
 
 	.pds-container {
 		flex-direction: column;
+		gap: 24px;
 		height: auto;
 	}
 
 	.pds-gallery,
 	.pds-details {
 		width: 100%;
+	}
+
+	.pds-details {
+		min-height: auto;
+		gap: 24px;
 	}
 
 	.pds-gallery {
@@ -452,5 +461,30 @@
 
 	.pds-description {
 		font-size: 20px;
+	}
+}
+
+@media (max-width: 640px) {
+	.pds-action-row {
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+	.pds-qty {
+		width: 100%;
+	}
+
+	.pds-shop-btn {
+		width: 100%;
+	}
+
+	.pds-title {
+		font-size: clamp(28px, 8vw, 36px);
+		line-height: 1.15;
+	}
+
+	.pds-description {
+		font-size: 16px;
+		line-height: 1.5;
 	}
 }

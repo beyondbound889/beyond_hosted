@@ -3,6 +3,7 @@ import frontImg from './assets/front.jpg';
 import backImg from './assets/back.jpg';
 import sideImg from './assets/side.png';
 import labelImg from './assets/label.png';
+import { ShieldIcon, ArrowRight } from 'lucide-react';
 
 import './ProductPage.css';
 const ProductPage = () => {
@@ -59,11 +60,11 @@ const ProductPage = () => {
         <div className="details-section">
           <div className="badge-row">
             <span className="badge stock-badge">In Stock</span>
-            <span className="badge refund-badge">100% Refund Guarantee</span>
+            <span className="badge refund-badge"><ShieldIcon size={'16px'}/> 100% Refund Guarantee</span>
           </div>
 
           <h1 className="product-title">Glycomics</h1>
-          <p className="price">₹1925</p>
+          <p className="price">M.R.P : ₹ 1,925</p>
 
           <p className="description">
             Experience the power of scientifically-validated Ayurvedic ingredients. 
@@ -82,7 +83,7 @@ const ProductPage = () => {
               <button onClick={() => setQuantity(quantity + 1)}>+</button>
             </div>
             <button className="add-to-cart-btn">
-              <span className="cart-icon">🛒</span> ADD TO CART
+              SHOP NOW <ArrowRight />
             </button>
           </div>
 

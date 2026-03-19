@@ -12,6 +12,7 @@ margin: 0 auto;
 width: 100%;
 box-sizing: border-box;
 padding: 0 16px;
+overflow: hidden;
 }
 
 .glyco-content {
@@ -25,7 +26,7 @@ border: none;
 }
 
 .glyco-left {
-width: 825px;
+width: min(825px, 100%);
 padding: 0;
 box-sizing: border-box;
 display: flex;
@@ -126,7 +127,7 @@ font-size: 21.08px;
 line-height: 29.51px;
 font-weight: 400;
 letter-spacing: 0;
-font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 color: #636366;
 gap: 5px;
 white-space: nowrap;
@@ -143,7 +144,7 @@ white-space: nowrap;
 }
 
 .glyco-title {
-width: 825px;
+width: min(825px, 100%);
 height: 160px;
 font-family: 'Bree Serif', Georgia, serif;
 font-size: 80px;
@@ -183,7 +184,7 @@ height: 23px;
 display: inline-flex;
 align-items: center;
 justify-content: flex-start;
-font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 font-size: 24px;
 line-height: 22.4px;
 font-weight: 400;
@@ -198,7 +199,7 @@ height: 36px;
 display: inline-flex;
 align-items: center;
 justify-content: center;
-font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 font-size: 30.22px;
 line-height: 35.14px;
 font-weight: 500;
@@ -216,7 +217,7 @@ display: inline-flex;
 align-items: center;
 justify-content: center;
 background: #e8f2ee;
-font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 font-size: 11.42px;
 line-height: 17.13px;
 font-weight: 500;
@@ -227,21 +228,26 @@ white-space: nowrap;
 
 .glyco-btn {
 border: none;
-width: 303px;
-height: 70px;
-padding: 10px;
+width: auto;
+height: auto;
+padding: 0;
 display: inline-flex;
 align-items: center;
 justify-content: center;
-gap: 10px;
-border-radius: 6px;
-background: #0d7377;
-color: #f4ede0;
+gap: 0;
+border-radius: 0;
+background: transparent;
+color: inherit;
 cursor: pointer;
 transition: transform 0.15s ease, box-shadow 0.2s ease;
-box-shadow:
-	0 9.4px 11.75px -7.05px rgba(0, 0, 0, 0.10),
-	0 1px 29.37px -5.87px rgba(0, 0, 0, 0.25);
+box-shadow: none;
+}
+
+.glyco-btn-image {
+	display: block;
+	width: 216px;
+	height: auto;
+	object-fit: contain;
 }
 
 .glyco-btn-content {
@@ -259,7 +265,7 @@ box-shadow:
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	font-size: 24px;
 	line-height: 32.9px;
 	font-weight: 700;
@@ -268,20 +274,18 @@ box-shadow:
 }
 
 .glyco-btn:hover {
-transform: translateY(-1px);
-box-shadow:
-	0 9.4px 11.75px -7.05px rgba(0, 0, 0, 0.10),
-	0 1px 29.37px -5.87px rgba(0, 0, 0, 0.25);
+transform: none;
+box-shadow: none;
 }
 
 .glyco-note {
-width: 474px;
+width: min(474px, 100%);
 height: 39px;
 max-width: 474.31px;
 display: grid;
 place-items: start;
 text-align: left;
-font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 font-size: 18px;
 line-height: 33.2px;
 font-weight: 500;
@@ -293,7 +297,7 @@ overflow: visible;
 
 .glyco-note-text {
 	display: inline-block;
-	white-space: nowrap !important;
+	white-space: nowrap;
 }
 
 .glyco-note-strong {
@@ -336,6 +340,19 @@ display: block;
 	max-height: 496px;
 	object-fit: contain;
 	z-index: 10;
+}
+
+.glyco-image--blur {
+	position: absolute;
+	left: 50%;
+	top: 62%;
+	transform: translate(-50%, -50%);
+	width: min(440px, 92%);
+	height: auto;
+	object-fit: contain;
+	z-index: 1;
+	pointer-events: none;
+	opacity: 0.95;
 }
 
 @media (max-width: 1200px) {
@@ -415,6 +432,11 @@ max-width: 420px;
 		width: min(100%, 420px);
 		max-width: 420px;
 	}
+
+	.glyco-image--blur {
+		width: min(360px, 88%);
+		top: 64%;
+	}
 }
 
 @media (max-width: 768px) {
@@ -460,10 +482,14 @@ font-size: 24px;
 }
 
 .glyco-btn {
-height: 44px;
-	width: 240px;
-	padding: 8px;
+	height: auto;
+	width: auto;
+	padding: 0;
 }
+
+	.glyco-btn-image {
+		width: 186px;
+	}
 
 	.glyco-btn-content {
 		width: auto;
@@ -480,16 +506,16 @@ height: 44px;
 	}
 
 .glyco-note {
-	width: 474px;
-	max-width: 474.31px;
-	height: 39px;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
 	font-size: 18px;
-	line-height: 33.2px;
+	line-height: 1.45;
 	overflow: visible;
 }
 
 	.glyco-note-text {
-		white-space: nowrap !important;
+		white-space: normal;
 	}
 
 .glyco-image {
@@ -559,4 +585,89 @@ max-width: 260px;
 .glyco-btn {
 min-width: 160px;
 }
+}
+
+/* ── Responsive Typography Styles ── */
+/* Heading: text-4xl (36px) base → text-5xl (48px) sm → text-6xl (60px) md → text-7xl (72px) lg → text-8xl (96px) xl */
+h1[id="glyco-hero-title"] {
+	font-family: 'Bree Serif', Georgia, serif;
+	font-weight: 400;
+	font-size: 2.25rem; /* text-4xl: 36px */
+	line-height: 1.2; /* leading-tight */
+	letter-spacing: 0.05em;
+	color: #0A1D33;
+	margin: 0;
+	word-break: break-word;
+	white-space: normal;
+	font-synthesis: none;
+}
+
+h1[id="glyco-hero-title"] span {
+	display: block;
+}
+
+/* sm: 640px */
+@media (min-width: 640px) {
+	h1[id="glyco-hero-title"] {
+		font-size: 3rem; /* text-5xl: 48px */
+	}
+}
+
+/* md: 768px */
+@media (min-width: 768px) {
+	h1[id="glyco-hero-title"] {
+		font-size: 3.75rem; /* text-6xl: 60px */
+	}
+}
+
+/* lg: 1024px */
+@media (min-width: 1024px) {
+	h1[id="glyco-hero-title"] {
+		font-size: 4.5rem; /* text-7xl: 72px */
+	}
+}
+
+/* xl: 1280px */
+@media (min-width: 1280px) {
+	h1[id="glyco-hero-title"] {
+		font-size: 6rem; /* text-8xl: 96px */
+	}
+}
+
+/* ── Price Section: Flex with wrap ── */
+.page-container .glyco-left > div[aria-label="Pricing"] {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem; /* gap-3 */
+	flex-wrap: wrap;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.page-container .glyco-left > div[aria-label="Pricing"] span:first-child {
+	text-decoration: line-through;
+	color: #9ca3af; /* text-gray-400 */
+	font-size: 1rem;
+}
+
+.page-container .glyco-left > div[aria-label="Pricing"] span:nth-child(2) {
+	font-size: 1.125rem; /* text-lg: 18px */
+	font-weight: 600;
+	color: #171717;
+}
+
+.page-container .glyco-left > div[aria-label="Pricing"] span:last-child {
+	background-color: #dcfce7; /* bg-green-100 */
+	color: #15803d; /* text-green-700 */
+	padding: 0.25rem 0.5rem; /* px-2 py-1 */
+	border-radius: 0.25rem;
+	font-size: 0.875rem; /* text-sm */
+	white-space: nowrap;
+}
+
+/* md: 768px - Increase price font size */
+@media (min-width: 768px) {
+	.page-container .glyco-left > div[aria-label="Pricing"] span:nth-child(2) {
+		font-size: 1.25rem; /* md:text-xl: 20px */
+	}
 }
