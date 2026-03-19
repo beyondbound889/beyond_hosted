@@ -11,7 +11,8 @@
 }
 
 .about-solution {
-	width: 1344px;
+	width: 100%;
+	max-width: 1200px;
 	min-height: 550.8px;
 	display: flex;
 	align-items: flex-start;

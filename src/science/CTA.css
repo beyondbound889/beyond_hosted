@@ -132,8 +132,39 @@
   }
   
   .cta-bg-text {
-    font-size: 15rem;
-    right: -50px;
-    bottom: -20px;
+    font-size: 8rem;
+    right: -30px;
+    bottom: -10px;
+    opacity: 0.15;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-title {
+    font-size: 2rem;
+  }
+
+  .cta-guarantee {
+    font-size: 0.7rem;
+  }
+
+  .cta-info {
+    font-size: 0.95rem;
+  }
+
+  .cta-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .cta-bg-text {
+    font-size: 5rem;
+    right: -40px;
+    bottom: -5px;
+    opacity: 0.1;
+  }
+
+  .benefit-item {
+    font-size: 0.8rem;
   }
 }

@@ -121,6 +121,14 @@
 
 
 @media (max-width: 768px) {
+  .story-bg-text {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    max-width: 90%;
+    white-space: normal;
+    word-break: break-word;
+  }
+
   .our-story h2 {
     font-size: 2rem;
     margin-bottom: 40px;
@@ -136,6 +144,14 @@
 }
 
 @media (max-width: 480px) {
+  .story-bg-text {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    max-width: 85%;
+    white-space: normal;
+    word-break: break-word;
+  }
+
   .our-story h2 {
     font-size: 1.5rem;
     margin-bottom: 30px;

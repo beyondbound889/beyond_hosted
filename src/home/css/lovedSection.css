@@ -6,7 +6,7 @@
 }
 
 .loved-container {
-	width: min(1728px, 100%);
+	width: min(1200px, 100%);
 	height: auto;
 	padding: 0 32px;
 	margin: 0 auto;
@@ -14,7 +14,7 @@
 }
 
 .loved-frame {
-	width: min(1540px, 100%);
+	width: min(1200px, 100%);
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -76,7 +76,7 @@
 
 .loved-cards {
 	width: 100%;
-	max-width: 1540px;
+	max-width: 1200px;
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 512.81px));
 	justify-content: center;
