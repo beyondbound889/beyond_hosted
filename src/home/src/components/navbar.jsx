@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./navbar.css";
-import beyondLogo from "./assets/beyond.svg";
+import "../css/navbar.css";
+import beyondLogo from "../assets/beyond.svg";
 import GoogleSignIn from "./GoogleSignIn";
-import useMenuStore from './useMenuStore';
+
 const scienceItems = [
   { title: "Our Research", subtitle: "Peer-reviewed studies" },
   { title: "Ingredients", subtitle: "Botanical sourcing & purity" },
@@ -25,9 +25,7 @@ const accountMenuItems = [
 ];
 
 function Navbar() {
-  const activeMenu = useMenuStore((state) => state.activeMenu);
-  const setActiveMenu = useMenuStore((state) => state.setActiveMenu);
-  const setActivePage = useMenuStore((state) => state.setActivePage);
+  const [activeMenu, setActiveMenu] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileSubMenu, setMobileSubMenu] = useState(null);
   const [signedInUser, setSignedInUser] = useState(null);
@@ -40,36 +38,23 @@ function Navbar() {
     <>
       <header
         className="navbar-wrapper"
-        onMouseLeave={() => {
-          // Close any open dropdown menus when the cursor leaves the navbar.
-          if (["science", "about", "login"].includes(activeMenu)) {
-            setActiveMenu(null);
-          }
-        }}
+        onMouseLeave={() => setActiveMenu(null)}
       >
         <nav className="navbar">
           <div className="navbar-brand">
             <img src={beyondLogo} alt="Beyond Bound" className="navbar-logo" />
-            BEYOND BOUND<sup>®</sup>
+            BEYOND BOUND<sup className="logo-trademark">®</sup>
           </div>
 
           <ul className="navbar-links">
             <li className="menu-item">
-              <button
-                type="button"
-                className="menu-trigger"
-                onClick={() => setActivePage("home")}
-              >
+              <button type="button" className="menu-trigger">
                 Home
               </button>
             </li>
 
             <li className="menu-item">
-              <button
-                type="button"
-                className="menu-trigger"
-                onClick={() => setActivePage("products")}
-              >
+              <button type="button" className="menu-trigger">
                 Products
               </button>
             </li>
@@ -85,19 +70,16 @@ function Navbar() {
 
             <li
               className="menu-item"
-            /* onMouseEnter={() => setActiveMenu("science")} */
+              onMouseEnter={() => setActiveMenu("science")}
             >
               <button
                 type="button"
                 className="menu-trigger"
-                onClick={() => {
-                  toggleMenu("science");
-                  setActivePage("science");
-                }}
+                onClick={() => toggleMenu("science")}
                 aria-expanded={activeMenu === "science"}
               >
                 Science
-                {/* <span className="menu-caret">⌄</span> */}
+                <span className="menu-caret">⌄</span>
               </button>
               {activeMenu === "science" ? (
                 <div className="dropdown-panel compact-panel">
@@ -122,7 +104,7 @@ function Navbar() {
               <button
                 type="button"
                 className="menu-trigger"
-                onClick={() => setActivePage("about")}
+                onClick={() => toggleMenu("about")}
                 aria-expanded={activeMenu === "about"}
               >
                 About
@@ -151,20 +133,12 @@ function Navbar() {
             </li>
           </ul>
 
-          <div className="navbar-actions">
-            <button type="button" className="nav-login-btn">
-              Login
-            </button>
-
-            <button type="button" className="nav-signup-btn">
-              Sign Up
-            </button>
-          </div>
-
-
           <div
             className={`navbar-icons${mobileOpen ? " navbar-icons--hidden" : ""}`}
           >
+            <button type="button" className="signup-btn">
+              Sign Up
+            </button>
             <div className="login-menu">
               <button
                 type="button"
@@ -219,47 +193,19 @@ function Navbar() {
 
         {mobileOpen && (
           <div className="mobile-menu">
-            <div className="navbar-actions">
-              <button type="button" className="nav-login-btn">
-                Login
-              </button>
-
-              <button type="button" className="nav-signup-btn">
-                Sign Up
-              </button>
-            </div>
-
-            <button
-              type="button"
-              className="mobile-link"
-              onClick={() => {
-                setActivePage("home");
-                setMobileOpen(false);
-                setMobileSubMenu(null);
-              }}
-            >
+            <button type="button" className="mobile-link">
               Home
             </button>
-            <button
-              type="button"
-              className="mobile-link"
-              onClick={() => {
-                setActivePage("products");
-                setMobileOpen(false);
-                setMobileSubMenu(null);
-              }}
-            >
+            <button type="button" className="mobile-link">
               Products
             </button>
 
             <button
               type="button"
               className="mobile-link mobile-link--has-sub"
-              onClick={() => {
-                setActivePage("science");
-                setMobileOpen(false);
-                setMobileSubMenu((p) => (p === "science" ? null : "science"));
-              }}
+              onClick={() =>
+                setMobileSubMenu((p) => (p === "science" ? null : "science"))
+              }
               aria-expanded={mobileSubMenu === "science"}
             >
               Science
@@ -287,11 +233,9 @@ function Navbar() {
             <button
               type="button"
               className="mobile-link mobile-link--has-sub"
-              onClick={() => {
-                setActivePage("about");
-                setMobileOpen(false);
-                setMobileSubMenu((p) => (p === "about" ? null : "about"));
-              }}
+              onClick={() =>
+                setMobileSubMenu((p) => (p === "about" ? null : "about"))
+              }
               aria-expanded={mobileSubMenu === "about"}
             >
               About
@@ -335,4 +279,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
