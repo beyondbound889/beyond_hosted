@@ -9,7 +9,7 @@
 }
 
 .mgs-frame {
-	width: min(1558px, 100%);
+	width: min(1200px, 100%);
 	min-height: 899px;
 	display: flex;
 	flex-direction: column;

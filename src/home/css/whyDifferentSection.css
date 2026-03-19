@@ -8,7 +8,7 @@
 }
 
 .wds-shell {
-	width: min(1728px, 100%);
+	width: min(1200px, 100%);
 	min-height: auto;
 	display: flex;
 	flex-direction: column;

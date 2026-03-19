@@ -3,16 +3,12 @@ import "./navbar.css";
 import beyondLogo from "./assets/beyond.svg";
 import GoogleSignIn from "./GoogleSignIn";
 import useMenuStore from './useMenuStore';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 const scienceItems = [
   { title: "Our Research", subtitle: "Peer-reviewed studies" },
   { title: "Ingredients", subtitle: "Botanical sourcing & purity" },
   { title: "Clinical Results", subtitle: "Real-world outcomes" },
-];
-
-const aboutItems = [
-  { title: "Our Story", subtitle: "How Beyond Bound began" },
-  { title: "Mission & Values", subtitle: "What drives us" },
-  { title: "Certifications", subtitle: "Quality standards" },
 ];
 
 const accountMenuItems = [
@@ -50,7 +46,7 @@ function Navbar() {
         <nav className="navbar">
           <div className="navbar-brand">
             <img src={beyondLogo} alt="Beyond Bound" className="navbar-logo" />
-            BEYOND BOUND<sup>®</sup>
+            BEYOND BOUND<span>®</span>
           </div>
 
           <ul className="navbar-links">
@@ -128,20 +124,6 @@ function Navbar() {
                 About
                 {/* <span className="menu-caret">⌄</span> */}
               </button>
-              {activeMenu === "about" ? (
-                <div className="dropdown-panel compact-panel">
-                  {aboutItems.map((item) => (
-                    <button
-                      key={item.title}
-                      type="button"
-                      className="compact-item"
-                    >
-                      <span className="panel-title">{item.title}</span>
-                      <span className="panel-subtitle">{item.subtitle}</span>
-                    </button>
-                  ))}
-                </div>
-              ) : null}
             </li>
 
             <li className="menu-item">
@@ -162,47 +144,7 @@ function Navbar() {
           </div>
 
 
-          <div
-            className={`navbar-icons${mobileOpen ? " navbar-icons--hidden" : ""}`}
-          >
-            <div className="login-menu">
-              <button
-                type="button"
-                className="login-trigger"
-                onClick={() => toggleMenu("login")}
-                aria-label={signedInUser ? "Logout menu" : "Login menu"}
-                aria-expanded={activeMenu === "login"}
-              >
-                <i className="fa-solid fa-user" aria-hidden="true" />
-              </button>
-              {activeMenu === "login" ? (
-                <div className="dropdown-panel login-panel">
-                  <GoogleSignIn onUserChange={setSignedInUser} />
-                  {signedInUser ? (
-                    <>
-                      {accountMenuItems.map((item) => (
-                        <button key={item} type="button" className="login-item">
-                          {item}
-                        </button>
-                      ))}
-                      {/* Logout button after login */}
-                      <button
-                        type="button"
-                        className="login-item logout-btn"
-                        onClick={() => setSignedInUser(null)}
-                      >
-                        Logout
-                      </button>
-                    </>
-                  ) : (
-                    <p className="login-hint">
-                      Sign in to access your account options.
-                    </p>
-                  )}
-                </div>
-              ) : null}
-            </div>
-          </div>
+           
 
           <button
             type="button"
@@ -325,10 +267,10 @@ function Navbar() {
 
       <button
         type="button"
-        className={`cart-fab${mobileOpen || activeMenu === "login" ? " cart-fab--hidden" : ""}`}
-        aria-label="Cart"
+        className="cart-fab"
+        aria-label="Shopping Cart"
       >
-        <i className="fa-solid fa-bag-shopping" aria-hidden="true" />
+        <FontAwesomeIcon icon={faShoppingCart} />
       </button>
     </>
   );

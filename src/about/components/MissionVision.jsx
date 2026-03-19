@@ -1,5 +1,7 @@
 import React from 'react';
 import '../css/MissionVision.css';
+import missionImg from '../assets/mission.png';
+import visionImg from '../assets/vission.png';
 
 const MissionVision = () => {
   return (
@@ -12,7 +14,7 @@ const MissionVision = () => {
       <div className="mv-container">
         <div className="mv-card">
           <div className="mv-image">
-            <img src="/images/mission.jpg" alt="Mission" />
+            <img src={missionImg} alt="Mission" />
           </div>
           <div className="mv-content">
             <h3>Mission</h3>
@@ -24,7 +26,7 @@ const MissionVision = () => {
 
         <div className="mv-card">
           <div className="mv-image">
-            <img src="/images/vision.jpg" alt="Vision" />
+            <img src={visionImg} alt="Vision" />
           </div>
           <div className="mv-content">
             <h3>Vision</h3>

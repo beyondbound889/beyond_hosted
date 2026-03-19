@@ -1,7 +1,7 @@
 .slider-container {
   position: relative;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   aspect-ratio: 16 / 9; /* Adjust based on your images */
   overflow: hidden;
   user-select: none;
