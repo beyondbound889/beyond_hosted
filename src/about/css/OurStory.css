@@ -182,7 +182,7 @@
 
 /* Solution Section Styles */
 .solution-section {
-  padding: 60px 20px 0;
+  padding: 40px 20px 0;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -327,8 +327,8 @@
 }
 
 .product-bottle {
-  width: 250px;
-  height: 300px;
+  width: 350px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,10 +343,10 @@
 .certifications {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 30px;
+  gap: 20px;
   text-align: center;
-  margin-top: 40px;
-  padding: 30px 0;
+  margin-top: 2%  ;
+  padding: 10px 0;
 }
 
 .cert {
@@ -357,11 +357,11 @@
 }
 
 .cert h4 {
-  font-size: 2rem;
+  font-size: 2.7rem;
   color: #2a7c7c;
   margin-bottom: 8px;
   font-weight: 700;
-  font-family: 'Inter', sans-serif;
+  font-family: 'bree serif', sans-serif;
 }
 
 .cert p {

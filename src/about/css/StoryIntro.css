@@ -16,6 +16,7 @@
   gap: 0px;
   width: 100%;
   align-items: flex-start;
+  position: relative;
 }
 
 .intro-left {
@@ -35,8 +36,9 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 300px;
-  left: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 20;
 }
 
@@ -162,6 +164,11 @@
     padding: 50px 20px;
   }
 
+  .intro-top {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
   .intro-arrow {
     display: none;
   }
@@ -178,6 +185,12 @@
     max-width: 100%;
   }
 
+  .intro-logo {
+    position: static;
+    margin-bottom: 20px;
+    transform: none;
+  }
+
   .intro-nav-button {
     padding: 12px 14px;
     font-size: 0.85rem;
@@ -191,12 +204,28 @@
     padding: 30px 15px;
   }
 
+  .intro-top {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .intro-title {
     font-size: 2rem;
   }
 
   .intro-subtitle {
     font-size: 1rem;
+  }
+
+  .intro-logo {
+    position: static;
+    margin-bottom: 15px;
+    transform: none;
+  }
+
+  .logo-image {
+    width: 120px;
+    height: 120px;
   }
 
   .intro-images-container {
