@@ -17,8 +17,8 @@ const OurTeam = () => {
       id: 1,
       name: "Priyanshu Chauhan",
       title: "Director & Founder",
-      qualification: "MBA Healthcare Management KJ",
-      location: "Somaiya, Mumbai",
+      qualification: "MBA Healthcare Management ",
+      location: "KJ Somaiya, Mumbai",
       image: priyanshuImg,
       badge: somaiya
     },
@@ -38,7 +38,7 @@ const OurTeam = () => {
       id: 1,
       name: "Chaitanya Desai",
       desc: "40+ Years Ex in Pharma",
-      image: vasudev,
+      image: chaitanya,
       badge: bio
     },
     {
@@ -52,7 +52,7 @@ const OurTeam = () => {
       id: 3,
       name: "Vasudev Tribhuvan",
       desc: "26+ Years Ex in Pharma",
-      image: chaitanya,
+      image: vasudev,
       badge: omni
     }
   ];
