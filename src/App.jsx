@@ -6,12 +6,14 @@ import './App.css'
 import Navbar from './navbar.jsx'
 import Footer from './footer.jsx'
 import useMenuStore from './useMenuStore';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function App() {
   const activePage = useMenuStore((state) => state.activePage);
 
   return (
-    <>
+    <div className="app" style={{position: 'relative'}}>
       <Navbar />
       <div /* className='scaled-wrapper' */>
    
@@ -25,7 +27,16 @@ function App() {
         {activePage === 'science' && <Science />}
       </div>
       <Footer />
-    </>
+
+      <button
+        type="button"
+        className="cart-fab-2"
+        aria-label="Shopping Cart"
+        
+      >
+        <FontAwesomeIcon icon={faShoppingCart} />
+      </button>
+    </div>
   )
 }
 

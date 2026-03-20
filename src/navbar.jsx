@@ -5,6 +5,7 @@ import GoogleSignIn from "./GoogleSignIn";
 import useMenuStore from './useMenuStore';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { ArrowUpRight } from "lucide-react";
 const scienceItems = [
   { title: "Our Research", subtitle: "Peer-reviewed studies" },
   { title: "Ingredients", subtitle: "Botanical sourcing & purity" },
@@ -133,8 +134,9 @@ function Navbar() {
           </ul>
 
           <div className="navbar-actions">
-            <button type="button" className="nav-login-btn">
-              Login
+            <button type="button" className="nav-contact-us-btn">
+              Contact Us 
+              <ArrowUpRight size={'18px'} />
             </button>
 
             <button type="button" className="nav-signup-btn">
@@ -259,13 +261,13 @@ function Navbar() {
         )}
       </header>
 
-      <button
+      {/* <button
         type="button"
-        className="cart-fab"
+        className="cart-fab-2"
         aria-label="Shopping Cart"
       >
         <FontAwesomeIcon icon={faShoppingCart} />
-      </button>
+      </button> */}
     </>
   );
 }
