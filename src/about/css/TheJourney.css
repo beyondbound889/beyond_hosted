@@ -1,0 +1,167 @@
+/* TheJourney.css */
+
+.the-journey {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.journey-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.journey-bg-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  font-weight: 800;
+  color: rgba(200, 200, 200, 0.25);
+  line-height: 1.1;
+  letter-spacing: 5px;
+  width: 120%;
+  pointer-events: none;
+  font-family: 'Inter', sans-serif;
+  z-index: 0;
+  text-transform: uppercase;
+}
+
+.the-journey h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.journey-subtitle {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #666;
+  margin-bottom: 60px;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  position: relative;
+  text-align: left;
+}
+
+.timeline-year {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.timeline-item.hovered .timeline-year {
+  color: #2a7c7c;
+}
+
+.timeline-line {
+  width: 100%;
+  height: 3px;
+  background: #d0d0d0;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.timeline-item.hovered .timeline-line {
+  background: #2a7c7c;
+}
+
+.timeline-item.active .timeline-line {
+  background: #2a7c7c;
+}
+
+.timeline-content h3 {
+  font-size: 1rem;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-weight: 800;
+  font-family: '', sans-serif;
+  line-height: 1.4;
+}
+
+.timeline-content p {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .timeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .journey-bg-text {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    width: 90%;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .the-journey h2 {
+    font-size: 2rem;
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .timeline-year {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .the-journey {
+    padding: 40px 20px;
+  }
+
+  .the-journey h2 {
+    font-size: 1.8rem;
+  }
+
+  .journey-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .timeline-year {
+    font-size: 1.3rem;
+  }
+}
+
+
+

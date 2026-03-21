@@ -1,0 +1,140 @@
+.landing-container-ld {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+}
+
+/* Testimonial Styles */
+.main-quote-ld {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.3;
+  font-weight: 600;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.quote-author-ld {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.testimonial-grid-ld {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.test-card-ld {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.stars-ld { color: #d4a017; margin-bottom: 10px; }
+
+.test-text-ld {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.user-info-ld { display: flex; align-items: center; gap: 12px; }
+.avatar-ld { width: 45px; height: 45px; border-radius: 50%; }
+.user-name-ld { font-weight: 700; font-size: 14px; }
+.verified-ld { font-size: 12px; color: #888; }
+
+/* Badge Section */
+.trust-section-ld {
+  text-align: center;
+  margin: 80px 0;
+  font-size: 24px;
+}
+
+.trust-text-ld {
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.badge-row-ld {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  opacity: 0.8;
+}
+
+/* FAQ Styles */
+.faq-section-ld {
+  display: flex;
+  gap: 60px;
+  border-top: 1px solid #eee;
+  padding-top: 60px;
+}
+
+.faq-left-ld { flex: 1; flex-direction: column; display: flex; justify-content: space-between; }
+.faq-right-ld { flex: 1.5; font-size: 24px; }
+
+.faq-title-ld {
+  font-size: 52px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.faq-item-ld {
+  border-bottom: 1px solid #ddd;
+  padding: 32px 0;
+  cursor: pointer;
+}
+
+.faq-question-ld {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.faq-answer-ld {
+  padding-top: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.cart-btn-ld {
+  background: #137474;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 300px;
+  font-size: 1.2rem;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .faq-section-ld { flex-direction: column; }
+  .main-quote-ld { font-size: 22px; }
+}
+
+
+

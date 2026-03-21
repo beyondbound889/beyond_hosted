@@ -1,0 +1,121 @@
+.pas-section {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 76.9px 100.45px 24px;
+	border-top: 1.57px solid rgba(229, 229, 229, 0.5);
+	border-bottom: 1.57px solid rgba(229, 229, 229, 0.5);
+	background: #f3f4f6;
+}
+
+.pas-container {
+	width: min(1200px, 100%);
+	min-height: 164.01px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 325.28px));
+	column-gap: 75.34px;
+	row-gap: 75.34px;
+	justify-content: center;
+}
+
+.pas-item {
+	width: 325.28px;
+	min-height: 164.01px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.pas-icon-wrap {
+	width: 75.34px;
+	height: 75.34px;
+	border-radius: 18.83px;
+	border: 1.57px solid rgba(78, 77, 77, 0.5);
+	background: #fafafa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pas-icon-image {
+	width: 31.39px;
+	height: 31.39px;
+	object-fit: contain;
+	display: block;
+}
+
+.pas-copy {
+	height: 69.84px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6.28px;
+}
+
+.pas-title,
+.pas-subtitle {
+	margin: 0;
+	font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 0;
+	white-space: nowrap;
+}
+
+.pas-title {
+	font-size: 24px;
+	line-height: 32.96px;
+	color: #171717;
+}
+
+.pas-subtitle {
+	font-size: 20px;
+	line-height: 30.6px;
+	color: #737373;
+}
+
+@media (max-width: 1600px) {
+	.pas-section {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.pas-container {
+		grid-template-columns: repeat(2, minmax(260px, 1fr));
+		column-gap: 28px;
+		row-gap: 32px;
+	}
+
+	.pas-item {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.pas-section {
+		padding: 44px 16px 18px;
+	}
+
+	.pas-container {
+		grid-template-columns: 1fr;
+		row-gap: 28px;
+	}
+
+	.pas-item {
+		min-height: auto;
+		gap: 14px;
+	}
+
+	.pas-title {
+		font-size: 22px;
+		line-height: 1.25;
+	}
+
+	.pas-subtitle {
+		font-size: 18px;
+		line-height: 1.35;
+		white-space: normal;
+	}
+}

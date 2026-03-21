@@ -1,24 +1,44 @@
+import Product from './product/Product.jsx'
+import AboutUs from './about/components/AboutUs.jsx'
+import Home from './home/src//App.jsx'
+import Science from './science/Science.jsx'
 import './App.css'
-import Navbar from './components/navbar'
-import HowItWorks from './components/Howit'
-import Trust from './components/trust'
-import WhoGlycomics from './components/WhoGlyco'
-import FAQ from './components/faq'
-import Footer from './components/footer'
-import Meet from './components/MeetGlyco'
+import Navbar from './navbar.jsx'
+import Footer from './footer.jsx'
+import useMenuStore from './useMenuStore';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function App() {
+  const activePage = useMenuStore((state) => state.activePage);
+
   return (
-    <>
+    <div className="app" style={{position: 'relative'}}>
       <Navbar />
-      <Trust />
-      <Meet />
-       <WhoGlycomics />
-      <HowItWorks />
-      <FAQ />
+      <div /* className='scaled-wrapper' */>
+   
+        <div /* className='scaled-wrapper' */>
+
+        {activePage === 'products' && <Product />}
+        </div>
+
+        {activePage === 'about' && <AboutUs />}
+        {activePage === 'home' && <Home />}
+        {activePage === 'science' && <Science />}
+      </div>
       <Footer />
-    </>
+
+      <button
+        type="button"
+        className="cart-fab-2"
+        aria-label="Shopping Cart"
+        
+      >
+        <FontAwesomeIcon icon={faShoppingCart} />
+      </button>
+    </div>
   )
 }
 
 export default App
+

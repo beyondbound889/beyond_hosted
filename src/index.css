@@ -1,10 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+html,body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter'
+}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Bree Serif', Georgia, serif;
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.scaled-wrapper {
+  transform: scale(0.9);
+  transform-origin: top center;
+  /* width: 111.11%; */ /* 100 / 0.9 to compensate shrink */
+}
+
+.scaled-wrapper2 {
+  transform: scale(0.9);
+  transform-origin: top center;
+  /* width: 111.11%; */ /* 100 / 0.9 to compensate shrink */
 }

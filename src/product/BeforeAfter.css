@@ -1,0 +1,140 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 16 / 9; /* Adjust based on your images */
+  overflow: hidden;
+  user-select: none;
+  border-radius: 1rem;
+}
+
+.image-after {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 1. Hide the default appearance across all browsers */
+.slider-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  appearance: none; /* Modern browsers */
+  -webkit-appearance: none; /* Chrome, Safari, Edge */
+  -moz-appearance: none; /* Firefox */
+  z-index: 20;
+  cursor: ew-resize;
+  margin: 0;
+}
+
+/* 2. Target the specific "thumb" for Chrome, Safari, and Edge */
+.slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;      /* Match the width of your custom circle */
+  height: 100vh;    /* Make it tall enough to cover the whole image */
+  background: transparent; /* This makes the default circle invisible */
+  cursor: ew-resize;
+}
+
+/* 3. Target the specific "thumb" for Firefox */
+.slider-input::-moz-range-thumb {
+  width: 40px;
+  height: 100vh;
+  background: transparent;
+  border: none;
+  cursor: ew-resize;
+}
+
+/* 4. Remove the default track styling (optional but cleaner) */
+.slider-input::-webkit-slider-runnable-track {
+  background: transparent;
+}
+
+/* The custom visual handle */
+.slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none; /* Let clicks pass through to the input */
+  transform: translateX(-50%);
+}
+
+.handle-line {
+  flex-grow: 1;
+  width: 2px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.handle-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* Creating CSS arrows */
+.arrow-left, .arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  margin: 0 2px;
+}
+
+.arrow-left {
+  border-right: 8px solid #555;
+}
+
+.arrow-right {
+  border-left: 8px solid #555;
+}
+
+.before-tag {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+}
+
+.after-tag{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+}
+
+.before-tag, .after-tag {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 32px;
+    font-size: 1rem
+}
+
+
+
