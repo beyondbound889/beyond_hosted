@@ -17,7 +17,7 @@ import TransformationSection from "./components/TransformationSection";
 function App() {
   return (
     <div className="page-container">
-     {/*  <Navbar /> */}
+      {/*  <Navbar /> */}
       <Meet />
       <Trust />
       <AboutBeyond />

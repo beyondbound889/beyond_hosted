@@ -8,27 +8,27 @@ import emilyImage from "../../Image (Emily R.).png";
 const testimonials = [
   {
     id: "sarah",
-    quote:
-      "“My insulin levels have never been so balanced, totally recommend glycomics!! Worth every penny!!”",
     name: "Naina Sharma",
     role: "Verified Customer",
     image: sarahImage,
+    quote:
+      "My insulin levels have never been so balanced, totally recommend glycomics!! Worth every penny!!",
   },
   {
     id: "james",
-    quote:
-      '"The quality is exceptional. I appreciate the transparency in ingredients and the natural formulation. Highly recommended!"',
     name: "James K.",
     role: "Verified Customer",
     image: jamesImage,
+    quote:
+      '"The quality is exceptional. I appreciate the transparency in ingredients and the natural formulation. Highly recommended!"',
   },
   {
     id: "emily",
-    quote:
-      "\"I've tried many supplements, but Beyond Bound stands out. The results are noticeable and I love that it's all-natural.\"",
     name: "Emily R.",
     role: "Verified Customer",
     image: emilyImage,
+    quote:
+      "I've tried many supplements, but Beyond Bound stands out. The results are noticeable and I love that it's all-natural.",
   },
 ];
 
