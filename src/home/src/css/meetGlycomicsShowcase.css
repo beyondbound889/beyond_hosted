@@ -1,10 +1,9 @@
 .mgs-section {
 	width: 100%;
 	min-height: auto;
-	background: linear-gradient(180deg, #f3f3f3 0%, #f1f1ef 100%);
 	display: flex;
 	justify-content: center;
-	padding: 62px 24px;
+	padding: 20px 20px;
 	box-sizing: border-box;
 }
 
@@ -44,7 +43,6 @@
 	display: flex;
 	align-items: flex-start;
 	gap: 31px;
-	background: linear-gradient(180deg, #f3f3f3 0%, #f1f1ef 100%);
 }
 
 .mgs-left {

@@ -1,9 +1,8 @@
 .about-section {
 	width: 100%;
-	min-height: 933px;
+	min-height: 700px;
+	padding: 12px 12px;
 	height: auto;
-	padding-left: 313.38px;
-	padding-right: 313.38px;
 	box-sizing: border-box;
 	background: #ffffff;
 	display: flex;
@@ -14,7 +13,7 @@
 
 .about-solution {
 	width: 100%;
-	max-width: 1344px;
+	max-width: 1200px;
 	min-height: 550.8px;
 	display: flex;
 	align-items: flex-start;
@@ -154,7 +153,7 @@
 @media (max-width: 1600px) {
 	.about-section {
 		height: auto;
-		padding: 80px 80px;
+		padding: 20px 20px;
 	}
 
 	.about-solution {
@@ -195,7 +194,7 @@
 
 @media (max-width: 900px) {
 	.about-section {
-		padding: 56px 20px;
+		padding: 36px 16px;
 	}
 
 	.about-solution {
