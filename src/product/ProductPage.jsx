@@ -1,5 +1,5 @@
 import React, { useState } from 'react'; // <--- Is this exactly like this?
-import frontImg from './assets/front.jpg';
+import frontImg from './assets/bottles.png';
 import backImg from './assets/back.jpg';
 import sideImg from './assets/side.png';
 import labelImg from './assets/label.png';

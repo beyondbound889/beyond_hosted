@@ -1,11 +1,9 @@
 
 import '../css/MeetGlyco.css'
-import bottleImg from '../../Gemini_Generated_Image_5ccfpd5ccfpd5ccf 2.png'
-import blurImg from '../../Blur.png'
+import bottleImg from '../../bottle.jpeg'
 import reviewImageOne from '../../image 32.png'
 import reviewImageTwo from '../../image 33.png'
 import reviewImageThree from '../../image 34.png'
-import shopNowButtonImage from '../../Component 5 (1).png'
 
 function MeetGlycomics() {
 	return (
@@ -58,13 +56,7 @@ function MeetGlycomics() {
 						</div>
 
 						<button type="button" className="glyco-btn">
-							<img
-								src={shopNowButtonImage}
-								alt="Shop now"
-								className="glyco-btn-image"
-								loading="lazy"
-								decoding="async"
-							/>
+							<span className="glyco-btn-label">Shop now →</span>
 						</button>
 
 						<p className="glyco-note">
@@ -76,14 +68,7 @@ function MeetGlycomics() {
 
 					<div className="glyco-right">
 						<div className="glyco-product-wrap">
-							<img
-								src={blurImg}
-								alt=""
-								className="glyco-image glyco-image--blur"
-								loading="lazy"
-								decoding="async"
-								aria-hidden="true"
-							/>
+							
 							<img
 								src={bottleImg}
 								alt="Glycomics product bottle"

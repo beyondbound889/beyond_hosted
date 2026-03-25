@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "../css/productDetailSection.css";
 
-import bottleFront from "../../Gemini_Generated_Image_5wdmlg5wdmlg5wdm 2.jpg";
+import bottleFront from "../../bottles.png";
 import bottleLabelA from "../../Gemini_Generated_Image_5wdmlg5wdmlg5wdm 1.jpg";
 import bottleLabelB from "../../Gemini_Generated_Image_5wdmlg5wdmlg5wdm 3.jpg";
-import bottleLabelC from "../../4f188a24bc1b69b908ac63c465fe2c10c0b8559f.png";
+import bottleLabelC from "../../101.png";
 
 const galleryItems = [
   { id: "front", src: bottleFront, alt: "Glycomics front bottle view" },
