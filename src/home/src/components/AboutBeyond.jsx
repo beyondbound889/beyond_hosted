@@ -1,5 +1,5 @@
 import '../css/aboutBeyond.css'
-import aboutImage from '../../Gemini_Generated_Image_9ceczi9ceczi9cec 1 (1).png'
+import aboutImage from '../../imglogo.jpeg'
 import naturalBadgeImage from '../../Container (1).png'
 import learnMoreButtonImage from '../../Component 5.png'
 
