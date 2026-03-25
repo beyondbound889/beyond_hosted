@@ -36,9 +36,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 4.2%;
+  left: 28%;
   z-index: 20;
 }
 
@@ -162,6 +161,7 @@
     grid-template-columns: 1fr;
     gap: 30px;
     padding: 50px 20px;
+    position: relative;
   }
 
   .intro-top {
@@ -179,6 +179,7 @@
 
   .intro-images-container {
     grid-template-columns: 0.3fr 0.7fr;
+    position: relative;
   }
 
   .intro-image, .intro-image-right {
@@ -186,9 +187,16 @@
   }
 
   .intro-logo {
-    position: static;
-    margin-bottom: 20px;
-    transform: none;
+    position: absolute;
+   top: 65%;
+    left: 50%;
+    margin-bottom: 0;
+    z-index: 15;
+  }
+
+  .logo-image {
+    width: 140px;
+    height: 140px;
   }
 
   .intro-nav-button {
@@ -202,6 +210,7 @@
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 30px 15px;
+    position: relative;
   }
 
   .intro-top {
@@ -218,18 +227,22 @@
   }
 
   .intro-logo {
-    position: static;
-    margin-bottom: 15px;
-    transform: none;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0;
+    z-index: 15;
   }
 
   .logo-image {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 
   .intro-images-container {
     grid-template-columns: 1fr;
+    position: relative;
   }
 
   .intro-image, .intro-image-right {

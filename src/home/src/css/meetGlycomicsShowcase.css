@@ -46,20 +46,21 @@
 }
 
 .mgs-left {
-	width: 958.83px;
+	width: 900px;
 	min-height: auto;
 	display: flex;
 	flex-direction: column;
-	gap: 9.85px;
+	gap: 8px;
+	padding: 10px;
 }
 
 .mgs-copy {
 	width: 100%;
-	max-width: 881px;
-	min-height: 606.81px;
+	max-width: 860px;
+	min-height: 600px;
 	display: flex;
 	flex-direction: column;
-	gap: 19px;
+	gap: 15px;
 }
 
 .mgs-heading {

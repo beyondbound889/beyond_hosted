@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./navbar.css";
-import beyondLogo from "./assets/beyond.svg";
+import beyondLogo from "./assets/beyond.png";
 import GoogleSignIn from "./GoogleSignIn";
 import useMenuStore from './useMenuStore';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

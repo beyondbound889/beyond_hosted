@@ -1,6 +1,6 @@
 import '../css/transformationSection.css'
 
-import transformationImage from '../../Gemini_Generated_Image_jeiry2jeiry2jeir 1.png'
+import transformationImage from '../../docglycos1.jpeg'
 
 const metrics = [
 	{
