@@ -129,6 +129,12 @@ gap: 5px;
   font-weight: 600;
 }
 
+.size-buttons-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .size-btn {
   padding: 10px 25px;
   border: 1px solid var(--primary-teal);
@@ -138,6 +144,18 @@ gap: 5px;
   font-family: inherit;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.size-btn:hover {
+  background: #e0f2f1;
+  border-color: #005a5a;
+}
+
+.size-btn.active {
+  background: var(--primary-teal);
+  color: white;
+  border-color: var(--primary-teal);
 }
 
 .purchase-actions {
@@ -200,17 +218,27 @@ gap: 5px;
 
 /* --- Accordion Section --- */
 .accordion-section {
-  border-top: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  border-top: 1.3px solid var(--border-light);
+  border-bottom: 1.3px solid var(--border-light);
   margin-top: 20px;
 }
 
-.accordion-wrapper {
-  border-bottom: 1px solid var(--border-light);
+.accordion-item-wrapper {
+  border-bottom: 1.3px solid var(--border-light);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.accordion-item-wrapper:last-child {
+  border-bottom: none;
 }
 
 .accordion-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 18px 0;
   font-weight: 500;
@@ -218,6 +246,23 @@ gap: 5px;
   cursor: pointer;
   user-select: none;
   transition: color 0.2s ease;
+  border: none;
+  background: transparent;
+  color: var(--text-dark);
+  text-align: left;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  flex: 1;
+  min-width: 0;
+}
+
+.accordion-plus-icon {
+  padding: 18px 0;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+  cursor: pointer;
 }
 
 .accordion-item:hover {
@@ -225,12 +270,19 @@ gap: 5px;
 }
 
 .accordion-content {
-  padding-bottom: 20px;
+  padding: 16px 0;
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 14px;
   line-height: 1.6;
-  color: #666;
-  /* Animates the visibility */
+  color: #555;
+  background: transparent;
   animation: slideDown 0.25s ease-out;
+  flex: 0 0 100%;
+}
+
+.accordion-content p {
+  margin: 0;
 }
 
 @keyframes slideDown {
@@ -241,6 +293,234 @@ gap: 5px;
   to { 
     opacity: 1; 
     transform: translateY(0); 
+  }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1200px) {
+  .product-container {
+    max-width: 100%;
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .product-title {
+    font-size: 52px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 980px) {
+  .product-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .gallery-section {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+
+  .thumbnails {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .thumb-box {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+  }
+
+  .main-display {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .details-section {
+    width: 100%;
+  }
+
+  .product-title {
+    font-size: 42px;
+    margin-bottom: 8px;
+  }
+
+  .price {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .purchase-actions {
+    gap: 12px;
+    margin: 25px 0;
+  }
+
+  .quantity-counter {
+    min-width: 110px;
+  }
+
+  .size-buttons-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .size-btn {
+    flex: 1;
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 640px) {
+  .body-pp {
+    background: #f5f5f5;
+  }
+
+  .product-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 14px;
+    max-width: 100%;
+  }
+
+  .gallery-section {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+
+  .thumbnails {
+    flex-direction: row;
+    gap: 8px;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .thumb-box {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+  }
+
+  .main-display {
+    width: 100%;
+    min-height: 350px;
+    border-radius: 16px;
+  }
+
+  .details-section {
+    width: 100%;
+  }
+
+  .badge-row {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .product-title {
+    font-size: clamp(28px, 8vw, 40px);
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .price {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 1.5;
+    padding-top: 16px;
+    margin-bottom: 20px;
+  }
+
+  .size-selector {
+    margin-bottom: 20px;
+  }
+
+  .size-selector label {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .size-buttons-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .size-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .purchase-actions {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .quantity-counter {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .quantity-counter button {
+    padding: 12px;
+    font-size: 14px;
+    flex: 1;
+  }
+
+  .quantity-counter span {
+    width: auto;
+    flex: 1;
+  }
+
+  .add-to-cart-btn {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .shipping-link {
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+
+  .accordion-section {
+    margin-top: 15px;
+  }
+
+  .accordion-item {
+    padding: 14px 0;
+    font-size: 14px;
+  }
+
+  .accordion-content {
+    padding: 12px 0;
+    font-size: 13px;
   }
 }
 

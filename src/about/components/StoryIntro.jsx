@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/StoryIntro.css';
 import expirementImg from '../assets/expirement.png';
 import meetImg from '../assets/meet.png';
-import logoImg from '../assets/beyond.svg';
+import logoImg from '../assets/beyond.png';
 
 const StoryIntro = () => {
   const scrollToSection = (sectionId) => {

@@ -10,9 +10,15 @@ const ProductPage = () => {
   const images = [frontImg, backImg, sideImg, labelImg];
   const [mainImage, setMainImage] = useState(frontImg);
   const [quantity, setQuantity] = useState(1);
-  
-  // State to track which accordion is open (null means all closed)
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [selectedSize, setSelectedSize] = useState('60');
+  const [activeAccordion, setActiveAccordion] = useState(null);
+
+  const sizes = [
+    { value: '20', label: '20 Capsules', price: 600 },
+    { value: '60', label: '60 Capsules', price: 1925 }
+  ];
+
+  const currentPrice = sizes.find(size => size.value === selectedSize)?.price || 1925;
 
   const accordionData = [
     {
@@ -30,9 +36,7 @@ const ProductPage = () => {
   ];
 
   const toggleAccordion = (index) => {
-    console.log("clicked")
-    // If the clicked one is already open, close it (set to null), otherwise open it
-    setActiveIndex(activeIndex === index ? null : index);
+    setActiveAccordion(activeAccordion === index ? null : index);
   };
 
   return (
@@ -40,15 +44,19 @@ const ProductPage = () => {
       <div className="product-container">
         {/* Left: Image Gallery */}
         <div className="gallery-section">
-          <div className="thumbnails">
+          <div className="thumbnails" role="tablist" aria-label="Product image thumbnails">
             {images.map((img, index) => (
-              <div 
-                key={index} 
+              <button
+                key={index}
+                type="button"
                 className={`thumb-box ${mainImage === img ? 'active' : ''}`}
                 onClick={() => setMainImage(img)}
+                role="tab"
+                aria-selected={mainImage === img}
+                aria-label={`View product image ${index + 1}`}
               >
-                <img src={img} alt={`view ${index}`} />
-              </div>
+                <img src={img} alt="" aria-hidden="true" />
+              </button>
             ))}
           </div>
           <div className="main-display">
@@ -64,7 +72,7 @@ const ProductPage = () => {
           </div>
 
           <h1 className="product-title">Glycomics</h1>
-          <p className="price">M.R.P : ₹ 1,925</p>
+          <p className="price">M.R.P : ₹ {currentPrice}</p>
 
           <p className="description">
             Experience the power of scientifically-validated Ayurvedic ingredients. 
@@ -73,34 +81,46 @@ const ProductPage = () => {
 
           <div className="size-selector">
             <label>Size</label>
-            <button className="size-btn active">60 Capsules</button>
+            <div className="size-buttons-group">
+              {sizes.map((size) => (
+                <button
+                  key={size.value}
+                  type="button"
+                  className={`size-btn ${selectedSize === size.value ? 'active' : ''}`}
+                  onClick={() => setSelectedSize(size.value)}
+                >
+                  {size.label}
+                </button>
+              ))}
+            </div>
           </div>
 
           <div className="purchase-actions">
-            <div className="quantity-counter">
-              <button onClick={() => setQuantity(Math.max(1, quantity - 1))}>−</button>
+            <div className="quantity-counter" aria-label="Quantity selector">
+              <button type="button" onClick={() => setQuantity(Math.max(1, quantity - 1))} aria-label="Decrease quantity" disabled={quantity <= 1}>−</button>
               <span>{quantity}</span>
-              <button onClick={() => setQuantity(quantity + 1)}>+</button>
+              <button type="button" onClick={() => setQuantity(quantity + 1)} aria-label="Increase quantity">+</button>
             </div>
-            <button className="add-to-cart-btn">
+            <button type="button" className="add-to-cart-btn">
               SHOP NOW <ArrowRight />
             </button>
           </div>
 
           <a href="#" className="shipping-link">Shipping, Exchange and Returns</a>
 
-          {/* Dynamic Accordion Section */}
-          <div className="accordion-section">
+          <div className="accordion-section" role="list">
             {accordionData.map((item, index) => (
-              <div key={index} className="accordion-wrapper">
-                <div 
-                  className="accordion-item" 
+              <div key={index} className="accordion-item-wrapper">
+                <button
+                  type="button"
+                  className="accordion-item"
+                  role="listitem"
                   onClick={() => toggleAccordion(index)}
                 >
-                  <span>{item.title}</span> 
-                  <span>{activeIndex === index ? '−' : '+'}</span>
-                </div>
-                {activeIndex === index && (
+                  <span>{item.title}</span>
+                </button>
+                <span className="accordion-plus-icon" aria-hidden="true" onClick={() => toggleAccordion(index)}>{activeAccordion === index ? '-' : '+'}</span>
+                {activeAccordion === index && (
                   <div className="accordion-content">
                     <p>{item.content}</p>
                   </div>

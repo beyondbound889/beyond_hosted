@@ -13,12 +13,38 @@ const galleryItems = [
   { id: "label-c", src: bottleLabelC, alt: "Glycomics label strip view" },
 ];
 
-const accordionItems = ["Information", "Benefits", "Ingredients"];
+const accordionData = [
+  {
+    title: "Information",
+    content: "This premium supplement is crafted in a GMP-certified facility. Each batch undergoes rigorous third-party testing to ensure purity and potency."
+  },
+  {
+    title: "Benefits",
+    content: "Supports healthy insulin sensitivity, reduces sugar cravings, and provides sustained energy levels throughout the day without the crash."
+  },
+  {
+    title: "Ingredients",
+    content: "Contains a proprietary blend of Gymnema Sylvestre, Bitter Melon, Fenugreek, and Chromium Picolinate for maximum metabolic support."
+  }
+];
 
 function ProductDetailSection() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
+  const [selectedSize, setSelectedSize] = useState('60');
+  const [openAccordion, setOpenAccordion] = useState(null);
   const activeImage = galleryItems[activeIndex];
+
+  const sizes = [
+    { value: '20', label: '20 Capsules', price: 600 },
+    { value: '60', label: '60 Capsules', price: 1925 }
+  ];
+
+  const currentPrice = sizes.find(size => size.value === selectedSize)?.price || 1925;
+
+  const toggleAccordion = (index) => {
+    setOpenAccordion(openAccordion === index ? null : index);
+  };
 
   return (
     <section className="pds-section" aria-labelledby="pds-title">
@@ -86,7 +112,7 @@ function ProductDetailSection() {
             <h3 id="pds-title" className="pds-title">
               Glycomics
             </h3>
-            <p className="pds-price">₹1925</p>
+            <p className="pds-price">₹{currentPrice}</p>
           </div>
 
           <div className="pds-line-wrap" aria-hidden="true">
@@ -102,9 +128,18 @@ function ProductDetailSection() {
 
             <div className="pds-size-wrap">
               <p className="pds-size-label">Size</p>
-              <button type="button" className="pds-size-chip">
-                60 Capsules
-              </button>
+              <div className="pds-size-buttons-group">
+                {sizes.map((size) => (
+                  <button
+                    key={size.value}
+                    type="button"
+                    className={`pds-size-chip ${selectedSize === size.value ? 'pds-size-chip--active' : ''}`}
+                    onClick={() => setSelectedSize(size.value)}
+                  >
+                    {size.label}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -146,16 +181,23 @@ function ProductDetailSection() {
           <p className="pds-policy">Shipping, Exchange and Returns</p>
 
           <div className="pds-accordion-list" role="list">
-            {accordionItems.map((item) => (
-              <button
-                key={item}
-                type="button"
-                className="pds-accordion-item"
-                role="listitem"
-              >
-                <span>{item}</span>
-                <span aria-hidden="true">+</span>
-              </button>
+            {accordionData.map((item, index) => (
+              <div key={index} className="pds-accordion-item-wrapper">
+                <button
+                  type="button"
+                  className="pds-accordion-item"
+                  role="listitem"
+                  onClick={() => toggleAccordion(index)}
+                >
+                  <span>{item.title}</span>
+                </button>
+                <span className="pds-accordion-plus-icon" aria-hidden="true" onClick={() => toggleAccordion(index)}>{openAccordion === index ? '-' : '+'}</span>
+                {openAccordion === index && (
+                  <div className="pds-accordion-content">
+                    <p>{item.content}</p>
+                  </div>
+                )}
+              </div>
             ))}
           </div>
         </div>
