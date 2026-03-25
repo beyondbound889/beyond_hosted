@@ -1,6 +1,6 @@
 import '../css/howit.css'
 import doctorApprovedImage from '../../image 18.png'
-import mechanismBackground from '../../Screenshot 2026-03-13 at 19.16.40 1.png'
+import mechanismBackground from '../../top.png'
 import doctorApprovedIcon from '../../Component 1.png'
 
 const steps = [
