@@ -1,5 +1,5 @@
 import '../css/meetGlycomicsShowcase.css'
-import productShowcaseImage from '../../Gemini_Generated_Image_5wdmlg5wdmlg5wdm 2.jpg'
+import productShowcaseImage from '../../bottles.png'
 
 const ingredients = [
 	'Karela',

@@ -47,7 +47,7 @@
   border: 3px solid #2a7c7c;
   border-radius: 50%;
   object-fit: contain;
-  padding: 8px;
+  padding: 2px;
   background: white;
   box-shadow: 0 4px 15px rgba(42, 124, 124, 0.2);
 }
