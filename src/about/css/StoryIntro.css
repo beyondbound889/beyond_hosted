@@ -3,7 +3,7 @@
 .story-intro {
   display: flex;
   flex-direction: column;
-  gap:100px;
+  gap: 100px;
   align-items: center;
   padding: 40px 40px;
   max-width: 1200px;
@@ -33,103 +33,148 @@
 
 .intro-logo {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
+  align-items: center !important;
+  justify-content: center !important;
+  position: absolute !important;
   top: 4.2%;
   left: 28%;
   z-index: 20;
-}
-
-.logo-image {
+  border-radius: 50%;
   width: 160px;
   height: 160px;
   border: 3px solid #2a7c7c;
-  border-radius: 50%;
-  object-fit: contain;
-  padding: 2px;
   background: white;
   box-shadow: 0 4px 15px rgba(42, 124, 124, 0.2);
+  box-sizing: border-box !important;
+  padding: 8px;
+}
+
+.logo-image {
+  width: 85% !important;
+  height: 85% !important;
+  object-fit: contain !important;
+  box-sizing: border-box !important;
+  display: block;
 }
 
 .intro-title {
   font-size: 4rem;
   font-weight: 700;
+
   color: #2a7c7c;
-  font-family: 'bree Serif', sans-serif;
+
+  font-family: "bree Serif", sans-serif;
+
   line-height: 1.1;
+
   margin: 0;
 }
 
 .intro-subtitle {
   font-size: 1.3rem;
+
   color: #2c3e50;
-  font-family: 'Inter', sans-serif;
+
+  font-family: "Inter", sans-serif;
+
   font-weight: 400;
+
   margin: 0;
 }
 
 .intro-images-container {
   display: grid;
+
   grid-template-columns: 0.3fr 0.7fr;
+
   gap: 30px;
+
   width: 100%;
+
   max-width: 100%;
+
   position: relative;
+
   margin-top: 0;
 }
 
-.intro-image, .intro-image-right {
+.intro-image,
+.intro-image-right {
   width: 100%;
+
   max-width: 100%;
+
   height: 370px;
+
   border-radius: 20px;
+
   overflow: hidden;
+
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.intro-image img, .intro-image-right img {
+.intro-image img,
+.intro-image-right img {
   width: 100%;
+
   height: 100%;
+
   object-fit: cover;
 }
 
 .intro-arrow {
   width: 80px;
+
   height: auto;
+
   align-self: center;
 }
 
 .intro-nav-buttons {
   display: flex;
+
   flex-direction: column;
+
   gap: 12px;
 }
 
 .intro-nav-button {
   background: white;
-  border: 2px solid #2a7c7c;
-  border-radius: 12px;
-  padding: 12px 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-family: 'Inter', sans-serif;
-  transition: all 0.3s ease;
-  font-size: 0.9rem;
 
+  border: 2px solid #2a7c7c;
+
+  border-radius: 12px;
+
+  padding: 12px 10px;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-family: "Inter", sans-serif;
+
+  transition: all 0.3s ease;
+
+  font-size: 0.9rem;
 }
 
 .intro-nav-button:hover {
   background: #2a7c7c;
+
   color: white;
+
   transform: translateX(5px);
 }
 
 .intro-button-number {
   font-weight: 700;
+
   color: #2a7c7c;
+
   min-width: 25px;
 }
 
@@ -139,7 +184,9 @@
 
 .intro-button-text {
   flex: 1;
+
   text-align: left;
+
   color: #2c3e50;
 }
 
@@ -149,6 +196,7 @@
 
 .intro-button-arrow {
   font-size: 1.1rem;
+
   color: #2a7c7c;
 }
 
@@ -159,13 +207,17 @@
 @media (max-width: 768px) {
   .story-intro {
     grid-template-columns: 1fr;
+
     gap: 30px;
+
     padding: 50px 20px;
+
     position: relative;
   }
 
   .intro-top {
     grid-template-columns: 1fr;
+
     gap: 30px;
   }
 
@@ -179,28 +231,36 @@
 
   .intro-images-container {
     grid-template-columns: 0.3fr 0.7fr;
+
     position: relative;
   }
 
-  .intro-image, .intro-image-right {
+  .intro-image,
+  .intro-image-right {
     max-width: 100%;
   }
 
   .intro-logo {
     position: absolute;
-   top: 65%;
+
+    top: 65%;
+
     left: 50%;
+
     margin-bottom: 0;
+
     z-index: 15;
   }
 
   .logo-image {
     width: 140px;
+
     height: 140px;
   }
 
   .intro-nav-button {
     padding: 12px 14px;
+
     font-size: 0.85rem;
   }
 }
@@ -208,13 +268,17 @@
 @media (max-width: 480px) {
   .story-intro {
     grid-template-columns: 1fr;
+
     gap: 20px;
+
     padding: 30px 15px;
+
     position: relative;
   }
 
   .intro-top {
     grid-template-columns: 1fr;
+
     gap: 20px;
   }
 
@@ -228,30 +292,40 @@
 
   .intro-logo {
     position: absolute;
+
     bottom: 25%;
+
     left: 50%;
+
     transform: translateX(-50%);
+
     margin-bottom: 0;
+
     z-index: 15;
   }
 
   .logo-image {
     width: 100px;
+
     height: 100px;
   }
 
   .intro-images-container {
     grid-template-columns: 1fr;
+
     position: relative;
   }
 
-  .intro-image, .intro-image-right {
+  .intro-image,
+  .intro-image-right {
     max-width: 100%;
+
     height: 180px;
   }
 
   .intro-nav-button {
     padding: 10px 12px;
+
     font-size: 0.8rem;
   }
 
@@ -263,6 +337,3 @@
     font-size: 0.9rem;
   }
 }
-
-
-
