@@ -39,7 +39,7 @@ function FAQ() {
 		<section className="faq-section">
 			<div className="faq-inner">
 				<div className="faq-header">
-					<h2 className="faq-title">Frequently asked questions</h2>
+					<h2 className="faq-title">Frequently asked<br /> questions</h2>
 					<p className="faq-subtitle">Everything you need to know about Glycomics</p>
 				</div>
 

@@ -68,11 +68,10 @@ const ProductPage = () => {
         <div className="details-section">
           <div className="badge-row">
             <span className="badge stock-badge">In Stock</span>
-            <span className="badge refund-badge"><ShieldIcon size={'16px'}/> 100% Refund Guarantee</span>
           </div>
 
           <h1 className="product-title">Glycomics</h1>
-          <p className="price">M.R.P : ₹ {currentPrice}</p>
+          <p className="price">₹ {currentPrice}</p>
 
           <p className="description">
             Experience the power of scientifically-validated Ayurvedic ingredients. 
@@ -102,7 +101,7 @@ const ProductPage = () => {
               <button type="button" onClick={() => setQuantity(quantity + 1)} aria-label="Increase quantity">+</button>
             </div>
             <button type="button" className="add-to-cart-btn">
-              SHOP NOW <ArrowRight />
+              Add To Cart
             </button>
           </div>
 
