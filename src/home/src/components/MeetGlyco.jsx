@@ -44,10 +44,10 @@ function MeetGlycomics() {
 						</div>
 
 						<h1 id="glyco-hero-title" className="glyco-hero-title">
-							Blood Sugar Focused Metabolism Enhancer
-						</h1>
+						Blood Sugar Focused Metabolism Enhancer
+					</h1>
 
-						<div className="glyco-pricing" aria-label="Pricing">
+					<div className="glyco-pricing" aria-label="Pricing">
 							<span className="glyco-price-old-text">₹2400</span>
 							<span className="glyco-price-new-text">₹1925</span>
 							<span className="glyco-discount-badge">

@@ -24,13 +24,12 @@
 }
 
 .trust-label {
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 11px;
 	font-weight: 600;
 	line-height: 1.25;
 	letter-spacing: 2.5px;
-	text-transform: uppercase;
-	color: #0D7377;
+	color: #474848;
 	margin: 0;
 	display: block;
 }
