@@ -31,7 +31,7 @@ const faqs = [
 ]
 
 function FAQ() {
-	const [openIndex, setOpenIndex] = useState(0)
+	const [openIndex, setOpenIndex] = useState(null)
 
 	const toggle = (i) => setOpenIndex((prev) => (prev === i ? null : i))
 
