@@ -48,10 +48,10 @@ function MeetGlycomics() {
 					</h1>
 
 					<div className="glyco-pricing" aria-label="Pricing">
-							<span className="glyco-price-old-text">₹2400</span>
+							<span className="glyco-price-old-text">₹1984</span>
 							<span className="glyco-price-new-text">₹1925</span>
 							<span className="glyco-discount-badge">
-								Save 29%
+								Save 3%
 							</span>
 						</div>
 
