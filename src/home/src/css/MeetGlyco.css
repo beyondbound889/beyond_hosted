@@ -596,7 +596,7 @@ min-width: 160px;
 h1[id="glyco-hero-title"] {
 	font-family: 'Bree Serif', Georgia, serif;
 	font-weight: 400;
-	font-size: 2.25rem; /* text-4xl: 36px */
+	font-size: 80px; /* text-4xl: 36px */
 	line-height: 1.2; /* leading-tight */
 	letter-spacing: 0.05em;
 	color: #0A1D33;
