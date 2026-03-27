@@ -89,7 +89,7 @@
 	background-color: #e0f2f1;
 	padding: 15px 30px;
 	border-radius: 55px;
-	box-shadow: 0 0 20px rgba(25, 25, 26, 0.25), 0 0 40px rgba(13, 115, 119, 0.15);
+	box-shadow: 0 0 15px rgba(25, 25, 26, 0.25), 0 0 30px rgba(13, 115, 119, 0.15);
 	backdrop-filter: blur(2px);
 	filter: drop-shadow(0 0 8px rgba(13, 115, 119, 0.1));
 }
