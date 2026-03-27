@@ -44,7 +44,7 @@ function MeetGlycomics() {
 						</div>
 
 						<h1 id="glyco-hero-title" className="glyco-hero-title">
-							Blood Sugar Focused Metablosim Enhancer
+							Blood Sugar Focused Metabolism Enhancer
 						</h1>
 
 						<div className="glyco-pricing" aria-label="Pricing">
