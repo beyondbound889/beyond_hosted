@@ -5,7 +5,7 @@ import Trust from "./components/trust";
 import AboutBeyond from "./components/AboutBeyond";
 import MeetGlycomicsShowcase from "./components/MeetGlycomicsShowcase";
 import WhoGlycomics from "./components/WhoGlyco";
-import ProductDetailSection from "./components/ProductDetailSection";
+import ProductPage from "../../product/ProductPage";
 import PurchaseAssurance from "./components/PurchaseAssurance";
 import WhyDifferentSection from "./components/WhyDifferentSection";
 import FAQ from "./components/faq";
@@ -23,7 +23,7 @@ function App() {
       <AboutBeyond />
       <MeetGlycomicsShowcase />
       <WhoGlycomics />
-      <ProductDetailSection />
+      <ProductPage />
       <PurchaseAssurance />
       <WhyDifferentSection />
       <FAQ />
