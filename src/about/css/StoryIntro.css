@@ -163,11 +163,11 @@
 }
 
 .intro-nav-button:hover {
-  background: #2a7c7c;
+  background: white;
 
-  color: white;
+  color: inherit;
 
-  transform: translateX(5px);
+  transform: none;
 }
 
 .intro-button-number {
@@ -179,7 +179,7 @@
 }
 
 .intro-nav-button:hover .intro-button-number {
-  color: white;
+  color: #2a7c7c;
 }
 
 .intro-button-text {
@@ -188,20 +188,48 @@
   text-align: left;
 
   color: #2c3e50;
+
+  font-weight: 400;
+
+  transition: opacity 0.2s ease, font-weight 0.2s ease;
 }
 
 .intro-nav-button:hover .intro-button-text {
-  color: white;
+  color: #2c3e50;
+
+  font-weight: 700;
 }
 
 .intro-button-arrow {
   font-size: 1.1rem;
 
   color: #2a7c7c;
+
+  opacity: 0;
+
+  width: 1.1rem;
+
+  text-align: center;
+
+  transition: opacity 0.2s ease;
 }
 
 .intro-nav-button:hover .intro-button-arrow {
-  color: white;
+  color: #2a7c7c;
+
+  opacity: 1;
+}
+
+.intro-nav-button .intro-button-content,
+.intro-nav-button .intro-button-description {
+  display: none;
+  opacity: 0;
+}
+
+.intro-nav-button:hover .intro-button-content,
+.intro-nav-button:hover .intro-button-description {
+  display: block;
+  opacity: 1;
 }
 
 @media (max-width: 768px) {

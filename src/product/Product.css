@@ -1,0 +1,12 @@
+.spiking-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+	.spiking-section {
+		margin-top: 48px;
+	}
+}

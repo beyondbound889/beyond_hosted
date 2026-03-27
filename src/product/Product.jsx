@@ -18,7 +18,7 @@ function App() {
         <ProductPage />
         <SoundFamiliar />
         <IngredientsSection />
-        <div style={{display:'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <div className="spiking-section">
           <div
             style={{
               fontFamily: "'Bree Serif', 'Inter'",

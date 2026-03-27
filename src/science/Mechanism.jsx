@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Mechanism.css';
 import bottleImg from './assets/bottle.png';
 
@@ -33,15 +33,15 @@ const Mechanism = () => {
           <p className="mechanism-desc">Each step builds on the last — addressing the root cause of blood sugar disruption, not just masking symptoms.</p>
           
           <div className="mechanism-steps">
-            {steps.map((step, index) => (
+            {steps.map((step) => (
               <div 
                 key={step.num} 
-                className={`mechanism-step ${index === 0 ? 'active' : ''}`}
+                className="mechanism-step"
               >
                 <div className="step-num">{step.num}</div>
                 <div className="step-text">
                   <h4 className="step-title">{step.title}</h4>
-                  {index === 0 && <p className="step-desc">{step.desc}</p>}
+                  <p className="step-desc">{step.desc}</p>
                 </div>
               </div>
             ))}

@@ -1,7 +1,10 @@
 .science-mechanism {
   padding: 6rem 2rem;
   background-color: #ffffff;
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    sans-serif;
   color: #333;
 }
 
@@ -10,7 +13,7 @@
 }
 
 .section-title {
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   font-size: 3.5rem;
   font-weight: 400;
   margin-bottom: 4rem;
@@ -37,7 +40,7 @@
 }
 
 .mechanism-subtitle {
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.2;
@@ -64,6 +67,7 @@
   padding: 1.5rem 0;
   border-top: 1px solid #eaeaea;
   align-items: flex-start;
+  transition: all 0.3s ease;
 }
 
 .mechanism-step:last-child {
@@ -75,27 +79,23 @@
   font-size: 1.75rem;
   color: #d8d8d8;
   width: 40px;
-  font-family: 'Bree Serif', monospace;
-}
-
-.mechanism-step.active .step-num {
-  color: #0D7377;
-  /* Deep Teal/Green */
+  font-family: "Bree Serif", monospace;
+  transition: all 0.3s ease;
 }
 
 .step-text {
   flex: 1;
+  display: grid;
+  grid-template-rows: auto 0fr;
+  transition: grid-template-rows 0.3s ease;
 }
 
 .step-title {
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0 0 0.5rem 0;
-  color: #d8d8d8;
-}
-
-.mechanism-step.active .step-title {
   color: #000;
+  transition: all 0.3s ease;
 }
 
 .step-desc {
@@ -103,6 +103,25 @@
   line-height: 1.5;
   color: #666;
   margin: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+.mechanism-step:hover .step-text {
+  grid-template-rows: auto 1fr;
+}
+
+.mechanism-step:hover .step-num,
+.mechanism-step:hover .step-title {
+  font-weight: 700;
+}
+
+.mechanism-step:hover .step-desc {
+  max-height: 220px;
+  opacity: 1;
+  margin-top: 0.25rem;
 }
 
 .mechanism-image-wrapper {

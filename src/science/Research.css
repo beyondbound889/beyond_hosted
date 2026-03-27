@@ -3,7 +3,10 @@
   padding-top: 0;
   padding-bottom: 0;
   background-color: #ffffff;
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    sans-serif;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -13,7 +16,7 @@
 }
 
 .section-title {
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   font-size: 3.5rem;
   font-weight: 400;
   margin-bottom: 5rem;
@@ -23,16 +26,19 @@
 .research-container {
   display: flex;
   gap: 4rem;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .research-left {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .research-number {
   font-size: 10rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #d1e8e2; /* Light teal */
   margin: 0;
   line-height: 0.8;
@@ -40,7 +46,7 @@
 }
 
 .research-subtitle {
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   font-size: 2.2rem;
   font-weight: 400;
   color: #000;
@@ -75,40 +81,45 @@
 }
 
 .checkmark {
-  color: #0D7377; /* Green checkmark */
+  color: #0d7377; /* Green checkmark */
   font-weight: bold;
 }
 
 .research-right {
-  flex: 1;
+  flex: 1.2;
   display: flex;
+  width: 100%;
+  height: auto;
 }
 
 .research-cards {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  flex: 1.2;
   width: 100%;
+  height: auto;
 }
 
 .research-card {
+  flex: 0 1 auto;
   border: 1px solid #eaeaea;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.2rem 1.5rem;
   background-color: #fff;
 }
 
 .research-card-tag {
   font-size: 0.75rem;
   font-weight: 700;
-  color: #0D7377; /* Green tag text */
+  color: #0d7377; /* Green tag text */
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 1rem;
 }
 
 .research-card-title {
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   font-size: 1.4rem;
   font-weight: 400;
   color: #000;
@@ -127,17 +138,27 @@
     flex-direction: column;
     gap: 3rem;
   }
+
+  .research-left,
+  .research-right,
+  .research-cards {
+    height: auto;
+  }
+
+  .research-card {
+    flex: none;
+  }
 }
 
 @media (max-width: 768px) {
   .research-number {
     font-size: 6rem;
   }
-  
+
   .research-subtitle {
     font-size: 1.8rem;
   }
-  
+
   .research-card {
     padding: 1.5rem;
   }
