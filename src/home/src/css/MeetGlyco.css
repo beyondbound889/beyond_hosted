@@ -675,3 +675,88 @@ h1[id="glyco-hero-title"] span {
 		font-size: 1.25rem; /* md:text-xl: 20px */
 	}
 }
+
+/* ── New Custom CSS Classes ── */
+
+/* sHero Title - Replaces all Tailwind responsive text classes */
+.glyco-hero-title {
+	font-family: 'Bree Serif', Georgia, serif;
+	font-weight: 200;
+	line-height: 1.2; /* leading-tight */
+	color: #0A1D33; /* text-blue-950 */
+
+}
+
+/* sm: 640px */
+@media (min-width: 640px) {
+	.glyco-hero-title {
+		font-size: 1rem; /* text-3xl: 30px */
+	}
+}
+
+/* md: 768px */
+@media (min-width: 768px) {
+	.glyco-hero-title {
+		font-size: 2rem; /* text-4xl: 36px */
+	}
+}
+
+/* lg: 1024px */
+@media (min-width: 1024px) {
+	.glyco-hero-title {
+		font-size: 2rem; /* text-5xl: 48px */
+	}
+}
+
+/* xl: 1280px */
+@media (min-width: 1280px) {
+	.glyco-hero-title {
+		font-size: 3.75rem; /* text-6xl: 60px */
+	}
+}
+
+/* Pricing Container - Replaces flex items-center gap-3 flex-wrap */
+.glyco-pricing {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem; /* gap-3 */
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+/* Old Price Text - Replaces line-through text-gray-400 */
+.glyco-price-old-text {
+	text-decoration: line-through;
+	color: #9ca3af; /* text-gray-400 */
+	font-size: 1rem;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* New Price Text - Replaces text-lg md:text-xl font-semibold */
+.glyco-price-new-text {
+	font-size: 1.125rem; /* text-lg: 18px */
+	font-weight: 600;
+	color: #171717;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@media (min-width: 768px) {
+	.glyco-price-new-text {
+		font-size: 1.25rem; /* md:text-xl: 20px */
+	}
+}
+
+/* Discount Badge - Replaces bg-green-100 text-green-700 px-2 py-1 rounded text-sm */
+.glyco-discount-badge {
+	background-color: #dcfce7; /* bg-green-100 */
+	color: #15803d; /* text-green-700 */
+	padding: 0.25rem 0.5rem; /* px-2 py-1 */
+	border-radius: 0.25rem;
+	font-size: 0.875rem; /* text-sm */
+	white-space: nowrap;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
