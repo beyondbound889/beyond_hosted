@@ -99,7 +99,7 @@
 	min-height: 765.78px;
 	display: flex;
 	flex-direction: column;
-	gap: 39.06px;
+	gap:10px;
 }
 
 .pds-badges-row {
@@ -148,10 +148,10 @@
 
 .pds-title-wrap {
 	width: 100%;
-	min-height: 124.05px;
+	min-height: 10px;
 	display: flex;
 	flex-direction: column;
-	gap: 21px;
+	gap: 10px;
 }
 
 .pds-line-wrap {
