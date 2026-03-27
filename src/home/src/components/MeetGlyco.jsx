@@ -43,15 +43,15 @@ function MeetGlycomics() {
 							</div>
 						</div>
 
-						<h1 id="glyco-hero-title" className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight break-words font-serif font-normal tracking-wide text-blue-950">
-							Blood Sugar Focused Metablosim Enhancer
-						</h1>
+						<h1 id="glyco-hero-title" className="glyco-hero-title">
+						Blood Sugar Focused Metabolism Enhancer
+					</h1>
 
-						<div className="flex items-center gap-3 flex-wrap" aria-label="Pricing">
-							<span className="line-through text-gray-400">₹2400</span>
-							<span className="text-lg md:text-xl font-semibold">₹1925</span>
-							<span className="bg-green-100 text-green-700 px-2 py-1 rounded text-sm">
-								Save 29%
+					<div className="glyco-pricing" aria-label="Pricing">
+							<span className="glyco-price-old-text">₹1984</span>
+							<span className="glyco-price-new-text">₹1925</span>
+							<span className="glyco-discount-badge">
+								Save 3%
 							</span>
 						</div>
 

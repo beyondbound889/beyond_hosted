@@ -1,7 +1,5 @@
 import '../css/aboutBeyond.css'
 import aboutImage from '../../imglogo.jpeg'
-import naturalBadgeImage from '../../Container (1).png'
-import learnMoreButtonImage from '../../Component 5.png'
 
 function AboutBeyond() {
 	return (
@@ -20,14 +18,8 @@ function AboutBeyond() {
 				<div className="about-right-frame">
 					<div className="about-copy-stack">
 						<div className="about-pill">
-							<img
-								src={naturalBadgeImage}
-								alt="100% Natural"
-								className="about-pill-image"
-								loading="lazy"
-								decoding="async"
-							/>
-						</div>
+						<span className="about-pill-text">100% Natural</span>
+					</div>
 
 						<div className="about-text-block">
 							<h2 id="about-beyond-title" className="about-title">About Beyond Bound</h2>
@@ -39,13 +31,7 @@ function AboutBeyond() {
 						</div>
 
 						<button type="button" className="about-learn-btn">
-							<img
-								src={learnMoreButtonImage}
-								alt="Learn More"
-								className="about-learn-btn-image"
-								loading="lazy"
-								decoding="async"
-							/>
+							Learn more →
 						</button>
 					</div>
 				</div>

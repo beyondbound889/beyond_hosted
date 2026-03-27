@@ -2,9 +2,10 @@
 .who-section {
   width: 100%;
   background: rgba(250, 250, 250, 0.3);
-  padding: 87px 100px;
+  padding: 40px 100px;
   box-sizing: border-box;
   border-radius: 14px;
+margin-bottom: 30px;
 }
 
 .who-inner {
@@ -15,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+  gap: 10px;
 }
 
 .who-title-wrap {
@@ -36,23 +37,23 @@
   letter-spacing: 0;
   margin: 0;
   text-align: center;
-  font-synthesis: none;
+  font-family:'bree serif', serif;
 }
 
 .who-cards-container {
-  width: min(1527.11px, 100%);
+  width: min(1200px, 100%);
   max-width: 100%;
-  min-height: 457.21px;
+  min-height: 180px;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  gap: 37.65px;
+  gap: 20px;
 }
 
 /* ── Card Styles ── */
 .who-card {
-  width: 483.93px;
-  height: 457.21px;
+  width: 280px;
+  height: 355px;
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 6px;
@@ -79,7 +80,7 @@
   justify-content: center;
   width: 88px;
   height: 88px;
-  margin: 0 auto 62px;
+  margin: 0 auto 40px;
   background: #e8f2ee;
   color: #0d7377;
   border: none;
@@ -98,20 +99,21 @@
 }
 
 .who-card-title {
-  width: min(355.23px, 100%);
+  width: min(355.23px, 80%);
   min-height: 34.68px;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 32.2px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2px;
   color: #06131f;
   letter-spacing: 0;
+  word-spacing: 4px;
   margin: 0 0 18.83px;
   font-synthesis: none;
   text-align: center;
 }
 
 .who-card-description {
-  width: min(355.23px, 100%);
+  width: min(355.23px, 90%);
   min-height: 114.77px;
   font-family:
     "Inter",
@@ -119,23 +121,22 @@
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
-  font-size: 24px;
-  line-height: 38.26px;
+  font-size: 17px;
+  line-height: 26px;
   color: #636366;
-  letter-spacing: 0;
+  letter-spacing: 1px;
   margin: 0;
   text-align: center;
 }
 
 /* ── Disclaimer Styles ── */
 .who-disclaimer {
-  width: min(760px, calc(100% - 32px));
-  min-height: 107.25px;
+  width: min(800px, calc(80% - 32px));
+  min-height: 80px;
   background: rgba(255, 255, 255, 0.45);
-  border: 1.17px solid #f0d99a;
+  border: 1.5px solid #efd58d;
   border-radius: 9.33px;
-  padding: 16.67px 19.82px;
-  margin: 8px auto 0;
+  padding: 10px 10px;
   box-sizing: border-box;
   display: flex;
   align-items: flex-start;
@@ -156,12 +157,12 @@
   width: 19px;
   height: 30px;
   display: block;
-  color: #7a5c1e;
+  color: #927437;
 }
 
 .who-disclaimer-text {
   width: auto;
-  min-height: 73px;
+  min-height: 60px;
   margin: 0;
   font-family:
     "Inter",
@@ -169,11 +170,11 @@
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
-  font-size: 15.16px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 24.25px;
+  line-height: 18.25px;
   letter-spacing: 0;
-  color: #7a5c1e;
+  color: #926f29;
 }
 
 /* ── Tablet (1024px) ── */
@@ -204,8 +205,8 @@
 
   .who-card {
     width: calc((100% - 36px) / 3);
-    padding: 38px 20px 28px;
-    min-height: 410px;
+    padding: 30px 18px 24px;
+    min-height: 320px;
   }
 
   .who-card-title,
@@ -239,7 +240,7 @@
     width: 100%;
     min-height: auto;
     height: auto;
-    padding: 28px 20px 24px;
+    padding: 24px 18px 20px;
     border-radius: 18px;
   }
 

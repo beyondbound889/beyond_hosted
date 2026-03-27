@@ -1,9 +1,10 @@
 .pas-section {
 	width: 100%;
 	box-sizing: border-box;
+	margin-top: 60px;
 	padding: 76.9px 100.45px 24px;
-	border-top: 1.57px solid rgba(229, 229, 229, 0.5);
-	border-bottom: 1.57px solid rgba(229, 229, 229, 0.5);
+	border-top: 2px solid rgba(125, 124, 124, 0.5);
+	border-bottom: 1.57px solid rgba(125, 124, 124, 0.5);
 	background: #f3f4f6;
 	overflow-x: hidden;
 }
