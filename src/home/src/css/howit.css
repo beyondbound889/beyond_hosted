@@ -83,11 +83,11 @@
 .howit-card--step {
 	flex: 1;
 	min-height: 0;
-	padding: 48px;
+	padding: 40px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	gap: 24px;
+	gap: 20px;
 	border-radius: 6px;
 	box-sizing: border-box;
 }
@@ -104,7 +104,7 @@
 .howit-card-step {
 	margin: 0;
 	font-weight: 600;
-	font-size: 48px;
+	font-size: 40px;
 	line-height: 48px;
 	letter-spacing: -1.44px;
 	color: #3a3d38;
@@ -119,20 +119,20 @@
 
 .howit-card-title {
 	margin: 0;
-	font-family: 'Bree Serif', Georgia, serif;
-	font-weight: 400;
+	font-family: 'Inter', Georgia, serif;
+	font-weight: 600;
 	font-size: 28px;
 	line-height: 1.2;
 	letter-spacing: -0.26px;
-	color: #0F2744;
+	color: #419b9e;
 }
 
 .howit-card-description {
 	margin: 0;
-	max-width: 398px;
+	max-width: 420px;
 	font-weight: 400;
-	font-size: 20px;
-	line-height: 31.5px;
+	font-size: 15px;
+	line-height: 28.5px;
 	letter-spacing: 0;
 	color: #525252;
 }
@@ -410,7 +410,7 @@
 	}
 
 	.howit-card-title {
-		font-size: 28px;
+		font-size: 25px;
 		line-height: 1.2;
 	}
 

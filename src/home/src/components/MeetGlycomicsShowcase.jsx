@@ -43,7 +43,7 @@ function MeetGlycomicsShowcase() {
 							<div className="mgs-paragraph-group">
 								<p className="mgs-paragraph mgs-paragraph--primary">
 									Glycomics is a <strong>clinically-informed Ayurvedic formulation</strong>
-									 designed to support healthy glucose metabolism in adults.
+									  <br />designed to support healthy glucose metabolism in adults.
 								</p>
 								<p className="mgs-paragraph mgs-paragraph--secondary">
 									It combines standardized botanical extracts with modern analytical

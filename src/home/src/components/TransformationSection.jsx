@@ -27,10 +27,7 @@ function TransformationSection() {
 				<div className="transform-main">
 					<div className="transform-left">
 						<h2 id="transform-title" className="transform-title">
-							Start your
-							<span>metabolic</span>
-							<span>transformation</span>
-							<span>today</span>
+							Start your <br/> metabolic <br />transformation <br /> today
 						</h2>
 
 						<p className="transform-copy">
