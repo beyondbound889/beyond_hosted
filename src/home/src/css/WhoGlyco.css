@@ -5,6 +5,7 @@
   padding: 87px 100px;
   box-sizing: border-box;
   border-radius: 14px;
+
 }
 
 .who-inner {
@@ -36,7 +37,7 @@
   letter-spacing: 0;
   margin: 0;
   text-align: center;
-  font-synthesis: none;
+  font-family:'bree serif', serif;
 }
 
 .who-cards-container {
