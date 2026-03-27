@@ -174,7 +174,7 @@ function ProductDetailSection() {
               </button>
             </div>
             <button type="button" className="pds-shop-btn">
-              Shop now →
+              Add To Cart
             </button>
           </div>
 
