@@ -155,7 +155,7 @@
 
   .mv-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 50px;
     max-width: 100%;
     padding: 0 15px;
   }
@@ -163,6 +163,7 @@
   .mv-card {
     min-height: 360px;
     margin: 15px 5px;
+    margin-bottom: 30px;
   }
 
   .mv-image {
@@ -184,13 +185,14 @@
 @media (max-width: 480px) {
   .mv-container {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 50px;
     padding: 0 10px;
   }
 
   .mv-card {
     min-height: 340px;
     margin: 10px 0;
+    margin-bottom: 30px;
   }
 
   .mv-image {

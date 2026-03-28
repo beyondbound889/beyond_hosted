@@ -172,6 +172,38 @@
 	}
 }
 
+/* ── LARGE SCREENS (1440px to 1600px) ── */
+@media (max-width: 1440px) {
+	.about-section {
+		padding: 30px 24px;
+	}
+
+	.about-solution {
+		max-width: 1200px;
+		gap: 48px;
+	}
+
+	.about-image-wrap,
+	.about-main-image {
+		max-width: 480px;
+		min-height: 480px;
+	}
+
+	.about-copy-stack {
+		gap: 32px;
+	}
+
+	.about-title {
+		font-size: 60px;
+		line-height: 1.1;
+	}
+
+	.about-description {
+		font-size: 20px;
+		line-height: 1.6;
+	}
+}
+
 @media (max-width: 1200px) {
 	.about-solution {
 		gap: 36px;
@@ -202,6 +234,48 @@
 	}
 }
 
+/* ── STANDARD LAPTOPS/MACBOOKS (1024px to 1200px) ── */
+@media (max-width: 1024px) {
+	.about-section {
+		padding: 32px 20px;
+	}
+
+	.about-solution {
+		gap: 32px;
+	}
+
+	.about-image-wrap,
+	.about-main-image {
+		width: 65%;
+		max-width: 380px;
+		min-height: 380px;
+	}
+
+	.about-copy-stack {
+		gap: 28px;
+	}
+
+	.about-title {
+		font-size: 48px;
+		line-height: 1.1;
+	}
+
+	.about-description {
+		font-size: 18px;
+		line-height: 1.6;
+	}
+
+	.about-learn-btn {
+		font-size: 16px;
+		padding: 12px 20px;
+	}
+
+	.about-pill-text {
+		font-size: 18px;
+		padding: 12px 24px;
+	}
+}
+
 @media (max-width: 900px) {
 	.about-section {
 		padding: 36px 16px;
@@ -215,8 +289,9 @@
 
 	.about-image-wrap,
 	.about-main-image {
-		width: min(100%, 551px);
+		width: min(100%, 400px);
 		height: auto;
+		min-height: 350px;
 	}
 
 	.about-right-frame,
@@ -225,6 +300,7 @@
 	.about-description,
 	.about-title {
 		width: 100%;
+		max-width: 100%;
 	}
 
 	.about-copy-stack,
@@ -233,7 +309,7 @@
 	}
 
 	.about-title {
-		font-size: 42px;
+		font-size: 40px;
 		line-height: 1.1;
 	}
 
@@ -247,9 +323,249 @@
 	.about-learn-btn {
 		width: auto;
 		height: auto;
+		font-size: 16px;
+		padding: 12px 20px;
 	}
 
 	.about-learn-btn-image {
 		width: 180px;
+	}
+
+	.about-pill-text {
+		font-size: 18px;
+		padding: 12px 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	.about-section {
+		padding: 28px 16px;
+		height: auto !important;
+		min-height: auto !important;
+	}
+
+	.about-solution {
+		flex-direction: column;
+		gap: 24px;
+		max-width: 100%;
+		min-height: auto !important;
+	}
+
+	.about-image-wrap,
+	.about-main-image {
+		width: 100%;
+		max-width: 100%;
+		min-height: 320px;
+		height: auto;
+	}
+
+	.about-right-frame,
+	.about-copy-stack,
+	.about-text-block {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.about-right-frame {
+		min-height: auto !important;
+	}
+
+	.about-copy-stack {
+		gap: 20px;
+		min-height: auto !important;
+	}
+
+	.about-text-block {
+		gap: 18px;
+		height: auto;
+		min-height: auto;
+		justify-content: flex-start;
+	}
+
+	.about-title {
+		font-size: 36px;
+		line-height: 1.2;
+	}
+
+	.about-description {
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0;
+		min-height: auto;
+		height: auto;
+	}
+
+	.about-learn-btn {
+		padding: 11px 18px;
+		font-size: 15px;
+		width: auto;
+		height: auto;
+	}
+
+	.about-learn-btn-image {
+		width: 150px;
+	}
+
+	.about-pill-text {
+		font-size: 16px;
+		padding: 10px 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.about-section {
+		padding: 20px 12px;
+		height: auto !important;
+		min-height: auto !important;
+	}
+
+	.about-solution {
+		flex-direction: column;
+		gap: 16px;
+		max-width: 100%;
+		min-height: auto !important;
+	}
+
+	.about-image-wrap,
+	.about-main-image {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		min-height: 260px;
+	}
+
+	.about-right-frame,
+	.about-copy-stack,
+	.about-text-block {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.about-right-frame {
+		min-height: auto !important;
+	}
+
+	.about-copy-stack {
+		gap: 14px;
+		min-height: auto !important;
+	}
+
+	.about-text-block {
+		gap: 14px;
+		height: auto;
+		min-height: auto;
+		justify-content: flex-start;
+	}
+
+	.about-title {
+		font-size: 28px;
+		line-height: 1.2;
+		letter-spacing: 0;
+	}
+
+	.about-description {
+		font-size: 14px;
+		line-height: 1.5;
+		letter-spacing: 0;
+		min-height: auto;
+		height: auto;
+	}
+
+	.about-learn-btn {
+		padding: 10px 16px;
+		font-size: 13px;
+		height: auto;
+		width: auto;
+	}
+
+	.about-learn-btn-image {
+		width: 130px;
+	}
+
+	.about-pill-text {
+		font-size: 14px;
+		padding: 10px 18px;
+		border-radius: 45px;
+	}
+}
+
+@media (max-width: 375px) {
+	.about-section {
+		padding: 16px 10px;
+		height: auto !important;
+		min-height: auto !important;
+	}
+
+	.about-solution {
+		flex-direction: column;
+		gap: 12px;
+		max-width: 100%;
+		min-height: auto !important;
+	}
+
+	.about-image-wrap,
+	.about-main-image {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		min-height: 220px;
+	}
+
+	.about-right-frame,
+	.about-copy-stack,
+	.about-text-block {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.about-right-frame {
+		min-height: auto !important;
+	}
+
+	.about-copy-stack {
+		gap: 12px;
+		min-height: auto !important;
+	}
+
+	.about-text-block {
+		gap: 12px;
+		height: auto;
+		min-height: auto;
+		justify-content: flex-start;
+	}
+
+	.about-title {
+		font-size: 24px;
+		line-height: 1.2;
+		letter-spacing: 0;
+	}
+
+	.about-description {
+		font-size: 13px;
+		line-height: 1.4;
+		letter-spacing: 0;
+		min-height: auto;
+		height: auto;
+	}
+
+	.about-learn-btn {
+		padding: 8px 14px;
+		font-size: 12px;
+		height: auto;
+		width: auto;
+	}
+
+	.about-learn-btn-image {
+		width: 110px;
+	}
+
+	.about-pill {
+		align-self: flex-start;
+	}
+
+	.about-pill-text {
+		font-size: 13px;
+		padding: 8px 16px;
+		border-radius: 40px;
 	}
 }

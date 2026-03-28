@@ -142,6 +142,10 @@
 }
 
 @media (max-width: 480px) {
+  .science-cta {
+    padding: 3rem 1rem;
+  }
+
   .cta-title {
     font-size: 2rem;
   }
@@ -168,5 +172,66 @@
 
   .benefit-item {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .science-cta {
+    padding: 2rem 0.8rem;
+  }
+
+  .cta-container {
+    max-width: 100%;
+  }
+
+  .cta-guarantee {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.2rem;
+  }
+
+  .cta-title {
+    font-size: 1.5rem;
+    line-height: 1.08;
+    margin-bottom: 1rem;
+  }
+
+  .cta-info {
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.8rem;
+    border-radius: 6px;
+  }
+
+  .cta-benefits {
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: flex-start;
+  }
+
+  .benefit-item {
+    font-size: 0.75rem;
+    gap: 0.4rem;
+  }
+
+  .bullet {
+    font-size: 0.8rem;
+  }
+
+  .cta-bg-text {
+    font-size: 3rem;
+    right: -50px;
+    bottom: 0;
+    opacity: 0.08;
   }
 }

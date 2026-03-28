@@ -263,3 +263,118 @@
     font-size: 2.5rem;
   }
 }
+
+@media (max-width: 480px) {
+  .body-is {
+    padding: 36px 12px;
+  }
+
+  .ingredients-container-is {
+    max-width: 100%;
+  }
+
+  .title-is,
+  .title-alt-is {
+    font-size: 1.8rem;
+    margin-bottom: 36px;
+  }
+
+  .scroll-wrap {
+    margin: 0;
+    padding-bottom: 12px;
+  }
+
+  .grid-is {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    gap: 20px;
+    padding: 0 4px;
+  }
+
+  .card-content-is {
+    min-height: 200px;
+    padding: 8px;
+  }
+
+  .hero-badge-is {
+    font-size: 0.45rem;
+    padding: 4px 10px;
+  }
+
+  .ingredient-img-is {
+    max-height: 160px;
+  }
+
+  .img-circle-is {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ingredient-name-is {
+    font-size: 1.1rem;
+  }
+
+  .ingredient-dosage-is {
+    font-size: 0.55rem;
+    margin-bottom: 12px;
+  }
+
+  .ingredient-description-is {
+    font-size: 0.58rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .body-is {
+    padding: 24px 10px;
+  }
+
+  .title-is,
+  .title-alt-is {
+    font-size: 1.5rem;
+    margin-bottom: 28px;
+  }
+
+  .grid-is {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    gap: 16px;
+    padding: 0;
+  }
+
+  .card-content-is {
+    min-height: 180px;
+    padding: 6px;
+  }
+
+  .hero-badge-is {
+    font-size: 0.43rem;
+    padding: 3px 8px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .ingredient-img-is {
+    max-height: 140px;
+  }
+
+  .img-circle-is {
+    width: 70px;
+    height: 70px;
+  }
+
+  .ingredient-name-is {
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+
+  .ingredient-dosage-is {
+    font-size: 0.53rem;
+    margin-bottom: 10px;
+  }
+
+  .ingredient-description-is {
+    font-size: 0.56rem;
+    line-height: 1.3;
+  }
+}

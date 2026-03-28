@@ -3,9 +3,44 @@
 .science-page {
   min-height: 100vh;
   background-color: #fff;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 /* Base resets or common styles for the page can go here */
 .science-page * {
   box-sizing: border-box;
+}
+
+@media (max-width: 1440px) {
+  .science-page {
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .science-page * {
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .science-page {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .science-page {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 375px) {
+  .science-page {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
 }

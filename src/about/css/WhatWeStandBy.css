@@ -16,10 +16,8 @@
   font-weight: 400;
   letter-spacing: 2px;
   line-height: 60px;
-  font-family: 'bree serif',serif;
-
+  font-family: "bree serif", serif;
 }
-
 
 .values-grid {
   display: grid;
@@ -40,7 +38,6 @@
   border-radius: 30px;
   box-shadow: 0 8px 24px rgba(42, 124, 124, 0.15);
   transition: all 0.3s ease;
-
 }
 
 .value-card:hover {
@@ -73,7 +70,7 @@
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 400;
-  font-family: 'bree serif', sans-serif;
+  font-family: "bree serif", sans-serif;
 }
 
 .leadership-section {
@@ -100,7 +97,7 @@
   color: rgba(3, 3, 3, 0.25);
   opacity: 20%;
   letter-spacing: 0px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   z-index: 0;
   text-transform: uppercase;
   white-space: pre-line;
@@ -113,7 +110,7 @@
   color: #1a1a1a;
   margin-bottom: 20px;
   font-weight: 700;
-  font-family: 'bree serif', sans-serif;
+  font-family: "bree serif", sans-serif;
   position: relative;
   z-index: 1;
 }
@@ -190,6 +187,3 @@
     font-size: 1.8rem;
   }
 }
-
-
-

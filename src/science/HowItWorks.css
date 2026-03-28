@@ -128,3 +128,95 @@
     padding: 2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .science-how-it-works {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .how-it-works-container::after {
+    top: 8px;
+    left: 8px;
+    right: -8px;
+    bottom: -8px;
+    background-color: #d8d8d8;
+  }
+
+  .how-it-works-box {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .how-it-works-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .flow-step {
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    min-height: 80px;
+  }
+
+  .flow-label {
+    font-size: 0.7rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .flow-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .science-how-it-works {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .how-it-works-container::after {
+    top: 6px;
+    left: 6px;
+    right: -6px;
+    bottom: -6px;
+  }
+
+  .how-it-works-box {
+    padding: 1.2rem;
+    border-radius: 14px;
+  }
+
+  .how-it-works-subtitle {
+    font-size: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .flow-step {
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    min-height: 70px;
+    min-width: auto;
+  }
+
+  .flow-label {
+    font-size: 0.65rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .flow-title {
+    font-size: 0.95rem;
+  }
+
+  .flow-arrow {
+    font-size: 0.8rem;
+  }
+}

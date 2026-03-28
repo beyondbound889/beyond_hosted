@@ -10,3 +10,15 @@
 		margin-top: 48px;
 	}
 }
+
+@media (max-width: 480px) {
+	.spiking-section {
+		margin-top: 32px;
+	}
+}
+
+@media (max-width: 375px) {
+	.spiking-section {
+		margin-top: 24px;
+	}
+}

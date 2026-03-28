@@ -117,7 +117,7 @@
   margin: 0;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .who-cards-container {
     flex-direction: column;
   }
@@ -127,5 +127,123 @@
   .section-title {
     font-size: 2.5rem;
     margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .science-who-is-it-for {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .who-cards-container {
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .who-card {
+    max-width: 100%;
+    padding: 1.2rem 1.5rem;
+    border-radius: 14px;
+  }
+
+  .who-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .who-card-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+
+  .who-card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .who-card-desc {
+    font-size: 0.9rem;
+  }
+
+  .who-disclaimer {
+    padding: 0.8rem 1rem;
+    gap: 0.8rem;
+    border-radius: 6px;
+    font-size: 0.55rem;
+  }
+
+  .disclaimer-icon {
+    margin-top: 1px;
+  }
+}
+
+@media (max-width: 375px) {
+  .science-who-is-it-for {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .who-cards-container {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .who-card {
+    max-width: 100%;
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+  }
+
+  .who-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(17, 112, 104, 0.08);
+  }
+
+  .who-card-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+  }
+
+  .who-card-title {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .who-card-desc {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .who-disclaimer {
+    padding: 0.6rem 0.8rem;
+    gap: 0.6rem;
+    border-radius: 6px;
+    border-width: 1px;
+  }
+
+  .disclaimer-icon {
+    width: 16px;
+    margin-top: 2px;
+  }
+
+  .disclaimer-text {
+    font-size: 0.55rem;
+  }
+
+  .disclaimer-text p {
+    margin-bottom: 0.3rem;
   }
 }

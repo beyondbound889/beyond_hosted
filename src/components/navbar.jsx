@@ -71,6 +71,7 @@ function Navbar() {
             <li
               className="menu-item"
               onMouseEnter={() => setActiveMenu("science")}
+              onTouchStart={() => setActiveMenu("science")}
             >
               <button
                 type="button"
@@ -100,6 +101,7 @@ function Navbar() {
             <li
               className="menu-item"
               onMouseEnter={() => setActiveMenu("about")}
+              onTouchStart={() => setActiveMenu("about")}
             >
               <button
                 type="button"

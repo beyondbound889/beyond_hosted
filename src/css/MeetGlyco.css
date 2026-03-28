@@ -192,34 +192,17 @@
 		gap: 24px;
 	}
 
+	.glyco-words {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		animation: none;
+	}
+
 	.glyco-word {
 		font-size: 24px;
-		height: 44px;
-		line-height: 44px;
-	}
-
-	.glyco-rotating {
-		height: 44px;
-	}
-
-	@keyframes scroll-words {
-		0% { transform: translateY(0); }
-		12% { transform: translateY(-44px); }
-		24% { transform: translateY(-88px); }
-		36% { transform: translateY(-132px); }
-		48% { transform: translateY(-176px); }
-		60% { transform: translateY(-220px); }
-		72% { transform: translateY(-264px); }
-		100% { transform: translateY(0); }
-	}
-
-	.glyco-description {
-		font-size: 14px;
-		line-height: 1.6;
-	}
-
-	.glyco-image {
-		max-width: 300px;
+		height: auto;
+		line-height: 1.4;
 	}
 
 	.glyco-image-wrapper {
@@ -247,25 +230,17 @@
 		gap: 18px;
 	}
 
+	.glyco-words {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		animation: none;
+	}
+
 	.glyco-word {
 		font-size: 20px;
-		height: 38px;
-		line-height: 38px;
-	}
-
-	.glyco-rotating {
-		height: 38px;
-	}
-
-	@keyframes scroll-words {
-		0% { transform: translateY(0); }
-		12% { transform: translateY(-38px); }
-		24% { transform: translateY(-76px); }
-		36% { transform: translateY(-114px); }
-		48% { transform: translateY(-152px); }
-		60% { transform: translateY(-190px); }
-		72% { transform: translateY(-228px); }
-		100% { transform: translateY(0); }
+		height: auto;
+		line-height: 1.4;
 	}
 
 	.glyco-description {
@@ -297,25 +272,17 @@
 		gap: 16px;
 	}
 
+	.glyco-words {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		animation: none;
+	}
+
 	.glyco-word {
 		font-size: 18px;
-		height: 32px;
-		line-height: 32px;
-	}
-
-	.glyco-rotating {
-		height: 32px;
-	}
-
-	@keyframes scroll-words {
-		0% { transform: translateY(0); }
-		12% { transform: translateY(-32px); }
-		24% { transform: translateY(-64px); }
-		36% { transform: translateY(-96px); }
-		48% { transform: translateY(-128px); }
-		60% { transform: translateY(-160px); }
-		72% { transform: translateY(-192px); }
-		100% { transform: translateY(0); }
+		height: auto;
+		line-height: 1.4;
 	}
 
 	.glyco-description {

@@ -205,3 +205,53 @@
 		margin: 0;
 	}
 }
+
+@media (max-width: 375px) {
+	.trust-section {
+		padding: 10px 8px;
+	}
+
+	.trust-inner {
+		gap: 8px;
+	}
+
+	.trust-header {
+		gap: 8px;
+	}
+
+	.trust-label {
+		font-size: 9px;
+		letter-spacing: 2px;
+	}
+
+	.trust-title {
+		max-width: 100%;
+		font-size: 28px;
+		line-height: 1.08;
+		white-space: normal;
+	}
+
+	.trust-grid {
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+		gap: 4px;
+	}
+
+	.trust-card {
+		min-height: 70px;
+		padding: 2px;
+	}
+
+	.trust-icon {
+		height: 60px;
+	}
+
+	.trust-icon--who,
+	.trust-icon--iso,
+	.trust-icon--quality,
+	.trust-icon--haccp,
+	.trust-icon--gmo {
+		max-width: 100px;
+		padding: 0;
+		margin: 0;
+	}
+}

@@ -134,6 +134,10 @@
     font-size: 2rem;
   }
 
+  .journey-subtitle {
+    margin: 15px 0;
+  }
+
   .timeline {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -155,6 +159,7 @@
 
   .journey-subtitle {
     font-size: 0.95rem;
+    margin: 15px 0;
   }
 
   .timeline-year {

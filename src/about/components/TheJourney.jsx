@@ -44,6 +44,8 @@ const TheJourney = () => {
             className={`timeline-item ${hoveredIndex === index ? 'hovered' : ''} ${item.active && hoveredIndex === 0 ? 'active' : ''}`}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(0)}
+            onTouchStart={() => setHoveredIndex(index)}
+            onTouchEnd={() => setHoveredIndex(0)}
           >
             <div className="timeline-year">{item.year}</div>
             <div className="timeline-line"></div>
