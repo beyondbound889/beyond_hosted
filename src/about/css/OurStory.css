@@ -18,11 +18,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-45%, -52%);
-  font-size: 5.8rem;
-  font-weight: 800;
-  opacity: 20%;
-  color: rgba(16, 16, 16, 0.25);
-  letter-spacing: 7px;
+  font-size: 128px;
+  font-weight: 900;
+  opacity: 5%;
+  color: #0D1B2A;
+  letter-spacing: 0px;
+  line-height: 66px;
   font-family: 'bree Serif ', sans-serif;
   z-index: 0;
   text-transform: uppercase;
@@ -31,32 +32,36 @@
 }
 
 .our-story h2 {
-  font-size: 3.5rem;
+  font-size: 64px;
   text-align: center;
   color: #1a1a1a;
   margin-bottom: 50px;
-  font-weight: 700;
-  font-family: 'bree Serif ', sans-serif;
+  font-weight: 400;
+  line-height: 52px;
+  font-style: regular;
+  font-family: 'bree Serif', serif;
   position: relative;
   z-index: 1;
 }
 
 .section-number {
-  color: #358787;
-  font-weight: 700;
+  color: #147070;
+  opacity: 40%;
+  font-weight: 400;
+  font-family: 'bree serif';
 }
 
 .gap-section h3 {
-  font-size: 3rem;
-  color: #656565;
+  font-size: 48px;
+  color: #666666;
   margin-bottom: 30px;
-  font-weight: 600;
-  font-family: 'bree Serif ', sans-serif;
+  font-weight: 400;
+  font-family: 'bree Serif';
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 30px;
 }
 
 .gap-section {
@@ -188,15 +193,15 @@
 }
 
 .solution-section h3 {
-  font-size: 3rem;
-  color: #4d4c4c;
-  margin-bottom: 15px;
-  font-weight: 600;
+  font-size: 48px;
+  color: #666666;
+  margin-bottom: 45px;
+  font-weight: 400;
   font-family: 'bree Serif', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 30px;
 }
 
 .solution-description {
@@ -228,7 +233,7 @@
 .solution-item {
   background: white;
   border: 2px solid #e8e8e8;
-  padding: 28px 24px;
+  padding: 22px 20px;
   border-radius: 12px;
   text-align: left;
   font-size: 1rem;
@@ -249,16 +254,20 @@
 }
 
 .solution-number {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #2a7c7c;
+  font-size: 48px;
+  font-weight: 400;
+  color: #147070;
+  opacity: 30%;
   line-height: 1;
-  min-width: 40px;
+  min-width: 60px;
+  font-family: 'bree serif';
 }
 
 .solution-item-left span:last-child {
   color: #333;
-  font-weight: 600;
+  font-weight: 800;
+  font-style: bold;
+  font-family: 'Inter';
 }
 
 .dropdown-icon {

@@ -14,39 +14,26 @@
   margin-bottom: 40px;
 }
 
-.journey-bg-text {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 8rem;
-  font-weight: 800;
-  color: rgba(200, 200, 200, 0.25);
-  line-height: 1.1;
-  letter-spacing: 5px;
-  width: 120%;
-  pointer-events: none;
-  font-family: 'Inter', sans-serif;
-  z-index: 0;
-  text-transform: uppercase;
-}
-
 .the-journey h2 {
-  font-size: 3.5rem;
+  font-size: 64px;
   text-align: center;
   color: #1a1a1a;
-  margin-bottom: 15px;
-  font-weight: 700;
-  font-family: 'Inter', sans-serif;
+  margin-bottom: 50px;
+  font-weight: 400;
+  line-height: 52px;
+  font-style: regular;
+  font-family: 'bree Serif', serif;
   position: relative;
   z-index: 1;
 }
 
 .journey-subtitle {
   text-align: center;
-  font-size: 1.05rem;
-  color: #666;
-  margin-bottom: 60px;
+  font-size: 30px;
+  width: 75%;
+  color: #636366;
+  margin: 60px 0;
+  text-align: left;
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
   position: relative;
@@ -70,13 +57,13 @@
 .timeline-year {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: #2a7c7c;
   margin-bottom: 15px;
   font-family: 'Inter', sans-serif;
   transition: color 0.3s ease;
 }
 
-.timeline-item.hovered .timeline-year {
+.timeline-item.hovered .timeline-year  {
   color: #2a7c7c;
 }
 
@@ -88,21 +75,33 @@
   transition: all 0.3s ease;
 }
 
-.timeline-item.hovered .timeline-line {
+.timeline-item.hovered .timeline-line  {
   background: #2a7c7c;
 }
+
 
 .timeline-item.active .timeline-line {
   background: #2a7c7c;
 }
 
-.timeline-content h3 {
-  font-size: 1rem;
+.timeline-item.hovered .timeline-content h3 {
   color: #1a1a1a;
+  opacity: 100%;
+}
+
+.timeline-item.hovered .timeline-content p {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.timeline-content h3 {
+  font-size: 24;
+  color: #1a1a1a;
+  opacity: 70%;
   margin-bottom: 8px;
   margin-top: 0;
-  font-weight: 800;
-  font-family: '', sans-serif;
+  font-weight: 400;
+  font-family: 'bree Serif', serif;
   line-height: 1.4;
 }
 

@@ -37,11 +37,11 @@
   justify-content: center !important;
   position: absolute !important;
   top: 4.2%;
-  left: 28%;
+  left: 30%;
   z-index: 20;
   border-radius: 50%;
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 125px;
   border: 3px solid #2a7c7c;
   background: white;
   box-shadow: 0 4px 15px rgba(42, 124, 124, 0.2);
@@ -50,8 +50,8 @@
 }
 
 .logo-image {
-  width: 85% !important;
-  height: 85% !important;
+  width: 80% !important;
+  height: 80% !important;
   object-fit: contain !important;
   box-sizing: border-box !important;
   display: block;

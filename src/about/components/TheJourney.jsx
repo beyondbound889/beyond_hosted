@@ -31,7 +31,6 @@ const TheJourney = () => {
   return (
     <section className="the-journey">
       <div className="journey-container">
-        <div className="journey-bg-text">OUR JOURNEY</div>
         <h2>Our Journey</h2>
         <p className="journey-subtitle">
           From pharmacological hypothesis to market-ready formulation in under 24 months.
@@ -50,7 +49,7 @@ const TheJourney = () => {
             <div className="timeline-line"></div>
             <div className="timeline-content">
               <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              <h3>{item.description}</h3>
             </div>
           </div>
         ))}
