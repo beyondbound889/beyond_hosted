@@ -36,4 +36,36 @@ html {
     max-width: 100%;
     height: auto;
   }
+
+  /* Trust badges - Single horizontal line on mobile */
+  .badge-row-ld {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow-x: auto !important;
+    width: 100% !important;
+    padding: 10px 5px !important;
+  }
+
+  .badge-row-ld > div {
+    flex: 0 0 auto !important;
+    min-width: auto !important;
+  }
+
+  .badge-row-ld > div > img,
+  .badge-row-ld > div > svg {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .badge-row-ld > div > p,
+  .badge-row-ld > div > h4,
+  .badge-row-ld > div > h3,
+  .badge-row-ld > div > span {
+    font-size: 12px !important;
+    white-space: nowrap !important;
+  }
 }
