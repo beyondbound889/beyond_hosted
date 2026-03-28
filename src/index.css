@@ -1,13 +1,13 @@
-html,body {
+html,
+body {
   padding: 0;
   margin: 0;
-  font-family: 'Inter'
+  font-family: "Inter";
 }
 
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
 
 .scaled-wrapper {
   transform: scale(0.9);
@@ -27,7 +27,8 @@ html {
     box-sizing: border-box;
   }
 
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
     width: 100%;
   }
