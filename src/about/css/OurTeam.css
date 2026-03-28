@@ -325,114 +325,60 @@
 
 @media (max-width: 768px) {
   .our-team {
-    padding: 50px 20px;
-  }
-
-  .team-header-container {
-    margin-bottom: 50px;
-  }
-
-  .team-bg-text {
-    font-size: 2.5rem;
-    max-width: 90%;
-    white-space: normal;
-    word-break: break-word;
+    padding: 40px 15px;
   }
 
   .our-team h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
-  .core-team {
-    margin-bottom: 50px;
-  }
-
+  /* 🔥 OUR TEAM → 2 IN ONE ROW */
   .team-container {
-    grid-template-columns: 1fr;
-    gap: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ✅ horizontal */
+    gap: 20px;
   }
 
+  /* 🔥 MENTORS → 3 IN ONE ROW */
+  .mentors-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ✅ horizontal */
+    gap: 15px;
+    padding: 0;
+  }
+
+  /* 🔥 SHRINK IMAGES */
   .team-image-wrapper {
-    width: 130px;
-    height: 130px;
-    margin: 0 auto 20px;
+    width: 90px;
+    height: 90px;
   }
 
   .team-image {
-    width: 130px;
-    height: 130px;
-  }
-
-  .team-badge {
-    width: 45px;
-    height: 45px;
-  }
-
-  .badge-image {
-    width: 35px;
-    height: 35px;
-  }
-
-  .team-card h3 {
-    font-size: 1.05rem;
-  }
-
-  .team-card .title {
-    font-size: 0.9rem;
-  }
-
-  .team-card .qualification {
-    font-size: 0.8rem;
-  }
-
-  .mentors-container {
-    grid-template-columns: 1fr;
-    gap: 35px;
-    margin-bottom: 50px;
+    width: 90px;
+    height: 90px;
   }
 
   .mentor-image-wrapper {
-    width: 130px;
-    height: 130px;
-    margin: 0 auto 20px;
-  }
-
-  .mentor-bg {
-    top: -6px;
-    left: 8px;
-    right: -8px;
-    bottom: 4px;
+    width: 80px;
+    height: 80px;
   }
 
   .mentor-image {
-    width: 130px;
-    height: 130px;
+    width: 80px;
+    height: 80px;
   }
 
+  /* 🔥 TEXT SMALL */
+  .team-card h3,
   .mentor-card h4 {
-    font-size: 1.05rem;
-  }
-
-  .mentor-card p {
     font-size: 0.8rem;
   }
 
-  .partner-title {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-
-  .partner-box {
-    padding: 35px;
-  }
-
-  .partner-box img {
-    max-width: 150px;
-    margin-bottom: 20px;
-  }
-
-  .partner-box p {
-    font-size: 1rem;
+  .team-card .title,
+  .team-card .qualification,
+  .team-card .location,
+  .mentor-card p {
+    font-size: 0.7rem;
   }
 }
 
@@ -458,8 +404,8 @@
   }
 
   .team-container {
-    grid-template-columns: 1fr;
-    gap: 45px;
+    grid-template-columns: repeat(2, 1fr); /* ✅ 2 in row */
+    gap: 20px;
   }
 
   .team-image-wrapper {
@@ -498,9 +444,8 @@
   }
 
   .mentors-container {
-    grid-template-columns: 1fr;
-    gap: 45px;
-    margin-bottom: 50px;
+    grid-template-columns: repeat(3, 1fr); /* ✅ 3 in row */
+    gap: 15px;
   }
 
   .mentor-image-wrapper {
@@ -614,7 +559,7 @@
   }
 
   .mentors-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 35px;
     margin-bottom: 40px;
   }
@@ -674,5 +619,64 @@
 
   .partner-box p {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mentors-container {
+    display: flex !important; /* 🔥 override grid */
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto; /* 🔥 enable scroll */
+    padding: 0 12px;
+    scroll-behavior: smooth;
+
+    /* hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .mentors-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mentor-card {
+    flex: 0 0 auto; /* 🔥 prevents shrinking */
+    width: 140px; /* 🔥 fixed card width */
+  }
+
+  .mentor-image-wrapper {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 12px;
+  }
+
+  .mentor-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .mentor-card h4 {
+    font-size: 0.85rem;
+  }
+
+  .mentor-card p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mentors-container {
+    padding-top: 12px; /* 🔥 give space for image */
+    overflow-y: visible; /* 🔥 prevent vertical cut */
+    align-items: flex-start; /* 🔥 align properly */
+  }
+
+  .mentor-card {
+    margin-top: 10px; /* 🔥 push card down slightly */
+  }
+
+  .mentor-image-wrapper {
+    overflow: visible; /* 🔥 allow full circle */
   }
 }
