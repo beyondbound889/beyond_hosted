@@ -20,3 +20,20 @@ html {
   transform-origin: top center;
   /* width: 111.11%; */ /* 100 / 0.9 to compensate shrink */
 }
+
+/* Simple Mobile Responsive - Just shrink everything, no layout changes */
+@media (max-width: 1024px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
