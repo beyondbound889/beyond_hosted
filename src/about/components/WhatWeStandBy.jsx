@@ -31,8 +31,7 @@ const WhatWeStandBy = () => {
 
   return (
     <section className="what-we-stand-by">
-      <h2>What we stand by.</h2>
-      <p className="stand-by-subtitle">Without exception.</p>
+      <h2>What we stand by. <br />Without exception.</h2>
 
       <div className="values-grid">
         {values.map((value) => (

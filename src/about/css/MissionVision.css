@@ -20,19 +20,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50.4%, -50%);
-  font-size: 5.8rem;
-  font-weight: 800;
-  color: rgba(27, 26, 26, 0.25);
-  opacity: 20%;
-  line-height: 1.1;
-  letter-spacing: 6px;
+  font-size: 110px;
+  font-weight: 900;
+  color: #0D1B2A;
+  opacity: 5%;
+  line-height: 66px;
+  letter-spacing: 0px;
   width: 300%;
   pointer-events: none;
   font-family: 'Inter', sans-serif;
   z-index: 0;
   text-transform: uppercase;
   white-space: nowrap;
-}
+}   
 
 .bg-text-mission,
 .bg-text-vision {
@@ -58,7 +58,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 50px;
-  margin-top: 110px;
+  margin-top: 180px;
   position: relative;
   z-index: 1;
   max-width: 800px;

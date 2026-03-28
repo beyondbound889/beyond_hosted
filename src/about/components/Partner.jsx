@@ -12,7 +12,7 @@ const Partner = () => {
           <div className="partner-logo">
             <img src={riidlLogo} alt="Ridi Logo" />
           </div>
-          <p className="partner-info">Partner & Advisor in Beyond Bound</p>
+          <p className="partner-info">Partner & Advisor in<br /> Beyond Bound</p>
         </div>
       </div>
     </section>
