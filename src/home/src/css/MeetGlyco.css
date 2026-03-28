@@ -809,3 +809,43 @@ h1[id="glyco-hero-title"] span {
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  /* 🔥 FIX MAIN SECTION PADDING */
+  .glyco-section {
+    padding: 16px 10px !important; /* reduce overall padding */
+  }
+
+  /* 🔥 REMOVE HUGE BOTTOM SPACE */
+  @media (max-width: 900px) {
+    .glyco-section {
+      padding-bottom: 20px !important; /* was 96px ❌ */
+    }
+  }
+
+  /* 🔥 REMOVE FORCED HEIGHT */
+  .glyco-right {
+    min-height: auto !important;
+  }
+
+  /* 🔥 REDUCE INNER SPACING */
+  .glyco-content {
+    gap: 8px;
+    padding-bottom: 0;
+  }
+
+  .glyco-left {
+    gap: 12px;
+  }
+
+  /* 🔥 TIGHTEN TITLE SPACING */
+  .glyco-title {
+    margin-bottom: 8px;
+  }
+
+  /* 🔥 REMOVE EXTRA SPACE BELOW BUTTON */
+  .glyco-note {
+    margin-top: 6px;
+    line-height: 1.3;
+  }
+}
