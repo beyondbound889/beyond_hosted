@@ -134,45 +134,59 @@
 
 @media (max-width: 480px) {
   .science-how-it-works {
-    padding: 2rem 1rem;
+    padding: 1.5rem 0.8rem;
   }
 
   .section-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
 
   .how-it-works-container::after {
-    top: 8px;
-    left: 8px;
-    right: -8px;
-    bottom: -8px;
-    background-color: #d8d8d8;
+    top: 6px;
+    left: 6px;
+    right: -6px;
+    bottom: -6px;
   }
 
+  /* ✅ MAIN BOX SHRINK */
   .how-it-works-box {
-    padding: 1.5rem;
-    border-radius: 16px;
+    padding: 1rem; /* 🔥 reduced */
+    border-radius: 14px;
+    width: 95%; /* 🔥 not full width */
+    margin: 0 auto; /* 🔥 center */
   }
 
   .how-it-works-subtitle {
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
   }
 
+  .how-it-works-flow {
+    gap: 0.8rem;
+  }
+
+  /* ✅ STEP BOX FIX */
   .flow-step {
-    padding: 1rem 1.2rem;
-    border-radius: 10px;
-    min-height: 80px;
+    padding: 0.8rem 0.9rem; /* 🔥 compact */
+    border-radius: 8px;
+    min-height: 60px; /* 🔥 reduced height */
+    min-width: 0 !important; /* 🔥 CRITICAL FIX */
   }
 
   .flow-label {
-    font-size: 0.7rem;
-    margin-bottom: 0.6rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.4rem;
   }
 
   .flow-title {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+
+  /* ✅ ARROW SMALL */
+  .flow-arrow {
+    font-size: 0.7rem;
   }
 }
 
