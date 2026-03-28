@@ -273,39 +273,60 @@
 /* ── Small Mobile (480px) ── */
 @media (max-width: 480px) {
   .who-section {
-    padding: 48px 12px;
-  }
-
-  .who-title {
-    font-size: 26px;
-    line-height: 1.2;
+    padding: 28px 10px;
   }
 
   .who-inner {
-    gap: 28px;
+    gap: 18px;
+  }
+
+  .who-title {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .who-cards-container {
+    gap: 14px;
+    align-items: center; /* ✅ center cards */
   }
 
   .who-card {
-    padding: 24px 16px;
+    width: 90%; /* 🔥 reduced width */
+    max-width: 320px; /* 🔥 prevents full stretch */
+    padding: 16px 12px;
+    border-radius: 12px;
   }
 
   .who-icon {
-    width: 64px;
-    height: 64px;
-    margin-bottom: 16px;
-  }
-
-  .who-card-title {
-    font-size: 21px;
+    width: 50px;
+    height: 50px;
     margin-bottom: 10px;
   }
 
+  .who-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .who-card-title {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
   .who-card-description {
-    font-size: 16px;
+    font-size: 13px;
+    line-height: 1.4;
   }
 
   .who-disclaimer {
-    width: 100%;
+    width: 90%; /* 🔥 match card width */
+    max-width: 320px;
+    padding: 8px;
+  }
+
+  .who-disclaimer-text {
+    font-size: 11px;
+    line-height: 1.4;
   }
 }
 
