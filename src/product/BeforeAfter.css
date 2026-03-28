@@ -45,8 +45,8 @@
 .slider-input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 40px;      /* Match the width of your custom circle */
-  height: 100vh;    /* Make it tall enough to cover the whole image */
+  width: 40px; /* Match the width of your custom circle */
+  height: 100vh; /* Make it tall enough to cover the whole image */
   background: transparent; /* This makes the default circle invisible */
   cursor: ew-resize;
 }
@@ -82,7 +82,7 @@
   flex-grow: 1;
   width: 2px;
   background: white;
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .handle-circle {
@@ -94,13 +94,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Creating CSS arrows */
-.arrow-left, .arrow-right {
-  width: 0; 
-  height: 0; 
+.arrow-left,
+.arrow-right {
+  width: 0;
+  height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   margin: 0 2px;
@@ -115,25 +116,24 @@
 }
 
 .before-tag {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-
+  position: absolute;
+  top: 16px;
+  left: 16px;
 }
 
-.after-tag{
-    position: absolute;
-    top: 16px;
-    right: 16px;
-
+.after-tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }
 
-.before-tag, .after-tag {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px 16px;
-    border-radius: 32px;
-    font-size: 1rem
+.before-tag,
+.after-tag {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 32px;
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -143,7 +143,8 @@
     border-radius: 0.75rem;
   }
 
-  .before-tag, .after-tag {
+  .before-tag,
+  .after-tag {
     padding: 8px 12px;
     border-radius: 28px;
     font-size: 0.85rem;
@@ -170,7 +171,8 @@
     border-radius: 0.6rem;
   }
 
-  .before-tag, .after-tag {
+  .before-tag,
+  .after-tag {
     padding: 6px 10px;
     border-radius: 24px;
     font-size: 0.75rem;
@@ -203,7 +205,8 @@
     border-radius: 0.5rem;
   }
 
-  .before-tag, .after-tag {
+  .before-tag,
+  .after-tag {
     padding: 5px 8px;
     border-radius: 20px;
     font-size: 0.65rem;
@@ -228,6 +231,3 @@
     width: 24px;
   }
 }
-
-
-

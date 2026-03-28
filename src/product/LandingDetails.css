@@ -2,7 +2,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #1a1a1a;
 }
 
@@ -38,10 +38,13 @@
   background: #fff;
   padding: 25px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.stars-ld { color: #d4a017; margin-bottom: 10px; }
+.stars-ld {
+  color: #d4a017;
+  margin-bottom: 10px;
+}
 
 .test-text-ld {
   font-size: 18px;
@@ -51,10 +54,24 @@
   font-style: italic;
 }
 
-.user-info-ld { display: flex; align-items: center; gap: 12px; }
-.avatar-ld { width: 45px; height: 45px; border-radius: 50%; }
-.user-name-ld { font-weight: 700; font-size: 14px; }
-.verified-ld { font-size: 12px; color: #888; }
+.user-info-ld {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.avatar-ld {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.user-name-ld {
+  font-weight: 700;
+  font-size: 14px;
+}
+.verified-ld {
+  font-size: 12px;
+  color: #888;
+}
 
 /* Badge Section */
 .trust-section-ld {
@@ -86,8 +103,16 @@
   padding-top: 60px;
 }
 
-.faq-left-ld { flex: 1; flex-direction: column; display: flex; justify-content: space-between; }
-.faq-right-ld { flex: 1.5; font-size: 24px; }
+.faq-left-ld {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+.faq-right-ld {
+  flex: 1.5;
+  font-size: 24px;
+}
 
 .faq-title-ld {
   font-size: 52px;
@@ -132,8 +157,12 @@
 }
 
 @media (max-width: 768px) {
-  .faq-section-ld { flex-direction: column; }
-  .main-quote-ld { font-size: 22px; }
+  .faq-section-ld {
+    flex-direction: column;
+  }
+  .main-quote-ld {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -301,6 +330,3 @@
     font-size: 0.9rem;
   }
 }
-
-
-

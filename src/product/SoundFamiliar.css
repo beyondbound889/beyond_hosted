@@ -1,7 +1,5 @@
-
-
 :root {
-  --teal-dark: #0D7377;
+  --teal-dark: #0d7377;
   --text-main: #333;
   --text-light: #777;
   --bg-white: #ffffff;
@@ -10,7 +8,7 @@
 .body-sf {
   margin: 0;
   padding: 60px 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #fdfdfd;
   display: flex;
   justify-content: center;
@@ -24,7 +22,7 @@
 
 /* Header */
 .title-sf {
-  font-family:'Bree Serif', 'Inter', sans-serif; /* Keeps that elegant look */
+  font-family: "Bree Serif", "Inter", sans-serif; /* Keeps that elegant look */
   font-size: 3.5rem;
   margin: 0 0 10px 0;
   color: #111;
@@ -46,13 +44,11 @@
 .grid-sf {
   display: grid;
   /* Forces 3 columns on PC, drops to 1 on mobile */
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px 30px; /* More vertical space for the offset shadow */
   margin-bottom: 60px;
   padding: 0 20px;
   max-width: 800px;
-  
-  
 }
 
 /* Card Styling */
@@ -66,7 +62,7 @@
   position: absolute;
   z-index: 1;
   /* Adjust these to control the "thickness" of the teal edge */
-  top: -6px; 
+  top: -6px;
   left: 6px;
   right: -6px;
   bottom: 6px;
@@ -86,7 +82,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .icon-circle-sf {
@@ -209,6 +204,3 @@
     font-size: 0.95rem;
   }
 }
-
-
-

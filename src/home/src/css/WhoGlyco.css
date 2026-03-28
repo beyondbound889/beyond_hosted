@@ -5,11 +5,13 @@
   padding: 40px 100px;
   box-sizing: border-box;
   border-radius: 14px;
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .who-inner {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
@@ -37,7 +39,7 @@ margin-bottom: 30px;
   letter-spacing: 0;
   margin: 0;
   text-align: center;
-  font-family:'bree serif', serif;
+  font-family: "bree serif", serif;
 }
 
 .who-cards-container {

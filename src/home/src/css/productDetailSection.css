@@ -1,689 +1,751 @@
 .pds-section {
-	width: 100%;
-	height: 900px;
-	padding: 60px 32px;
-	box-sizing: border-box;
-	background: #f5f5f5;
-	display: flex;
-	justify-content: center;
-	overflow-x: hidden;
+  width: 100%;
+  height: 900px;
+  padding: 60px 32px;
+  box-sizing: border-box;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
 }
 
 .pds-container {
-	width: 1302px;
-	max-width: 100%;
-	height: 750px;
-	padding: 20px 0px;
-	display: flex;
-	gap: 0;
+  width: 1302px;
+  max-width: 100%;
+  height: 750px;
+  padding: 20px 0px;
+  display: flex;
+  gap: 0;
 }
 
 .pds-gallery {
-	width: 781.2px;
-	height: 784px;
-	display: flex;
-	gap: 13.02px;
-	align-items: center;
-	padding-left: 29.53px;
-	box-sizing: border-box;
+  width: 781.2px;
+  height: 784px;
+  display: flex;
+  gap: 13.02px;
+  align-items: center;
+  padding-left: 29.53px;
+  box-sizing: border-box;
 }
 
 .pds-thumbnails {
-	width: 97.65px;
-	height: auto;
-	max-height: 360px;
-	display: flex;
-	flex-direction: column;
-	gap: 13.02px;
-	position: relative;
-	top: 18px;
-	align-self: center;
-	overflow-y: auto;
+  width: 97.65px;
+  height: auto;
+  max-height: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 13.02px;
+  position: relative;
+  top: 18px;
+  align-self: center;
+  overflow-y: auto;
 }
 
 .pds-thumb {
-	width: 97.65px;
-	height: 80px;
-	border-radius: 10.42px;
-	padding: 0;
-	background: transparent;
-	cursor: pointer;
-	overflow: hidden;
-	border: 1.3px solid transparent;
-	transition: transform 0.18s ease, opacity 0.2s ease;
-	flex-shrink: 0;
+  width: 97.65px;
+  height: 80px;
+  border-radius: 10.42px;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1.3px solid transparent;
+  transition:
+    transform 0.18s ease,
+    opacity 0.2s ease;
+  flex-shrink: 0;
 }
 
 .pds-thumb:hover {
-	transform: translateY(-1px);
+  transform: translateY(-1px);
 }
 
 .pds-thumb--active {
-	opacity: 1;
-	border-color: #c7c7cc;
+  opacity: 1;
+  border-color: #c7c7cc;
 }
 
 .pds-thumb--inactive {
-	opacity: 0.5;
-	border-color: rgba(0, 0, 0, 0);
+  opacity: 0.5;
+  border-color: rgba(0, 0, 0, 0);
 }
 
 .pds-thumb-image {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-	display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .pds-main-image-wrap {
-	width: 600px;
-	height: 650px;
-	flex: 0 0 641px;
-	border-radius: 37px;
-	background: #f5f5f5;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
+  width: 600px;
+  height: 650px;
+  flex: 0 0 641px;
+  border-radius: 37px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .pds-main-image {
-	width: 80%;
-	height: 90%;
-	object-fit: contain;
-	display: block;
+  width: 80%;
+  height: 90%;
+  object-fit: contain;
+  display: block;
 }
 
 .pds-details {
-	width: 468.72px;
-	height: auto;
-	min-height: 700px;
-	display: flex;
-	flex-direction: column;
-	gap:10px;
+  width: 468.72px;
+  height: auto;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .pds-badges-row {
-	width: 320.23px;
-	height: 26.75px;
-	display: flex;
-	gap: 7.96px;
-	align-items: center;
+  width: 320.23px;
+  height: 26.75px;
+  display: flex;
+  gap: 7.96px;
+  align-items: center;
 }
 
 .pds-badge {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 999px;
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 9.29px;
-	font-weight: 600;
-	line-height: 13.27px;
-	letter-spacing: -0.1px;
-	white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 9.29px;
+  font-weight: 600;
+  line-height: 13.27px;
+  letter-spacing: -0.1px;
+  white-space: nowrap;
 }
 
 .pds-badge--stock {
-	width: 57.17px;
-	height: 26.75px;
-	background: #e8f2ee;
-	color: #0d7377;
+  width: 57.17px;
+  height: 26.75px;
+  background: #e8f2ee;
+  color: #0d7377;
 }
 
 .pds-badge--refund {
-	width: 142.65px;
-	height: 24.08px;
-	padding: 5.31px 10.62px;
-	box-sizing: border-box;
-	background: #dbeafe;
-	color: #0f2744;
-	gap: 3px;
+  width: 142.65px;
+  height: 24.08px;
+  padding: 5.31px 10.62px;
+  box-sizing: border-box;
+  background: #dbeafe;
+  color: #0f2744;
+  gap: 3px;
 }
 
 .pds-shield {
-	width: 10.53px;
-	height: 10.7px;
-	flex-shrink: 0;
+  width: 10.53px;
+  height: 10.7px;
+  flex-shrink: 0;
 }
 
 .pds-title-wrap {
-	width: 100%;
-	min-height: 10px;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
+  width: 100%;
+  min-height: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .pds-line-wrap {
-	width: min(468.72px, 100%);
-	height: 2.6px;
-	display: flex;
-	align-items: center;
+  width: min(468.72px, 100%);
+  height: 2.6px;
+  display: flex;
+  align-items: center;
 }
 
 .pds-line {
-	width: 100%;
-	height: 1.3px;
-	background: #c7c7cc;
-	display: block;
+  width: 100%;
+  height: 1.3px;
+  background: #c7c7cc;
+  display: block;
 }
 
 .pds-title {
-	margin: 0;
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 39.06px;
-	line-height: 41.01px;
-	font-weight: 500;
-	letter-spacing: -1.63px;
-	color: #061a1c;
+  margin: 0;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 39.06px;
+  line-height: 41.01px;
+  font-weight: 500;
+  letter-spacing: -1.63px;
+  color: #061a1c;
 }
 
 .pds-price {
-	margin: 0;
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 18.23px;
-	line-height: 18.23px;
-	font-weight: 500;
-	padding-bottom: 10px;
-	letter-spacing: -0.78px;
-	color: #061a1c;
+  margin: 0;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 18.23px;
+  line-height: 18.23px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  letter-spacing: -0.78px;
+  color: #061a1c;
 }
 
 .pds-description-wrap {
-	width: 100%;
-	min-height: 186.82px;
-	display: flex;
-	flex-direction: column;
-	gap: 32.55px;
+  width: 100%;
+  min-height: 186.82px;
+  display: flex;
+  flex-direction: column;
+  gap: 32.55px;
 }
 
 .pds-description {
-	margin: 0;
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 18.23px;
-	line-height: 22.78px;
-	font-weight: 400;
-	padding-top: ;
-	letter-spacing: -0.65px;
-	color: #061a1c;
+  margin: 0;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 18.23px;
+  line-height: 22.78px;
+  font-weight: 400;
+  padding-top:;
+  letter-spacing: -0.65px;
+  color: #061a1c;
 }
 
 .pds-size-wrap {
-	display: flex;
-	flex-direction: column;
-	gap: 10.42px;
+  display: flex;
+  flex-direction: column;
+  gap: 10.42px;
 }
 
 .pds-size-label {
-	margin: 0;
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 18.23px;
-	line-height: 18.23px;
-	font-weight: 400;
-	color: #061a1c;
+  margin: 0;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 18.23px;
+  line-height: 18.23px;
+  font-weight: 400;
+  color: #061a1c;
 }
 
 .pds-size-chip {
-	width: 152.27px;
-	height: 55.85px;
-	border-radius: 13.02px;
-	border: 1.3px solid #0d7377;
-	background: #e9e9e9;
-	color: #0d7377;
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 18.23px;
-	line-height: 100%;
-	font-weight: 400;
-	cursor: pointer;
-	transition: all 0.2s ease;
+  width: 152.27px;
+  height: 55.85px;
+  border-radius: 13.02px;
+  border: 1.3px solid #0d7377;
+  background: #e9e9e9;
+  color: #0d7377;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 18.23px;
+  line-height: 100%;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .pds-size-chip:hover {
-	background: #ddd;
-	border-color: #0d7377;
+  background: #ddd;
+  border-color: #0d7377;
 }
 
 .pds-size-chip--active {
-	background: #0d7377;
-	color: #ffffff;
-	border-color: #0d7377;
+  background: #0d7377;
+  color: #ffffff;
+  border-color: #0d7377;
 }
 
 .pds-size-buttons-group {
-	display: flex;
-	gap: 10.42px;
-	flex-wrap: wrap;
+  display: flex;
+  gap: 10.42px;
+  flex-wrap: wrap;
 }
 
 .pds-action-row {
-	display: flex;
-	gap: 13.02px;
-	align-items: center;
-	height: 52.08px;
+  display: flex;
+  gap: 13.02px;
+  align-items: center;
+  height: 52.08px;
 }
 
 .pds-qty {
-	width: 122.39px;
-	height: 52.08px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0;
-	box-sizing: border-box;
-	border-radius: 10.42px;
-	border: 1.3px solid #c7c7cc;
-	background: #ffffff;
-	overflow: hidden;
+  width: 122.39px;
+  height: 52.08px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 10.42px;
+  border: 1.3px solid #c7c7cc;
+  background: #ffffff;
+  overflow: hidden;
 }
 
 .pds-qty-btn {
-	border: none;
-	width: 52.08px;
-	height: 52.08px;
-	border-radius: 10.42px;
-	background: #ffffff;
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 18.23px;
-	font-weight: 600;
-	line-height: 1;
-	cursor: pointer;
-	color: #061a1c;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0;
+  border: none;
+  width: 52.08px;
+  height: 52.08px;
+  border-radius: 10.42px;
+  background: #ffffff;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 18.23px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  color: #061a1c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .pds-qty-btn--disabled,
 .pds-qty-btn:disabled {
-	cursor: not-allowed;
-	color: rgba(0, 0, 0, 0.16);
-	background: #ffffff;
-	opacity: 1;
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.16);
+  background: #ffffff;
+  opacity: 1;
 }
 
 .pds-qty-value {
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 18.23px;
-	line-height: 1;
-	font-weight: 600;
-	color: #061a1c;
-	width: 18.23px;
-	text-align: center;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 18.23px;
+  line-height: 1;
+  font-weight: 600;
+  color: #061a1c;
+  width: 18.23px;
+  text-align: center;
 }
 
 .pds-qty-icon {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 23.44px;
-	height: 23.44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 23.44px;
+  height: 23.44px;
 }
 
 .pds-qty-icon--minus {
-	width: 13.67px;
-	height: 1.95px;
-	border-radius: 999px;
-	background: rgba(0, 0, 0, 0.16);
+  width: 13.67px;
+  height: 1.95px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.16);
 }
 
 .pds-qty-btn:not(:disabled) .pds-qty-icon--minus {
-	background: #061a1c;
+  background: #061a1c;
 }
 
 .pds-qty-icon--plus {
-	position: relative;
+  position: relative;
 }
 
 .pds-qty-icon-line {
-	position: absolute;
-	display: block;
-	background: #061a1c;
-	border-radius: 999px;
+  position: absolute;
+  display: block;
+  background: #061a1c;
+  border-radius: 999px;
 }
 
 .pds-qty-icon-line--h {
-	width: 16.92px;
-	height: 1.3px;
+  width: 16.92px;
+  height: 1.3px;
 }
 
 .pds-qty-icon-line--v {
-	width: 1.3px;
-	height: 16.91px;
+  width: 1.3px;
+  height: 16.91px;
 }
 
 .pds-shop-btn {
-	width: min(340px, 100%);
-	height: 52px;
-	border: none;
-	border-radius: 6.62px;
-	background: #0d7377;
-	color: #ffffff;
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 17.67px;
-	font-weight: 600;
-	line-height: 100%;
-	letter-spacing: 0.22px;
-	cursor: pointer;
+  width: min(340px, 100%);
+  height: 52px;
+  border: none;
+  border-radius: 6.62px;
+  background: #0d7377;
+  color: #ffffff;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 17.67px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.22px;
+  cursor: pointer;
 }
 
 .pds-policy {
-	margin: 0;
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 15.62px;
-	font-weight: 500;
-	line-height: 19px;
-	letter-spacing: -0.52px;
-	color: #9ba3a7;
+  margin: 0;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 15.62px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: -0.52px;
+  color: #9ba3a7;
 }
 
 .pds-accordion-list {
-	display: flex;
-	flex-direction: column;
-	border-top: 1.3px solid #c7c7cc;
-	border-bottom: 1.3px solid #c7c7cc;
+  display: flex;
+  flex-direction: column;
+  border-top: 1.3px solid #c7c7cc;
+  border-bottom: 1.3px solid #c7c7cc;
 }
 
 .pds-accordion-item-wrapper {
-	border-bottom: 1.3px solid #c7c7cc;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
+  border-bottom: 1.3px solid #c7c7cc;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .pds-accordion-item-wrapper:last-child {
-	border-bottom: none;
+  border-bottom: none;
 }
 
 .pds-accordion-item {
-	min-height: 52px;
-	height: auto;
-	border: none;
-	background: transparent;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 15.62px;
-	font-weight: 500;
-	line-height: 18.75px;
-	letter-spacing: -0.52px;
-	color: #1a1f24;
-	cursor: pointer;
-	padding: 12px 0;
-	flex: 1;
-	min-width: 0;
+  min-height: 52px;
+  height: auto;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 15.62px;
+  font-weight: 500;
+  line-height: 18.75px;
+  letter-spacing: -0.52px;
+  color: #1a1f24;
+  cursor: pointer;
+  padding: 12px 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .pds-accordion-plus-icon {
-	padding: 12px 0;
-	margin-left: auto;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	flex: 0 0 auto;
-	cursor: pointer;
+  padding: 12px 0;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+  cursor: pointer;
 }
 
 .pds-accordion-item:first-child {
-	border-top: none;
+  border-top: none;
 }
 
 .pds-accordion-content {
-	padding: 16px 0;
-	margin: 0;
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-size: 14.62px;
-	line-height: 1.6;
-	color: #555;
-	background: transparent;
-	animation: pdsSlideDown 0.3s ease-out;
-	flex: 0 0 100%;
+  padding: 16px 0;
+  margin: 0;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 14.62px;
+  line-height: 1.6;
+  color: #555;
+  background: transparent;
+  animation: pdsSlideDown 0.3s ease-out;
+  flex: 0 0 100%;
 }
 
 .pds-accordion-content p {
-	margin: 0;
+  margin: 0;
 }
 
 @media (max-width: 1320px) {
-	.pds-section {
-		padding: 72px 20px;
-		height: auto;
-	}
+  .pds-section {
+    padding: 72px 20px;
+    height: auto;
+  }
 
-	.pds-container {
-		width: 100%;
-		gap: 0;
-		height: auto;
-	}
+  .pds-container {
+    width: 100%;
+    gap: 0;
+    height: auto;
+  }
 
-	.pds-gallery {
-		width: calc(100% - 496px);
-		height: auto;
-		padding-left: 0;
-	}
+  .pds-gallery {
+    width: calc(100% - 496px);
+    height: auto;
+    padding-left: 0;
+  }
 
-	.pds-details {
-		width: 468.72px;
-	}
+  .pds-details {
+    width: 468.72px;
+  }
 }
 
 @media (max-width: 980px) {
-	.pds-section {
-		padding: 40px 14px;
-		height: auto;
-	}
+  .pds-section {
+    padding: 40px 14px;
+    height: auto;
+  }
 
-	.pds-container {
-		flex-direction: column;
-		gap: 24px;
-		height: auto;
-	}
+  .pds-container {
+    flex-direction: column;
+    gap: 24px;
+    height: auto;
+  }
 
-	.pds-gallery,
-	.pds-details {
-		width: 100%;
-	}
+  .pds-gallery,
+  .pds-details {
+    width: 100%;
+  }
 
-	.pds-details {
-		min-height: auto;
-		gap: 24px;
-	}
+  .pds-details {
+    min-height: auto;
+    gap: 24px;
+  }
 
-	.pds-gallery {
-		flex-direction: column-reverse;
-		height: auto;
-	}
+  .pds-gallery {
+    flex-direction: column-reverse;
+    height: auto;
+  }
 
-	.pds-thumbnails {
-		position: static;
-		width: 100%;
-		min-height: auto;
-		flex-direction: row;
-		gap: 10px;
-		overflow-x: auto;
-	}
+  .pds-thumbnails {
+    position: static;
+    width: 100%;
+    min-height: auto;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: auto;
+  }
 
-	.pds-thumb {
-		flex: 0 0 82px;
-		width: 82px;
-		height: 90px;
-	}
+  .pds-thumb {
+    flex: 0 0 82px;
+    width: 82px;
+    height: 90px;
+  }
 
-	.pds-main-image-wrap {
-		width: 100%;
-		height: 460px;
-		flex: none;
-	}
+  .pds-main-image-wrap {
+    width: 100%;
+    height: 460px;
+    flex: none;
+  }
 
-	.pds-title {
-		font-size: 42px;
-	}
+  .pds-title {
+    font-size: 42px;
+  }
 
-	.pds-description {
-		font-size: 20px;
-	}
+  .pds-description {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 640px) {
-	.pds-action-row {
-		flex-wrap: wrap;
-		height: auto;
-	}
+  .pds-action-row {
+    flex-wrap: wrap;
+    height: auto;
+  }
 
-	.pds-qty {
-		width: 100%;
-	}
+  .pds-qty {
+    width: 100%;
+  }
 
-	.pds-shop-btn {
-		width: 100%;
-	}
+  .pds-shop-btn {
+    width: 100%;
+  }
 
-	.pds-size-chip {
-		flex: 1;
-		min-width: 120px;
-	}
+  .pds-size-chip {
+    flex: 1;
+    min-width: 120px;
+  }
 
-	.pds-size-buttons-group {
-		gap: 8px;
-	}
+  .pds-size-buttons-group {
+    gap: 8px;
+  }
 
-	.pds-title {
-		font-size: clamp(28px, 8vw, 36px);
-		line-height: 1.15;
-	}
+  .pds-title {
+    font-size: clamp(28px, 8vw, 36px);
+    line-height: 1.15;
+  }
 
-	.pds-description {
-		font-size: 16px;
-		line-height: 1.5;
-	}
+  .pds-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 
-	.pds-accordion-item {
-		padding: 14px 0;
-		font-size: 14px;
-	}
+  .pds-accordion-item {
+    padding: 14px 0;
+    font-size: 14px;
+  }
 
-	.pds-accordion-content {
-		padding: 12px 0;
-		font-size: 13px;
-	}
+  .pds-accordion-content {
+    padding: 12px 0;
+    font-size: 13px;
+  }
 }
 
 /* ── MOBILE (max-width: 480px) ── */
 @media (max-width: 480px) {
-	.pds-section {
-		padding: 24px 12px;
-		height: auto;
-	}
+  .pds-section {
+    padding: 24px 12px;
+    height: auto;
+  }
 
-	.pds-container {
-		flex-direction: column;
-		gap: 16px;
-	}
+  .pds-container {
+    flex-direction: column;
+    gap: 16px;
+  }
 
-	.pds-gallery {
-		flex-direction: column;
-		gap: 8px;
-	}
+  .pds-gallery {
+    flex-direction: column;
+    gap: 8px;
+  }
 
-	.pds-thumbnails {
-		flex-direction: row;
-		gap: 6px;
-		overflow-x: auto;
-	}
+  .pds-thumbnails {
+    flex-direction: row;
+    gap: 6px;
+    overflow-x: auto;
+  }
 
-	.pds-thumb {
-		width: 60px;
-		height: 60px;
-		flex: 0 0 60px;
-	}
+  .pds-thumb {
+    width: 60px;
+    height: 60px;
+    flex: 0 0 60px;
+  }
 
-	.pds-main-image-wrap {
-		height: 300px;
-	}
+  .pds-main-image-wrap {
+    height: 300px;
+  }
 
-	.pds-title {
-		font-size: 28px;
-		line-height: 1.2;
-	}
+  .pds-title {
+    font-size: 28px;
+    line-height: 1.2;
+  }
 
-	.pds-price {
-		font-size: 16px;
-	}
+  .pds-price {
+    font-size: 16px;
+  }
 
-	.pds-description {
-		font-size: 14px;
-	}
+  .pds-description {
+    font-size: 14px;
+  }
 
-	.pds-size-label {
-		font-size: 14px;
-	}
+  .pds-size-label {
+    font-size: 14px;
+  }
 
-	.pds-size-chip {
-		font-size: 12px;
-		height: 40px;
-		width: 100%;
-		min-width: auto;
-	}
+  .pds-size-chip {
+    font-size: 12px;
+    height: 40px;
+    width: 100%;
+    min-width: auto;
+  }
 
-	.pds-action-row {
-		flex-direction: column;
-		gap: 8px;
-	}
+  .pds-action-row {
+    flex-direction: column;
+    gap: 8px;
+  }
 
-	.pds-qty,
-	.pds-shop-btn {
-		width: 100%;
-	}
+  .pds-qty,
+  .pds-shop-btn {
+    width: 100%;
+  }
 
-	.pds-accordion-item {
-		padding: 10px 0;
-		font-size: 12px;
-	}
+  .pds-accordion-item {
+    padding: 10px 0;
+    font-size: 12px;
+  }
 
-	.pds-accordion-content {
-		padding: 8px 0;
-		font-size: 11px;
-	}
+  .pds-accordion-content {
+    padding: 8px 0;
+    font-size: 11px;
+  }
 }
 
 /* ── EXTRA SMALL (max-width: 375px) ── */
 @media (max-width: 375px) {
-	.pds-section {
-		padding: 16px 10px;
-	}
+  .pds-section {
+    padding: 16px 10px;
+  }
 
-	.pds-container {
-		gap: 12px;
-	}
+  .pds-container {
+    gap: 12px;
+  }
 
-	.pds-title {
-		font-size: 22px;
-	}
+  .pds-title {
+    font-size: 22px;
+  }
 
-	.pds-price {
-		font-size: 14px;
-	}
+  .pds-price {
+    font-size: 14px;
+  }
 
-	.pds-description {
-		font-size: 12px;
-	}
+  .pds-description {
+    font-size: 12px;
+  }
 
-	.pds-badge {
-		font-size: 8px;
-	}
+  .pds-badge {
+    font-size: 8px;
+  }
 
-	.pds-thumb {
-		width: 50px;
-		height: 50px;
-	}
+  .pds-thumb {
+    width: 50px;
+    height: 50px;
+  }
 
-	.pds-main-image-wrap {
-		height: 250px;
-	}
+  .pds-main-image-wrap {
+    height: 250px;
+  }
 
-	.pds-accordion-item {
-		font-size: 11px;
-	}
+  .pds-accordion-item {
+    font-size: 11px;
+  }
 }

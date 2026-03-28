@@ -1,228 +1,198 @@
 .pas-section {
-	width: 100%;
-	box-sizing: border-box;
-	margin-top: 60px;
-	padding: 76.9px 100.45px 24px;
-	border-top: 2px solid rgba(125, 124, 124, 0.5);
-	border-bottom: 1.57px solid rgba(125, 124, 124, 0.5);
-	background: #f3f4f6;
-	overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 60px;
+  padding: 76.9px 100.45px 24px;
+  border-top: 2px solid rgba(125, 124, 124, 0.5);
+  border-bottom: 1.57px solid rgba(125, 124, 124, 0.5);
+  background: #f3f4f6;
+  overflow-x: hidden;
 }
 
 .pas-container {
-	width: 100%;
-	min-height: auto;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr;
-	column-gap: auto;
-	row-gap: 2rem;
-	justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* ✅ ALWAYS 4 ITEMS */
+  gap: 2rem;
 }
 
-/* sm: grid-cols-2 */
-@media (min-width: 640px) {
-	.pas-container {
-		grid-template-columns: repeat(2, 1fr);
-		column-gap: 2rem;
-	}
-}
-
-/* lg: grid-cols-4 */
-@media (min-width: 1024px) {
-	.pas-container {
-		grid-template-columns: repeat(4, 1fr);
-		column-gap: 2rem;
-	}
+/* sm */
+@media (max-width: 1024px) {
+  .pas-container {
+    grid-template-columns: repeat(4, 1fr); /* keep 4 */
+    gap: 1.5rem;
+  }
 }
 
 .pas-item {
-	width: 325.28px;
-	min-height: 164.01px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 16px;
+  width: 100%;
+  min-height: 164.01px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
+/* ICON */
 .pas-icon-wrap {
-	width: 75.34px;
-	height: 75.34px;
-	border-radius: 18.83px;
-	border: 1.57px solid rgba(78, 77, 77, 0.5);
-	background: #fafafa;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  width: 75.34px;
+  height: 75.34px;
+  border-radius: 18.83px;
+  border: 1.57px solid rgba(78, 77, 77, 0.5);
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pas-icon-image {
-	width: 31.39px;
-	height: 31.39px;
-	object-fit: contain;
-	display: block;
+  width: 31.39px;
+  height: 31.39px;
+  object-fit: contain;
 }
 
+/* TEXT */
 .pas-copy {
-	height: 69.84px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 6.28px;
+  height: 69.84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.28px;
 }
 
 .pas-title,
 .pas-subtitle {
-	margin: 0;
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	text-align: center;
-	letter-spacing: 0;
-	white-space: normal;
-	overflow-wrap: anywhere;
+  margin: 0;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
 }
 
 .pas-title {
-	font-size: 24px;
-	line-height: 32.96px;
-	color: #171717;
+  font-size: 24px;
+  line-height: 32.96px;
+  color: #171717;
 }
 
 .pas-subtitle {
-	font-size: 20px;
-	line-height: 30.6px;
-	color: #737373;
+  font-size: 20px;
+  line-height: 30.6px;
+  color: #737373;
 }
 
-@media (max-width: 1600px) {
-	.pas-section {
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-
-	.pas-item {
-		width: 100%;
-	}
-}
-
+/* -------- TABLET -------- */
 @media (max-width: 768px) {
-	.pas-section {
-		padding: 44px 16px 18px;
-	}
+  .pas-section {
+    padding: 32px 12px 14px;
+  }
 
-	.pas-container {
-		grid-template-columns: 1fr;
-		row-gap: 28px;
-	}
+  .pas-container {
+    grid-template-columns: repeat(4, 1fr); /* ✅ FIX */
+    gap: 10px;
+  }
 
-	.pas-item {
-		min-height: auto;
-		gap: 14px;
-	}
+  .pas-item {
+    min-height: auto;
+    gap: 8px;
+  }
 
-	.pas-title {
-		font-size: 22px;
-		line-height: 1.25;
-	}
+  .pas-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    border: 1px solid rgba(78, 77, 77, 0.35);
+  }
 
-	.pas-subtitle {
-		font-size: 18px;
-		line-height: 1.35;
-		white-space: normal;
-	}
+  .pas-icon-image {
+    width: 20px;
+    height: 20px;
+  }
+
+  .pas-title {
+    font-size: 12px;
+    line-height: 1.15;
+  }
+
+  .pas-subtitle {
+    font-size: 10px;
+    line-height: 1.2;
+  }
 }
 
-@media (max-width: 480px) {
-	.pas-section {
-		margin-top: 40px;
-		padding: 28px 12px 12px;
-		border-top: 1px solid rgba(125, 124, 124, 0.4);
-		border-bottom: 1px solid rgba(125, 124, 124, 0.4);
-	}
+/* -------- MOBILE -------- */
+@media (max-width: 768px) {
+  .pas-section {
+    padding: 24px 10px;
+  }
 
-	.pas-container {
-		grid-template-columns: 1fr;
-		row-gap: 20px;
-	}
+  .pas-container {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important; /* FORCE 4 */
+    gap: 8px;
+  }
 
-	.pas-item {
-		width: 100%;
-		min-height: auto;
-		gap: 12px;
-	}
+  .pas-item {
+    width: 100% !important; /* 🔥 CRITICAL FIX */
+    min-width: 0 !important; /* 🔥 prevents overflow */
+    gap: 6px;
+  }
 
-	.pas-icon-wrap {
-		width: 60px;
-		height: 60px;
-		border-radius: 14px;
-		border: 1px solid rgba(78, 77, 77, 0.4);
-	}
+  .pas-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+  }
 
-	.pas-icon-image {
-		width: 24px;
-		height: 24px;
-	}
+  .pas-icon-image {
+    width: 18px;
+    height: 18px;
+  }
 
-	.pas-copy {
-		height: auto;
-		gap: 4px;
-	}
+  .pas-title {
+    font-size: 11px;
+    line-height: 1.1;
+  }
 
-	.pas-title {
-		font-size: 18px;
-		line-height: 1.2;
-	}
-
-	.pas-subtitle {
-		font-size: 16px;
-		line-height: 1.3;
-	}
+  .pas-subtitle {
+    font-size: 9px;
+    line-height: 1.1;
+  }
 }
 
+/* -------- SMALL MOBILE -------- */
 @media (max-width: 375px) {
-	.pas-section {
-		margin-top: 32px;
-		padding: 20px 10px 10px;
-		border-top: 1px solid rgba(125, 124, 124, 0.3);
-		border-bottom: 1px solid rgba(125, 124, 124, 0.3);
-	}
+  .pas-section {
+    margin-top: 28px;
+    padding: 18px 8px 8px;
+  }
 
-	.pas-container {
-		grid-template-columns: 1fr;
-		row-gap: 16px;
-	}
+  .pas-container {
+    grid-template-columns: repeat(4, 1fr); /* ✅ STILL 4 */
+    gap: 6px;
+  }
 
-	.pas-item {
-		width: 100%;
-		min-height: auto;
-		gap: 10px;
-	}
+  .pas-icon-wrap {
+    width: 44px;
+    height: 44px;
+  }
 
-	.pas-icon-wrap {
-		width: 52px;
-		height: 52px;
-		border-radius: 12px;
-		border: 1px solid rgba(78, 77, 77, 0.3);
-	}
+  .pas-icon-image {
+    width: 16px;
+    height: 16px;
+  }
 
-	.pas-icon-image {
-		width: 20px;
-		height: 20px;
-	}
+  .pas-title {
+    font-size: 10px;
+  }
 
-	.pas-copy {
-		height: auto;
-		gap: 3px;
-	}
-
-	.pas-title {
-		font-size: 16px;
-		line-height: 1.15;
-	}
-
-	.pas-subtitle {
-		font-size: 14px;
-		line-height: 1.25;
-	}
+  .pas-subtitle {
+    font-size: 9px;
+  }
 }

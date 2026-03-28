@@ -1,7 +1,10 @@
 .science-ingredients {
   padding: 6rem 2rem;
   background-color: #ffffff;
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    sans-serif;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -11,7 +14,7 @@
 }
 
 .section-title {
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   font-size: 3.5rem;
   font-weight: 400;
   margin-bottom: 5rem;
@@ -31,7 +34,7 @@
 }
 
 .ingredients-subtitle {
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   font-size: 2.8rem;
   font-weight: 400;
   margin: 0;
@@ -67,13 +70,13 @@
 }
 
 .ingredient-card-wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 15px;
   left: 15px;
   right: -15px;
   bottom: -15px;
-  background-color: #0D7377; /* Teal color matching design */
+  background-color: #0d7377; /* Teal color matching design */
   border-radius: 20px;
   z-index: 0;
 }
@@ -95,7 +98,7 @@
   position: absolute;
   top: 1.5rem;
   left: 1.5rem;
-  background-color: #0D7377;
+  background-color: #0d7377;
   color: #fff;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
@@ -132,7 +135,7 @@
 }
 
 .ingredient-name {
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   font-size: 1.8rem;
   font-weight: 400;
   color: #000;
@@ -166,16 +169,16 @@
     flex-direction: column;
     gap: 1.5rem;
   }
-  
+
   .ingredients-desc-wrapper {
     justify-content: flex-start;
     padding-top: 0;
   }
-  
+
   .ingredients-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .ingredient-card-wrapper::after {
     top: 10px;
     left: 10px;
@@ -340,7 +343,7 @@
 .body-is {
   margin: 0;
   padding: 60px 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 
   display: flex;
   justify-content: center;
@@ -354,21 +357,21 @@
 
 /* Header */
 .title-is {
-  font-family: 'Bree Serif','Inter', sans-serif; /* The original uses serif for the main title */
+  font-family:
+    "Bree Serif", "Inter", sans-serif; /* The original uses serif for the main title */
   font-size: 3.8rem;
   font-weight: 400;
   margin: 0;
   color: var(--text-main);
 }
 
-.title-alt-is{
-  font-family: 'Bree Serif','Inter', sans-serif;
+.title-alt-is {
+  font-family: "Bree Serif", "Inter", sans-serif;
   font-size: 3.8rem;
   font-weight: 500;
   margin: 0 0 70px 0;
   color: var(--text-main);
   line-height: 1;
-
 }
 
 .scroll-wrap {
@@ -376,14 +379,13 @@
   padding-bottom: 20px; /* Space for scrollbar */
   margin: 0 -20px; /* Negate horizontal padding */
   max-width: 100%;
-  
-   /* Hide scrollbar (Firefox) */
+
+  /* Hide scrollbar (Firefox) */
   scrollbar-width: none;
 
   /* Hide scrollbar (IE/Edge legacy) */
   -ms-overflow-style: none;
 }
-
 
 .scroll-wrap::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
@@ -466,12 +468,12 @@
   width: 170px;
   height: 170px;
   border-radius: 50%;
-  background-color: #ECECEC;
+  background-color: #ececec;
   z-index: 10; /* Set to a negative value so it stays behind the image */
 }
 /* Text Content */
 .ingredient-name-is {
-  font-family: 'Bree Serif','Inter', sans-serif;
+  font-family: "Bree Serif", "Inter", sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
   margin: 0 0 5px 0;
@@ -492,7 +494,7 @@
 }
 
 .content-is {
-    text-align: left;
+  text-align: left;
 }
 
 /* Responsive Fix: Switch to 1 column on mobile */
@@ -502,7 +504,8 @@
     max-width: 400px;
     margin: 0 auto;
   }
-  .title-is, .title-alt-is {
+  .title-is,
+  .title-alt-is {
     font-size: 2.5rem;
   }
 }

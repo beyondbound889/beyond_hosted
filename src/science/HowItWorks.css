@@ -3,7 +3,10 @@
   padding-top: 0;
   padding-bottom: 0;
   background-color: #ffffff;
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    sans-serif;
 }
 
 .text-center {
@@ -11,7 +14,7 @@
 }
 
 .section-title {
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   font-size: 3.5rem;
   font-weight: 400;
   margin-bottom: 3rem;
@@ -26,7 +29,7 @@
 
 /* Background shadow effect as in design */
 .how-it-works-container::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 15px;
   left: 15px;
@@ -38,7 +41,7 @@
 }
 
 .how-it-works-box {
-  background-color: #0D7377;
+  background-color: #0d7377;
   /* dark teal */
   border-radius: 20px;
   padding: 3rem;
@@ -93,7 +96,7 @@
 }
 
 .flow-title {
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   font-size: 1.4rem;
   font-weight: 400;
   margin: 0;
